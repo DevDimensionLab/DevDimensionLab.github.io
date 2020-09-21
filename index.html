@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Co-pilot | co-pilot-cli.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Co-pilot" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://co-pilot-cli.github.io/" />
+<meta property="og:url" content="https://co-pilot-cli.github.io/" />
+<meta property="og:site_name" content="co-pilot-cli.github.io" />
+<script type="application/ld+json">
+{"headline":"Co-pilot","@type":"WebSite","url":"https://co-pilot-cli.github.io/","name":"co-pilot-cli.github.io","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+<h1><a href="https://github.com/co-pilot-cli">co-pilot-cli</a></h1>
+
+<p>A little “go help” for the Java/Kotlin developers using Maven.</p>
+
+<p>Current main capability? 
+Upgrade your pom.xml dependencies to latest and greatest!</p>
+
+<p>Why?</p>
+<ul>
+  <li>No installs of maven-plugins required, so if you a working in a multi-repo developer environment with lots of 2party dependencies and repos, you can easily upgrade them with <code class="language-plaintext highlighter-rouge">co-pilot upgrade 2party</code>.</li>
+  <li>Brings natural semantics and support for different types of dependencies to the table: Kotlin, 2party, spring-boot (curated dependencies), (other) 3party</li>
+  <li>Can be used as a library for other go-projects automating the upgrade process</li>
+  <li>Easy and fast</li>
+  <li>Brings feature to the table, not found anywhere else, stay tuned!</li>
+</ul>
+
+<p>Heads up!</p>
+<ul>
+  <li>co-pilot rewrites your pom.xml, so make sure you have your pom.xml committed before testing out co-pilot</li>
+  <li>start with <code class="language-plaintext highlighter-rouge">co-pilot format pom</code>, verify that the rewrite of the pom.xml is ok, commit, and from now on you will easily see the diff that co-pilot introduces with <code class="language-plaintext highlighter-rouge">co-pilot upgrade &lt;2party|3party|spring-boot|plugins|all&gt;</code></li>
+  <li>or just use  <code class="language-plaintext highlighter-rouge">co-pilot status</code> (no rewrite) and manually upgrade your pom.xml based on what is reported as outdated, current option if you need to keep your pom.xml formatting</li>
+</ul>
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+<script>anchors.add();</script>
+    
+</body>
+</html>
