@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Upgrade">
+<meta name="description" content="Ignores">
 
-<title>Upgrade | Co-pilot-cli</title>
+<title>Ignores | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -220,7 +220,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/upgrade/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/upgrade/" class="gdoc-nav__entry ">
                         Upgrade
                     </a>
                 </span>
@@ -337,7 +337,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/template/ignore/" class="gdoc-nav__entry ">
+                    <a href="/template/ignore/" class="gdoc-nav__entry is-active">
                         Ignores
                     </a>
                 </span>
@@ -471,7 +471,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Upgrade
+        <a href='/'>Co-pilot</a> / <a href='/template/'>Templates</a> / Ignores
     
 
     
@@ -488,7 +488,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Upgrade</h1>
+        <h1>Ignores</h1>
         
 
 
@@ -496,33 +496,43 @@
     
 
 
-<p>Upgrade is a command for upgrading all or specific parts of a project.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<pre><code>Perform upgrade on existing projects
+<p>During the merge process of a template into a target directory, co-pilot by default reads the <code>.gitignore</code> file from the template, and ignores all the files matching. In addition a <code>co-pilot.ignore</code> file can be added for file which should exist in the version control, but not be part of the template during merging.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="example-co-pilotignore">Example .co-pilot.ignore<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#example-co-pilotignore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example .co-pilot.ignore" href="#example-co-pilotignore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<pre><code>FooController.kt
+</code></pre><div class="gdoc-page__anchorwrap"><h2 id="example-gitignore">Example .gitignore<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#example-gitignore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example .gitignore" href="#example-gitignore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<pre><code>HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-Usage:
-  co-pilot upgrade [command]
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-Available Commands:
-  2party      Upgrade all 2party dependencies to project
-  3party      Upgrade all 3party dependencies to project
-  all         Upgrade everything in project
-  dependency  Upgrade a specific dependency on a project
-  deprecated  Remove and replace deprecated dependencies in a project
-  kotlin      Upgrade kotlin version in project
-  plugins     Upgrade all plugins found in project
-  spring-boot Upgrade spring-boot to the latest version
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
-Flags:
-      --dry-run         dry run does not write to pom.xml
-  -h, --help            help for upgrade
-  -r, --recursive       turn on recursive mode
-      --target string   Optional target directory (default &quot;.&quot;)
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-Global Flags:
-      --debug   turn on debug output
-
-
+### VS Code ###
+.vscode/
 </code></pre>
 
     </article>

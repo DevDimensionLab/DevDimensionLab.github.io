@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Upgrade">
+<meta name="description" content="Project">
 
-<title>Upgrade | Co-pilot-cli</title>
+<title>Project | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -220,7 +220,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/upgrade/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/upgrade/" class="gdoc-nav__entry ">
                         Upgrade
                     </a>
                 </span>
@@ -286,7 +286,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/configuration/project/" class="gdoc-nav__entry ">
+                    <a href="/configuration/project/" class="gdoc-nav__entry is-active">
                         Project
                     </a>
                 </span>
@@ -471,7 +471,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Upgrade
+        <a href='/'>Co-pilot</a> / <a href='/configuration/'>Configurations</a> / Project
     
 
     
@@ -488,7 +488,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Upgrade</h1>
+        <h1>Project</h1>
         
 
 
@@ -496,34 +496,24 @@
     
 
 
-<p>Upgrade is a command for upgrading all or specific parts of a project.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<pre><code>Perform upgrade on existing projects
+<p>In every co-pilot project and template there should be located a <code>co-pilot.json</code> file describing the project.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="example-co-pilotjson">Example co-pilot.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/project/#example-co-pilotjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example co-pilot.json" href="#example-co-pilotjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<pre><code>{
+  &quot;language&quot;: &quot;kotlin&quot;,
+  &quot;groupId&quot;: &quot;com.example&quot;,
+  &quot;artifactId&quot;: &quot;app&quot;,
+  &quot;package&quot;: &quot;com.example.app&quot;,
+  &quot;name&quot;: &quot;Example REST basic app&quot;,
+  &quot;team&quot;: {
+	&quot;name&quot;: &quot;demo-name&quot;,
+	&quot;email&quot;: &quot;demo-email@example.com&quot;
+  },
+  &quot;description&quot;: &quot;Demo of new app, generated with spring-boot and co-pilot templates&quot;,
+  &quot;dependencies&quot;: [&quot;web-services&quot;],
+  &quot;templates&quot; : [&quot;dockerfile&quot;, &quot;rest-basic&quot;]
+}
+</code></pre><p>The <code>dependencies</code> key in this file refers to spring-boot dependencies. The command <code>co-pilot info --spring-info</code> shows a complete list of all the available dependencies. The <code>templates</code> key refers to templates available in your cloud-config repository.</p>
 
-Usage:
-  co-pilot upgrade [command]
-
-Available Commands:
-  2party      Upgrade all 2party dependencies to project
-  3party      Upgrade all 3party dependencies to project
-  all         Upgrade everything in project
-  dependency  Upgrade a specific dependency on a project
-  deprecated  Remove and replace deprecated dependencies in a project
-  kotlin      Upgrade kotlin version in project
-  plugins     Upgrade all plugins found in project
-  spring-boot Upgrade spring-boot to the latest version
-
-Flags:
-      --dry-run         dry run does not write to pom.xml
-  -h, --help            help for upgrade
-  -r, --recursive       turn on recursive mode
-      --target string   Optional target directory (default &quot;.&quot;)
-
-Global Flags:
-      --debug   turn on debug output
-
-
-</code></pre>
 
     </article>
 

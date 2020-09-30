@@ -241,6 +241,123 @@
             
             <li>
             
+                <span class="flex">Configurations</span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/configuration/cloud/" class="gdoc-nav__entry ">
+                        Cloud
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/configuration/local/" class="gdoc-nav__entry ">
+                        Local
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/configuration/project/" class="gdoc-nav__entry ">
+                        Project
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">Templates</span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/template/basics/" class="gdoc-nav__entry ">
+                        Basics
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/template/ignore/" class="gdoc-nav__entry ">
+                        Ignores
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
                 <span class="flex">Usages</span>
             
 
@@ -256,8 +373,25 @@
             <li>
             
                 <span class="flex">
-                    <a href="/usage/configuration/" class="gdoc-nav__entry ">
-                        Configuration
+                    <a href="/usage/install/" class="gdoc-nav__entry ">
+                        Install
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/usage/basics/" class="gdoc-nav__entry ">
+                        Basics
                     </a>
                 </span>
             
@@ -273,21 +407,6 @@
                 <span class="flex">
                     <a href="/usage/docker/" class="gdoc-nav__entry ">
                         Docker
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/usage/install/" class="gdoc-nav__entry ">
-                        Install
                     </a>
                 </span>
             
@@ -377,6 +496,8 @@
     
 
 
+<p>Initializes a project with co-pilot files like <code>co-pilot.json</code>. The command also overwrites the pom.xml files with standard formatting and sorting.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/init/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <pre><code>Initializes a maven project with co-pilot files and formatting
 
 Usage:
@@ -386,7 +507,6 @@ Flags:
       --config-file string   Optional config file
       --dry-run              dry run does not write to pom.xml
   -h, --help                 help for init
-      --overwrite            Overwrite pom.xml file (default true)
   -r, --recursive            turn on recursive mode
       --target string        Optional target directory (default &quot;.&quot;)
 

@@ -241,6 +241,123 @@
             
             <li>
             
+                <span class="flex">Configurations</span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/configuration/cloud/" class="gdoc-nav__entry ">
+                        Cloud
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/configuration/local/" class="gdoc-nav__entry ">
+                        Local
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/configuration/project/" class="gdoc-nav__entry ">
+                        Project
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">Templates</span>
+            
+
+            
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/template/basics/" class="gdoc-nav__entry ">
+                        Basics
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/template/ignore/" class="gdoc-nav__entry ">
+                        Ignores
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+            
+            <li>
+            
                 <span class="flex">Usages</span>
             
 
@@ -256,8 +373,25 @@
             <li>
             
                 <span class="flex">
-                    <a href="/usage/configuration/" class="gdoc-nav__entry ">
-                        Configuration
+                    <a href="/usage/install/" class="gdoc-nav__entry ">
+                        Install
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+        
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/usage/basics/" class="gdoc-nav__entry ">
+                        Basics
                     </a>
                 </span>
             
@@ -273,21 +407,6 @@
                 <span class="flex">
                     <a href="/usage/docker/" class="gdoc-nav__entry ">
                         Docker
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/usage/install/" class="gdoc-nav__entry ">
-                        Install
                     </a>
                 </span>
             
@@ -377,6 +496,13 @@
     
 
 
+<div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/format/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<pre><code>co-pilot format pom --target webservice
+</code></pre><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://co-pilot-cli.github.io/commands/format/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<pre><code>INFO[0000] formatting for file webservice/pom.xml
+INFO[0000] sorting pom file with default dependencySort
+INFO[0000] writing model to pom file: webservice/pom.xml
+</code></pre><div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/format/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <pre><code>Format functionality for a project
 
 Usage:
@@ -390,13 +516,11 @@ Available Commands:
 Flags:
       --dry-run         dry run does not write to pom.xml
   -h, --help            help for format
-      --overwrite       Overwrite pom.xml file (default true)
   -r, --recursive       turn on recursive mode
       --target string   Optional target directory (default &quot;.&quot;)
 
 Global Flags:
       --debug   turn on debug output
-
 </code></pre>
 
     </article>

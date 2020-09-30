@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Upgrade">
+<meta name="description" content="Cloud">
 
-<title>Upgrade | Co-pilot-cli</title>
+<title>Cloud | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -220,7 +220,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/upgrade/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/upgrade/" class="gdoc-nav__entry ">
                         Upgrade
                     </a>
                 </span>
@@ -256,7 +256,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/configuration/cloud/" class="gdoc-nav__entry ">
+                    <a href="/configuration/cloud/" class="gdoc-nav__entry is-active">
                         Cloud
                     </a>
                 </span>
@@ -471,7 +471,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Upgrade
+        <a href='/'>Co-pilot</a> / <a href='/configuration/'>Configurations</a> / Cloud
     
 
     
@@ -488,7 +488,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Upgrade</h1>
+        <h1>Cloud</h1>
         
 
 
@@ -496,34 +496,10 @@
     
 
 
-<p>Upgrade is a command for upgrading all or specific parts of a project.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<pre><code>Perform upgrade on existing projects
+<p>Co-pilot supports cloud configuration for some of its more advanced features. A cloud configuration is simply an available git repository referred to in the local config file <code>~/.co-pilot/local-config.yaml</code>. An example is shipped with co-pilot at <a href="https://github.com/co-pilot-cli/co-pilot-config">https://github.com/co-pilot-cli/co-pilot-config</a>.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="requirements">Requirements<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#requirements" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Requirements" href="#requirements"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>The requirements for the cloud config repository is that there exists a template folder, and a <code>deprecated.json</code> and <code>services.json</code> file on the root level.</p>
 
-Usage:
-  co-pilot upgrade [command]
-
-Available Commands:
-  2party      Upgrade all 2party dependencies to project
-  3party      Upgrade all 3party dependencies to project
-  all         Upgrade everything in project
-  dependency  Upgrade a specific dependency on a project
-  deprecated  Remove and replace deprecated dependencies in a project
-  kotlin      Upgrade kotlin version in project
-  plugins     Upgrade all plugins found in project
-  spring-boot Upgrade spring-boot to the latest version
-
-Flags:
-      --dry-run         dry run does not write to pom.xml
-  -h, --help            help for upgrade
-  -r, --recursive       turn on recursive mode
-      --target string   Optional target directory (default &quot;.&quot;)
-
-Global Flags:
-      --debug   turn on debug output
-
-
-</code></pre>
 
     </article>
 

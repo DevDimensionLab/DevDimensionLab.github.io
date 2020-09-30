@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configurations on Co-pilot-cli</title>
+    <link>https://co-pilot-cli.github.io/configuration/</link>
+    <description>Recent content in Configurations on Co-pilot-cli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Sep 2020 12:55:39 +0200</lastBuildDate>
+    
+	<atom:link href="https://co-pilot-cli.github.io/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cloud</title>
+      <link>https://co-pilot-cli.github.io/configuration/cloud/</link>
+      <pubDate>Wed, 30 Sep 2020 12:55:39 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/configuration/cloud/</guid>
+      <description>Co-pilot supports cloud configuration for some of its more advanced features. A cloud configuration is simply an available git repository referred to in the local config file ~/.co-pilot/local-config.yaml. An example is shipped with co-pilot at https://github.com/co-pilot-cli/co-pilot-config.
+Requirements The requirements for the cloud config repository is that there exists a template folder, and a deprecated.json and services.json file on the root level.</description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>https://co-pilot-cli.github.io/configuration/project/</link>
+      <pubDate>Wed, 30 Sep 2020 12:53:19 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/configuration/project/</guid>
+      <description>In every co-pilot project and template there should be located a co-pilot.json file describing the project.
+Example co-pilot.json { &amp;quot;language&amp;quot;: &amp;quot;kotlin&amp;quot;, &amp;quot;groupId&amp;quot;: &amp;quot;com.example&amp;quot;, &amp;quot;artifactId&amp;quot;: &amp;quot;app&amp;quot;, &amp;quot;package&amp;quot;: &amp;quot;com.example.app&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;Example REST basic app&amp;quot;, &amp;quot;team&amp;quot;: { &amp;quot;name&amp;quot;: &amp;quot;demo-name&amp;quot;, &amp;quot;email&amp;quot;: &amp;quot;demo-email@example.com&amp;quot; }, &amp;quot;description&amp;quot;: &amp;quot;Demo of new app, generated with spring-boot and co-pilot templates&amp;quot;, &amp;quot;dependencies&amp;quot;: [&amp;quot;web-services&amp;quot;], &amp;quot;templates&amp;quot; : [&amp;quot;dockerfile&amp;quot;, &amp;quot;rest-basic&amp;quot;] } The dependencies key in this file refers to spring-boot dependencies. The command co-pilot info --spring-info shows a complete list of all the available dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Local</title>
+      <link>https://co-pilot-cli.github.io/configuration/local/</link>
+      <pubDate>Wed, 30 Sep 2020 10:40:32 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/configuration/local/</guid>
+      <description>The first time running co-pilot a ~/.co-pilot configuration folder is created with a ~/.co-pilot/local-config.yaml file. The contents of this file by default are:
+cloudConfig: git: url: https://github.com/co-pilot-cli/co-pilot-config.git </description>
+    </item>
+    
+  </channel>
+</rss>

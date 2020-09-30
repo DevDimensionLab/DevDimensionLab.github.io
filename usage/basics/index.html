@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Upgrade">
+<meta name="description" content="Basics">
 
-<title>Upgrade | Co-pilot-cli</title>
+<title>Basics | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -220,7 +220,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/upgrade/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/upgrade/" class="gdoc-nav__entry ">
                         Upgrade
                     </a>
                 </span>
@@ -390,7 +390,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/usage/basics/" class="gdoc-nav__entry ">
+                    <a href="/usage/basics/" class="gdoc-nav__entry is-active">
                         Basics
                     </a>
                 </span>
@@ -471,7 +471,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Upgrade
+        <a href='/'>Co-pilot</a> / <a href='/usage/'>Usages</a> / Basics
     
 
     
@@ -488,7 +488,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Upgrade</h1>
+        <h1>Basics</h1>
         
 
 
@@ -496,34 +496,14 @@
     
 
 
-<p>Upgrade is a command for upgrading all or specific parts of a project.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<pre><code>Perform upgrade on existing projects
+<p>Most of the <code>co-pilot</code> commands operate on some common principles, target, recursive, and dry-run.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="target">Target<a data-clipboard-text="https://co-pilot-cli.github.io/usage/basics/#target" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Target" href="#target"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>By default <code>co-pilot</code> operates on the current folder similar to tools like <code>git</code>. However a custom <code>--target</code> flag is available for most commands and enables the used to use <code>co-pilot ... --target</code> outside of the working folder.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="recursive">Recursive<a data-clipboard-text="https://co-pilot-cli.github.io/usage/basics/#recursive" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Recursive" href="#recursive"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Recursive mode is enabled with <code>--recursive</code> or <code>-r</code> for most commands. This mode starts by building a list of subprojects on the current target, and iteratively working on each subproject. Example of this is the upgrade <code>co-pilot upgrade all -r</code> command which will upgrade the current and all subprojects found in the working directory.</p>
+<div class="gdoc-page__anchorwrap"><h2 id="dry-run">Dry-run<a data-clipboard-text="https://co-pilot-cli.github.io/usage/basics/#dry-run" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Dry-run" href="#dry-run"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Dry-run mode is enabled with <code>--dry-run</code>, for commands which overwrites files. When dry-run in enabled no files is changed or overwritten. Example <code>co-pilot upgrade all --dry-run</code>.</p>
 
-Usage:
-  co-pilot upgrade [command]
-
-Available Commands:
-  2party      Upgrade all 2party dependencies to project
-  3party      Upgrade all 3party dependencies to project
-  all         Upgrade everything in project
-  dependency  Upgrade a specific dependency on a project
-  deprecated  Remove and replace deprecated dependencies in a project
-  kotlin      Upgrade kotlin version in project
-  plugins     Upgrade all plugins found in project
-  spring-boot Upgrade spring-boot to the latest version
-
-Flags:
-      --dry-run         dry run does not write to pom.xml
-  -h, --help            help for upgrade
-  -r, --recursive       turn on recursive mode
-      --target string   Optional target directory (default &quot;.&quot;)
-
-Global Flags:
-      --debug   turn on debug output
-
-
-</code></pre>
 
     </article>
 
