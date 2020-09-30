@@ -17,7 +17,7 @@
       
       <guid>https://co-pilot-cli.github.io/commands/upgrade/</guid>
       <description>Upgrade is a command for upgrading all or specific parts of a project.
-Help Perform upgrade on existing projects Usage: co-pilot upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version Flags: --dry-run dry run does not write to pom.</description>
+Example usage co-pilot upgrade all --target webservice Example output INFO[0000] upgrading everything for file webservice/pom.xml INFO[0000] outdated kotlin version [1.4.8 =&amp;gt; 1.4.10] INFO[0000] outdated spring-boot version [2.3.1.RELEASE =&amp;gt; 2.3.4.RELEASE] INFO[0000] outdated dependency org.hibernate:hibernate-core [5.2.21.Final =&amp;gt; 5.4.21.Final] INFO[0000] outdated dependency net.logstash.logback:logstash-logback-encoder [6.2 =&amp;gt; 6.4] INFO[0000] sorting pom file with default dependencySort INFO[0000] writing model to pom file: webservice/pom.xml Help Perform upgrade on existing projects Usage: co-pilot upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version Flags: --dry-run dry run does not write to pom.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@ Help Perform upgrade on existing projects Usage: co-pilot upgrade [command] Avai
       
       <guid>https://co-pilot-cli.github.io/commands/status/</guid>
       <description>Status is a command for printing status on a co-pilot project. By default it outputs available upgrades.
-Help Status functionality for a project Usage: co-pilot status [flags] Flags: -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default &amp;quot;.&amp;quot;) Global Flags: --debug turn on debug output </description>
+Example usage co-pilot status Example output INFO[0000] Project status for file ./pom.xml INFO[0000] No update needed, kotlin is the the latest version [1.4.10] INFO[0000] spring boot is the latest version [2.3.4.RELEASE] Help Status functionality for a project Usage: co-pilot status [flags] Flags: -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default &amp;quot;.</description>
     </item>
     
     <item>
