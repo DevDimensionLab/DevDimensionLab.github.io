@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Co-pilot on Co-pilot-cli</title>
+    <link>https://co-pilot-cli.github.io/</link>
+    <description>Recent content in Co-pilot on Co-pilot-cli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Sep 2020 10:40:32 +0200</lastBuildDate>
+    
+	<atom:link href="https://co-pilot-cli.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://co-pilot-cli.github.io/usage/configuration/</link>
+      <pubDate>Wed, 30 Sep 2020 10:40:32 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/usage/configuration/</guid>
+      <description>The first time running co-pilot a ~/.co-pilot configuration folder is created with a ~/.co-pilot/local-config.yaml file. The contents of this file by default are:
+cloudConfig: git: url: https://github.com/co-pilot-cli/co-pilot-config.git </description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://co-pilot-cli.github.io/usage/docker/</link>
+      <pubDate>Wed, 30 Sep 2020 10:39:46 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/usage/docker/</guid>
+      <description>A docker image with the latest co-pilot binary is available at https://hub.docker.com/repository/docker/copilotcli/co-pilot-cli</description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>https://co-pilot-cli.github.io/usage/install/</link>
+      <pubDate>Wed, 30 Sep 2020 10:29:19 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/usage/install/</guid>
+      <description>Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
+Download git clone https://github.com/co-pilot-cli/co-pilot.git Install make Help co-pilot </description>
+    </item>
+    
+    <item>
+      <title>Upgrade</title>
+      <link>https://co-pilot-cli.github.io/commands/upgrade/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:44 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/upgrade/</guid>
+      <description>Perform upgrade on existing projects Usage: co-pilot upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version Flags: --dry-run dry run does not write to pom.</description>
+    </item>
+    
+    <item>
+      <title>Status</title>
+      <link>https://co-pilot-cli.github.io/commands/status/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:42 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/status/</guid>
+      <description>Status functionality for a project Usage: co-pilot status [flags] Flags: -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default &amp;quot;.&amp;quot;) Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
+      <title>Merge</title>
+      <link>https://co-pilot-cli.github.io/commands/merge/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:39 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/merge/</guid>
+      <description>Merge functionalities for files to a project Usage: co-pilot merge [command] Available Commands: pom Merges a pom-file into a project template Merges a template from co-pilot-config text Merges two text files Flags: --from string file to merge -h, --help help for merge --overwrite Overwrite pom.xml file (default true) Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
+      <title>Init</title>
+      <link>https://co-pilot-cli.github.io/commands/init/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:32 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/init/</guid>
+      <description>Initializes a maven project with co-pilot files and formatting Usage: co-pilot init [flags] Flags: --config-file string Optional config file --dry-run dry run does not write to pom.xml -h, --help help for init --overwrite Overwrite pom.xml file (default true) -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;quot;.&amp;quot;) Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
+      <title>Info</title>
+      <link>https://co-pilot-cli.github.io/commands/info/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:29 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/info/</guid>
+      <description>Prints info on spring version, dependencies etc Usage: co-pilot info [flags] Flags: -h, --help help for info --maven-repositories show current maven repositories --spring-info show spring boot status --spring-managed show spring boot managed dependencies info Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
+      <title>Generate</title>
+      <link>https://co-pilot-cli.github.io/commands/generate/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:20 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/generate/</guid>
+      <description>Initializes a maven project with co-pilot files and formatting Usage: co-pilot generate [flags] Flags: --config-file string Optional config file -h, --help help for generate --target string Optional target directory (default &amp;quot;.&amp;quot;) Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
+      <title>Format</title>
+      <link>https://co-pilot-cli.github.io/commands/format/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:18 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/format/</guid>
+      <description>Format functionality for a project Usage: co-pilot format [command] Available Commands: inherit Removes manual versions from spring dependencies pom Formats pom.xml and sorts dependencies version Removes version tags and replaces them with property tags Flags: --dry-run dry run does not write to pom.xml -h, --help help for format --overwrite Overwrite pom.xml file (default true) -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;quot;.&amp;quot;) Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
+      <title>Config</title>
+      <link>https://co-pilot-cli.github.io/commands/config/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:11 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/config/</guid>
+      <description>Config settings for co-pilot Usage: co-pilot config [flags] Flags: --cloud-sync Sync with cloud config repo -h, --help help for config --reset Reset local config --show Sync local config Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
+      <title>Clean</title>
+      <link>https://co-pilot-cli.github.io/commands/clean/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:03 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/clean/</guid>
+      <description>Clean files and folder in a project Usage: co-pilot clean [flags] Flags: -h, --help help for clean --ide removes .idea folders and *.iml files Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
+      <title>Analyze</title>
+      <link>https://co-pilot-cli.github.io/commands/analyze/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:00 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/analyze/</guid>
+      <description>Perform an analyze on a projects Usage: co-pilot analyze [flags] Flags: --deps Show dependency usage -h, --help help for analyze -r, --recursive recursive mode -t, --target string optional target directory (default &amp;quot;.&amp;quot;) Global Flags: --debug turn on debug output </description>
+    </item>
+    
+  </channel>
+</rss>

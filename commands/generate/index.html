@@ -2,18 +2,16 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.74.3" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Co-pilot">
+<meta name="description" content="Generate">
 
-<title>Co-pilot | Co-pilot-cli</title>
+<title>Generate | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
 <link rel="stylesheet" href="/custom.css" media="screen">
 
-<link rel="alternate" type="application/rss+xml" href="https://co-pilot-cli.github.io/index.xml" title="Co-pilot-cli" />
 <!--Made with Geekdoc theme https://github.com/xoxys/hugo-geekdoc-->
 
 </head>
@@ -147,7 +145,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/generate/" class="gdoc-nav__entry ">
+                    <a href="/commands/generate/" class="gdoc-nav__entry is-active">
                         Generate
                     </a>
                 </span>
@@ -344,7 +342,21 @@
                 
     
     
-        Co-pilot
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Generate
+    
+
+    
+
     
 
             </span>
@@ -355,8 +367,9 @@
     </span>
 </div>
 
+
     <article class="gdoc-markdown">
-        <h1>Co-pilot</h1>
+        <h1>Generate</h1>
         
 
 
@@ -364,23 +377,20 @@
     
 
 
-<p>A little “go help” for the Java/Kotlin developers using Maven.</p>
-<p>Current main capability? Upgrade your pom.xml dependencies to latest and greatest!</p>
-<div class="gdoc-page__anchorwrap"><h2 id="why">Why?<a data-clipboard-text="https://co-pilot-cli.github.io/#why" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Why?" href="#why"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<ul>
-<li>No installs of maven-plugins required, so if you a working in a multi-repo developer environment with lots of 2party dependencies and repos, you can easily upgrade them with co-pilot upgrade 2party.</li>
-<li>Brings natural semantics and support for different types of dependencies to the table: Kotlin, 2party, spring-boot (curated dependencies), (other) 3party</li>
-<li>Can be used as a library for other go-projects automating the upgrade process</li>
-<li>Easy and fast</li>
-<li>Brings feature to the table, not found anywhere else, stay tuned!</li>
-</ul>
-<div class="gdoc-page__anchorwrap"><h2 id="heads-up">Heads up!<a data-clipboard-text="https://co-pilot-cli.github.io/#heads-up" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Heads up!" href="#heads-up"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<ul>
-<li>co-pilot rewrites your pom.xml, so make sure you have your pom.xml committed before testing out co-pilot</li>
-<li>start with co-pilot format pom, verify that the rewrite of the pom.xml is ok, commit, and from now on you will easily see the diff that co-pilot introduces with co-pilot upgrade &lt;2party|3party|spring-boot|plugins|all&gt;</li>
-<li>or just use co-pilot status (no rewrite) and manually upgrade your pom.xml based on what is reported as outdated, current option if you need to keep your pom.xml formatting</li>
-</ul>
+<pre><code>Initializes a maven project with co-pilot files and formatting
 
+Usage:
+  co-pilot generate [flags]
+
+Flags:
+      --config-file string   Optional config file
+  -h, --help                 help for generate
+      --target string        Optional target directory (default &quot;.&quot;)
+
+Global Flags:
+      --debug   turn on debug output
+
+</code></pre>
 
     </article>
 

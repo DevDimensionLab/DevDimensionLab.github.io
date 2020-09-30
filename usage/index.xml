@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usages on Co-pilot-cli</title>
+    <link>https://co-pilot-cli.github.io/usage/</link>
+    <description>Recent content in Usages on Co-pilot-cli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Sep 2020 10:40:32 +0200</lastBuildDate>
+    
+	<atom:link href="https://co-pilot-cli.github.io/usage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://co-pilot-cli.github.io/usage/configuration/</link>
+      <pubDate>Wed, 30 Sep 2020 10:40:32 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/usage/configuration/</guid>
+      <description>The first time running co-pilot a ~/.co-pilot configuration folder is created with a ~/.co-pilot/local-config.yaml file. The contents of this file by default are:
+cloudConfig: git: url: https://github.com/co-pilot-cli/co-pilot-config.git </description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://co-pilot-cli.github.io/usage/docker/</link>
+      <pubDate>Wed, 30 Sep 2020 10:39:46 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/usage/docker/</guid>
+      <description>A docker image with the latest co-pilot binary is available at https://hub.docker.com/repository/docker/copilotcli/co-pilot-cli</description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>https://co-pilot-cli.github.io/usage/install/</link>
+      <pubDate>Wed, 30 Sep 2020 10:29:19 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/usage/install/</guid>
+      <description>Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
+Download git clone https://github.com/co-pilot-cli/co-pilot.git Install make Help co-pilot </description>
+    </item>
+    
+  </channel>
+</rss>
