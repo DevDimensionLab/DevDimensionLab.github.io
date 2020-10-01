@@ -570,43 +570,34 @@
     
 
 
-<p>During the merge process of a template into a target directory, co-pilot by default reads the <code>.gitignore</code> file from the template, and ignores all the files matching. In addition a <code>co-pilot.ignore</code> file can be added for file which should exist in the version control, but not be part of the template during merging.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="example-co-pilotignore">Example .co-pilot.ignore<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#example-co-pilotignore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example .co-pilot.ignore" href="#example-co-pilotignore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>During the merge process of a template into a target directory co-pilot ignores the following files:</p>
+<div class="gdoc-page__anchorwrap"><h2 id="default-ignore">Default ignore<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#default-ignore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Default ignore" href="#default-ignore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Regardless what is defined in the ignore files, co-pilot will ignore filenames matching:</p>
+<div class="highlight"><pre class="chroma"><code class="language-Json" data-lang="Json"><span class="p">[</span>
+    <span class="s2">&#34;Application&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;co-pilot.json&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;.co-pilot.ignore&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;.gitignore&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;.mvn&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;mvnw&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;mvnw.cmd&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;.idea&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;.iml&#34;</span>
+<span class="p">]</span>
+</code></pre></div><blockquote class="gdoc-hint warning">
+  <p><strong>Ignoring filesnames matching Application</strong></p>
+<p>The first entry <code>Application</code>, in the list above, enables co-pilot to ignore files like <code>WebApplication.kt</code> or <code>FooApplication.java</code>. Files which are typically files containing the <code>@SpringBootApplication</code>. It is important that no template contain critical code inside of these files, as they are ignored during the merge process.</p>
+
+</blockquote>
+
+<div class="gdoc-page__anchorwrap"><h2 id="definitions-in-ignore-files">Definitions in ignore files<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#definitions-in-ignore-files" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Definitions in ignore files" href="#definitions-in-ignore-files"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Co-pilot by default reads the <code>.gitignore</code> file from the template, and ignores all the files matching. In addition a <code>co-pilot.ignore</code> file can be added for files which should exist in the version control, but not be part of the template during merging.</p>
+<div class="gdoc-page__anchorwrap"><h3 id="example-co-pilotignore">Example .co-pilot.ignore<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#example-co-pilotignore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example .co-pilot.ignore" href="#example-co-pilotignore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <pre><code>FooController.kt
-</code></pre><div class="gdoc-page__anchorwrap"><h2 id="example-gitignore">Example .gitignore<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#example-gitignore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example .gitignore" href="#example-gitignore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+</code></pre><p><em>Note: absolute path is not necessary</em></p>
+<div class="gdoc-page__anchorwrap"><h3 id="example-gitignore">Example .gitignore<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#example-gitignore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example .gitignore" href="#example-gitignore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <pre><code>HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
+target
 </code></pre>
 
     </article>

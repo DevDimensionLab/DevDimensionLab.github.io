@@ -16,8 +16,11 @@
       <pubDate>Wed, 30 Sep 2020 10:29:19 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/usage/install/</guid>
-      <description>Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
-Download git clone https://github.com/co-pilot-cli/co-pilot.git Install make Help co-pilot </description>
+      <description>Install co-pilot Install co-pilot with one of the two alternatives
+Alternative 1: Binaries Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases
+Alternative 2: Sources Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
+Download git clone https://github.com/co-pilot-cli/co-pilot.git Compile and install make no need to run make install separately
+Help co-pilot </description>
     </item>
     
     <item>
@@ -26,8 +29,10 @@ Download git clone https://github.com/co-pilot-cli/co-pilot.git Install make Hel
       <pubDate>Wed, 30 Sep 2020 13:07:42 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/template/ignore/</guid>
-      <description>During the merge process of a template into a target directory, co-pilot by default reads the .gitignore file from the template, and ignores all the files matching. In addition a co-pilot.ignore file can be added for file which should exist in the version control, but not be part of the template during merging.
-Example .co-pilot.ignore FooController.kt Example .gitignore HELP.md target/ !.mvn/wrapper/maven-wrapper.jar !**/src/main/**/target/ !**/src/test/**/target/ ### STS ### .apt_generated .classpath .factorypath .project .</description>
+      <description>During the merge process of a template into a target directory co-pilot ignores the following files:
+Default ignore Regardless what is defined in the ignore files, co-pilot will ignore filenames matching:
+[ &amp;#34;Application&amp;#34;, &amp;#34;co-pilot.json&amp;#34;, &amp;#34;.co-pilot.ignore&amp;#34;, &amp;#34;.gitignore&amp;#34;, &amp;#34;.mvn&amp;#34;, &amp;#34;mvnw&amp;#34;, &amp;#34;mvnw.cmd&amp;#34;, &amp;#34;.idea&amp;#34;, &amp;#34;.iml&amp;#34; ] Ignoring filesnames matching Application
+The first entry Application, in the list above, enables co-pilot to ignore files like WebApplication.kt or FooApplication.java. Files which are typically files containing the @SpringBootApplication.</description>
     </item>
     
     <item>
@@ -36,9 +41,9 @@ Example .co-pilot.ignore FooController.kt Example .gitignore HELP.md target/ !.m
       <pubDate>Wed, 30 Sep 2020 13:07:36 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/template/basics/</guid>
-      <description>Templates are added to the cloud-config repo under a templates folder. Example
+      <description>Templates is a concept where co-pilot effectively merges one project into another. Templates are added to the cloud-config repo under a templates folder, example, and are later referred to by their folder name in the co-pilot.json file. A template, like most projects, consists of these filetypes:
 Filetypes Filetypes in templates are
-.kt and .java files If a template supplies a .kt or a .java file, the file is copied to its right destination and the package com.example... line in top of the file is replaced to support the target. I with the same path and filename is found in the target, the file is ignored.</description>
+.kt and .java files If a template supplies a .kt or a .java file, the file is copied to its right destination and the package com.</description>
     </item>
     
     <item>

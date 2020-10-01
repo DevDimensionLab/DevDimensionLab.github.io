@@ -16,8 +16,11 @@
       <pubDate>Wed, 30 Sep 2020 10:29:19 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/usage/install/</guid>
-      <description>Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
-Download git clone https://github.com/co-pilot-cli/co-pilot.git Install make Help co-pilot </description>
+      <description>Install co-pilot Install co-pilot with one of the two alternatives
+Alternative 1: Binaries Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases
+Alternative 2: Sources Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
+Download git clone https://github.com/co-pilot-cli/co-pilot.git Compile and install make no need to run make install separately
+Help co-pilot </description>
     </item>
     
     <item>
