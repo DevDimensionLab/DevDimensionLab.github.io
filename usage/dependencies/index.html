@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Info">
+<meta name="description" content="Dependencies">
 
-<title>Info | Co-pilot-cli</title>
+<title>Dependencies | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -160,7 +160,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/info/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/info/" class="gdoc-nav__entry ">
                         Info
                     </a>
                 </span>
@@ -405,7 +405,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/usage/dependencies/" class="gdoc-nav__entry ">
+                    <a href="/usage/dependencies/" class="gdoc-nav__entry is-active">
                         Dependencies
                     </a>
                 </span>
@@ -560,7 +560,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Info
+        <a href='/'>Co-pilot</a> / <a href='/usage/'>Usages</a> / Dependencies
     
 
     
@@ -577,7 +577,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Info</h1>
+        <h1>Dependencies</h1>
         
 
 
@@ -585,23 +585,13 @@
     
 
 
-<p>Info is a command for printing various non-project information like spring-info, spring-managed dependencies, and which maven-repositories are defined by <code>mvn</code></p>
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/info/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<pre><code>Prints info on spring version, dependencies etc
+<p>Co-pilot strives to depend on as few third parties as possible, but some dependencies are optional</p>
+<div class="gdoc-page__anchorwrap"><h2 id="git">Git<a data-clipboard-text="https://co-pilot-cli.github.io/usage/dependencies/#git" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Git" href="#git"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Co-pilot uses <code>git</code> for various operations related to cloud-config and templates. Without git installed some functionality might not work as expected, as the following clean Windows 10 installation shows:</p>
+<p><img src="/static/windows-without-git.png" alt="Windows without git"></p>
+<div class="gdoc-page__anchorwrap"><h2 id="maven">Maven<a data-clipboard-text="https://co-pilot-cli.github.io/usage/dependencies/#maven" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Maven" href="#maven"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Co-pilot uses <code>mvn</code> Maven for some analytics commands.</p>
 
-Usage:
-  co-pilot info [flags]
-
-Flags:
-  -h, --help                 help for info
-      --maven-repositories   show current maven repositories
-      --spring-info          show spring boot status
-      --spring-managed       show spring boot managed dependencies info
-
-Global Flags:
-      --debug   turn on debug output
-
-</code></pre>
 
     </article>
 

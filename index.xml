@@ -5,7 +5,7 @@
     <link>https://co-pilot-cli.github.io/</link>
     <description>Recent content in Co-pilot on Co-pilot-cli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Sep 2020 13:07:42 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 11:15:08 +0200</lastBuildDate>
     
 	<atom:link href="https://co-pilot-cli.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,11 +16,22 @@
       <pubDate>Wed, 30 Sep 2020 10:29:19 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/usage/install/</guid>
-      <description>Install co-pilot Install co-pilot with one of the two alternatives
-Alternative 1: Binaries Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases
-Alternative 2: Sources Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
-Download git clone https://github.com/co-pilot-cli/co-pilot.git Compile and install make no need to run make install separately
+      <description>Co-pilot is created with Go and supports multiple platforms including:
+ GNU/Linux Windows MacOs  Download co-pilot Install co-pilot with one of the two alternatives
+Alternative 1: Binaries  Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases  Alternative 2: Sources Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
+Clone sources git clone https://github.com/co-pilot-cli/co-pilot.git Compile and install make no need to run make install separately
 Help co-pilot </description>
+    </item>
+    
+    <item>
+      <title>Dependencies</title>
+      <link>https://co-pilot-cli.github.io/usage/dependencies/</link>
+      <pubDate>Mon, 05 Oct 2020 11:15:08 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/usage/dependencies/</guid>
+      <description>Co-pilot strives to depend on as few third parties as possible, but some dependencies are optional
+Git Co-pilot uses git for various operations related to cloud-config and templates. Without git installed some functionality might not work as expected, as the following clean Windows 10 installation shows:
+Maven Co-pilot uses mvn Maven for some analytics commands.</description>
     </item>
     
     <item>
