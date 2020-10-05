@@ -30,7 +30,9 @@ Help co-pilot </description>
       
       <guid>https://co-pilot-cli.github.io/usage/dependencies/</guid>
       <description>Co-pilot strives to depend on as few third parties as possible, but some dependencies are optional
-Git Co-pilot uses git for various operations related to cloud-config and templates. Without git installed some functionality might not work as expected, as the following clean Windows 10 installation shows:
+Git Co-pilot uses git for various operations related to cloud-config and templates. Without git installed some functionality might not work as expected.
+Without git A clean Windows 10 installation without git:
+With git git installed on the cmd.exe path with git bash:
 Maven Co-pilot uses mvn Maven for some analytics commands.</description>
     </item>
     
