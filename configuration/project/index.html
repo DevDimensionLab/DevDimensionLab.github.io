@@ -599,7 +599,18 @@
   },
   &quot;description&quot;: &quot;Demo of new app, generated with spring-boot and co-pilot templates&quot;,
   &quot;dependencies&quot;: [&quot;web-services&quot;],
-  &quot;templates&quot; : [&quot;dockerfile&quot;, &quot;rest-basic&quot;]
+  &quot;templates&quot; : [&quot;dockerfile&quot;, &quot;rest-basic&quot;],
+  &quot;settings&quot;: {
+    &quot;disableDependencySort&quot;: false,
+    &quot;disableUpgradesFor&quot;: [
+      {
+        &quot;groupId&quot;: &quot;com.example&quot;,
+        &quot;artifactId&quot;: &quot;artifactId&quot;
+      }
+    ],
+    &quot;disableSpringBootUpgrade&quot;: false,
+    &quot;disableKotlinUpgrade&quot;: false
+  }
 }
 </code></pre><p>The <code>dependencies</code> key in this file refers to spring-boot dependencies. The command <code>co-pilot info --spring-info</code> shows a complete list of all the available dependencies. The <code>templates</code> key refers to templates available in your cloud-config repository.</p>
 
