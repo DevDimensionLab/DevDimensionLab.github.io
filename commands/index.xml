@@ -5,11 +5,7 @@
     <link>https://co-pilot-cli.github.io/commands/</link>
     <description>Recent content in Commands on Co-pilot-cli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Sep 2020 10:27:44 +0200</lastBuildDate>
-    
-	<atom:link href="https://co-pilot-cli.github.io/commands/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 30 Sep 2020 10:27:44 +0200</lastBuildDate><atom:link href="https://co-pilot-cli.github.io/commands/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upgrade</title>
       <link>https://co-pilot-cli.github.io/commands/upgrade/</link>
