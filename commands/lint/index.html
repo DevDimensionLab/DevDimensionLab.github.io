@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Config">
+<meta name="description" content="Lint">
 
-<title>Config | Co-pilot-cli</title>
+<title>Lint | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -115,7 +115,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/config/" class="gdoc-nav__entry ">
                         Config
                     </a>
                 </span>
@@ -190,7 +190,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/lint/" class="gdoc-nav__entry ">
+                    <a href="/commands/lint/" class="gdoc-nav__entry is-active">
                         Lint
                     </a>
                 </span>
@@ -605,7 +605,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Config
+        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Lint
     
 
     
@@ -622,7 +622,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Config</h1>
+        <h1>Lint</h1>
         
 
 
@@ -630,20 +630,31 @@
     
 
 
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/config/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Config settings <span class="k">for</span> co-pilot
+<div class="gdoc-page__anchorwrap"><h2 id="dependencies">Dependencies<a data-clipboard-text="https://co-pilot-cli.github.io/commands/lint/#dependencies" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Dependencies" href="#dependencies"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Some of these commands depends on:</p>
+<ul>
+<li><code>ktlint</code></li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/lint/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Linting commands
 
 Usage:
-  co-pilot config <span class="o">[</span>flags<span class="o">]</span>
+  co-pilot lint <span class="o">[</span>command<span class="o">]</span>
+
+Available Commands:
+  kotlin      uses ktlint <span class="k">for</span> linting kotlin code
 
 Flags:
-      --cloud-sync   sync with cloud config repo
-  -h, --help         <span class="nb">help</span> <span class="k">for</span> config
-      --reset        reset <span class="nb">local</span> config
-      --show         show <span class="nb">local</span> config
+  -h, --help            <span class="nb">help</span> <span class="k">for</span> lint
+  -r, --recursive       turn on recursive mode
+      --target string   optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
 
 Global Flags:
       --debug   turn on debug output
+
+Use <span class="s2">&#34;co-pilot lint [command] --help&#34;</span> <span class="k">for</span> more information about a command.
+</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/lint/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">co-pilot lint
 </code></pre></div>
 
     </article>

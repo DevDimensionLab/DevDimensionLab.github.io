@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Config">
+<meta name="description" content="Query">
 
-<title>Config | Co-pilot-cli</title>
+<title>Query | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -115,7 +115,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/config/" class="gdoc-nav__entry ">
                         Config
                     </a>
                 </span>
@@ -235,7 +235,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/query/" class="gdoc-nav__entry ">
+                    <a href="/commands/query/" class="gdoc-nav__entry is-active">
                         Query
                     </a>
                 </span>
@@ -605,7 +605,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Config
+        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Query
     
 
     
@@ -622,7 +622,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Config</h1>
+        <h1>Query</h1>
         
 
 
@@ -630,20 +630,22 @@
     
 
 
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/config/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Config settings <span class="k">for</span> co-pilot
+<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/query/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Query dependencies in a project
 
 Usage:
-  co-pilot config <span class="o">[</span>flags<span class="o">]</span>
+  co-pilot query <span class="o">[</span>flags<span class="o">]</span>
 
 Flags:
-      --cloud-sync   sync with cloud config repo
-  -h, --help         <span class="nb">help</span> <span class="k">for</span> config
-      --reset        reset <span class="nb">local</span> config
-      --show         show <span class="nb">local</span> config
+  -a, --artifactId string   artifactId
+  -g, --groupId string      groupId
+  -h, --help                <span class="nb">help</span> <span class="k">for</span> query
+      --target string       Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
 
 Global Flags:
       --debug   turn on debug output
+</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/query/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">co-pilot query
 </code></pre></div>
 
     </article>

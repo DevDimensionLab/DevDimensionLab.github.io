@@ -190,8 +190,53 @@
             <li>
             
                 <span class="flex">
+                    <a href="/commands/lint/" class="gdoc-nav__entry ">
+                        Lint
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/maven/" class="gdoc-nav__entry ">
+                        Maven
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
                     <a href="/commands/merge/" class="gdoc-nav__entry ">
                         Merge
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/query/" class="gdoc-nav__entry ">
+                        Query
                     </a>
                 </span>
             
@@ -585,9 +630,28 @@
     
 
 
-<div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/analyze/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<pre tabindex="0"><code>co-pilot analyze --deps --target webservice
-</code></pre><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://co-pilot-cli.github.io/commands/analyze/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="dependencies">Dependencies<a data-clipboard-text="https://co-pilot-cli.github.io/commands/analyze/#dependencies" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Dependencies" href="#dependencies"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>Some of these commands depends on:</p>
+<ul>
+<li><code>mvn</code></li>
+</ul>
+<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/analyze/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Perform an analyze on a projects
+
+Usage:
+  co-pilot analyze <span class="o">[</span>flags<span class="o">]</span>
+
+Flags:
+      --deps            Show dependency usage
+  -h, --help            <span class="nb">help</span> <span class="k">for</span> analyze
+  -r, --recursive       recursive mode
+  -t, --target string   optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
+
+Global Flags:
+      --debug   turn on debug output
+</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/analyze/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">co-pilot analyze --deps --target webservice
+</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://co-pilot-cli.github.io/commands/analyze/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">INFO<span class="o">[</span>0000<span class="o">]</span> Undeclared and unused dependencies <span class="k">for</span> file webservice/pom.xml
 INFO<span class="o">[</span>0005<span class="o">]</span> unused declared dependencies com.microsoft.sqlserver:mssql-jdbc
 INFO<span class="o">[</span>0005<span class="o">]</span> unused declared dependencies org.flywaydb:flyway-core
@@ -609,22 +673,7 @@ INFO<span class="o">[</span>0005<span class="o">]</span> used undeclared depende
 INFO<span class="o">[</span>0005<span class="o">]</span> used undeclared dependencies org.junit.jupiter:junit-jupiter-api
 INFO<span class="o">[</span>0005<span class="o">]</span> used undeclared dependencies org.springframework.boot:spring-boot-test-autoconfigure
 INFO<span class="o">[</span>0005<span class="o">]</span> used undeclared dependencies org.jetbrains:annotations
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/analyze/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<pre tabindex="0"><code>Perform an analyze on a projects
-
-Usage:
-  co-pilot analyze [flags]
-
-Flags:
-      --deps            Show dependency usage
-  -h, --help            help for analyze
-  -r, --recursive       recursive mode
-  -t, --target string   optional target directory (default &quot;.&quot;)
-
-Global Flags:
-      --debug   turn on debug output
-
-</code></pre>
+</code></pre></div>
 
     </article>
 

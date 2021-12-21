@@ -33,8 +33,7 @@ Example co-pilot.json { &amp;#34;language&amp;#34;: &amp;#34;kotlin&amp;#34;, &a
       <pubDate>Wed, 30 Sep 2020 10:40:32 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/configuration/local/</guid>
-      <description>The first time running co-pilot a ~/.co-pilot configuration folder is created with a ~/.co-pilot/local-config.yaml file. The contents of this file by default are:
-cloudConfig: git: url: https://github.com/co-pilot-cli/co-pilot-config.git </description>
+      <description>The first time running co-pilot a ~/.co-pilot configuration folder is created with a ~/.co-pilot/local-config.yaml file. The contents of this file by default are:</description>
     </item>
     
   </channel>

@@ -5,7 +5,7 @@
     <link>https://co-pilot-cli.github.io/</link>
     <description>Recent content in Co-pilot on Co-pilot-cli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Oct 2020 11:15:08 +0200</lastBuildDate><atom:link href="https://co-pilot-cli.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Dec 2021 10:27:32 +0200</lastBuildDate><atom:link href="https://co-pilot-cli.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install</title>
       <link>https://co-pilot-cli.github.io/usage/install/</link>
@@ -17,6 +17,35 @@
 Alternative 1: Binaries  Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases  Alternative 2: Sources Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
 Clone sources git clone https://github.com/co-pilot-cli/co-pilot.git Compile and install make no need to run make install separately
 Help co-pilot </description>
+    </item>
+    
+    <item>
+      <title>Lint</title>
+      <link>https://co-pilot-cli.github.io/commands/lint/</link>
+      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/lint/</guid>
+      <description>Dependencies Some of these commands depends on:
+ ktlint  Help Linting commands Usage: co-pilot lint [command] Available Commands: kotlin uses ktlint for linting kotlin code Flags: -h, --help help for lint -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot lint [command] --help&amp;#34; for more information about a command. Example usage co-pilot lint </description>
+    </item>
+    
+    <item>
+      <title>Maven</title>
+      <link>https://co-pilot-cli.github.io/commands/maven/</link>
+      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/maven/</guid>
+      <description>Dependencies Some of these commands depends on:
+ mvn dot (graphviz)  Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: graph creates a graph for dependencies in a project Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command. Example usage co-pilot maven </description>
+    </item>
+    
+    <item>
+      <title>Query</title>
+      <link>https://co-pilot-cli.github.io/commands/query/</link>
+      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/query/</guid>
+      <description>Help Query dependencies in a project Usage: co-pilot query [flags] Flags: -a, --artifactId string artifactId -g, --groupId string groupId -h, --help help for query --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Example usage co-pilot query </description>
     </item>
     
     <item>
@@ -93,8 +122,7 @@ Example co-pilot.json { &amp;#34;language&amp;#34;: &amp;#34;kotlin&amp;#34;, &a
       <pubDate>Wed, 30 Sep 2020 10:40:32 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/configuration/local/</guid>
-      <description>The first time running co-pilot a ~/.co-pilot configuration folder is created with a ~/.co-pilot/local-config.yaml file. The contents of this file by default are:
-cloudConfig: git: url: https://github.com/co-pilot-cli/co-pilot-config.git </description>
+      <description>The first time running co-pilot a ~/.co-pilot configuration folder is created with a ~/.co-pilot/local-config.yaml file. The contents of this file by default are:</description>
     </item>
     
     <item>
@@ -104,7 +132,7 @@ cloudConfig: git: url: https://github.com/co-pilot-cli/co-pilot-config.git </des
       
       <guid>https://co-pilot-cli.github.io/commands/upgrade/</guid>
       <description>Upgrade is a command for upgrading all or specific parts of a project.
-Example usage co-pilot upgrade all --target webservice Example output INFO[0000] upgrading everything for file webservice/pom.xml INFO[0000] outdated kotlin version [1.4.8 =&amp;gt; 1.4.10] INFO[0000] outdated spring-boot version [2.3.1.RELEASE =&amp;gt; 2.3.4.RELEASE] INFO[0000] outdated dependency org.hibernate:hibernate-core [5.2.21.Final =&amp;gt; 5.4.21.Final] INFO[0000] outdated dependency net.logstash.logback:logstash-logback-encoder [6.2 =&amp;gt; 6.4] INFO[0000] sorting pom file with default dependencySort INFO[0000] writing model to pom file: webservice/pom.xml Help Perform upgrade on existing projects Usage: co-pilot upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version Flags: --dry-run dry run does not write to pom.</description>
+Help Perform upgrade on existing projects Usage: co-pilot upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project interactive Interactively upgrade the project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version Flags: --cloud-sync force cloud sync --dry-run dry run does not write to pom.</description>
     </item>
     
     <item>
@@ -114,7 +142,7 @@ Example usage co-pilot upgrade all --target webservice Example output INFO[0000]
       
       <guid>https://co-pilot-cli.github.io/commands/status/</guid>
       <description>Status is a command for printing status on a co-pilot project. By default it outputs available upgrades.
-Example usage co-pilot status Example output INFO[0000] Project status for file ./pom.xml INFO[0000] No update needed, kotlin is the the latest version [1.4.10] INFO[0000] spring boot is the latest version [2.3.4.RELEASE] Help Status functionality for a project Usage: co-pilot status [flags] Flags: -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default &amp;quot;.</description>
+Help Status functionality for a project Usage: co-pilot status [flags] Flags: --cloud-sync force cloud sync -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Example usage co-pilot status Example output INFO[0000] Project status for file .</description>
     </item>
     
     <item>
@@ -124,7 +152,7 @@ Example usage co-pilot status Example output INFO[0000] Project status for file 
       
       <guid>https://co-pilot-cli.github.io/commands/merge/</guid>
       <description>Merge is a standalone command for merging a specific template into a target. It is the same process used iteratively by generate
-Help Merge functionalities for files to a project Usage: co-pilot merge [command] Available Commands: pom Merges a pom-file into a project template Merges a template from co-pilot-config text Merges two text files Flags: --from string file to merge -h, --help help for merge Global Flags: --debug turn on debug output </description>
+Help Merge functionalities for files to a project Usage: co-pilot merge [command] Available Commands: pom Merges a pom-file into a project template Merges a template from co-pilot-config text Merges two text files Flags: --from string file to merge -h, --help help for merge Global Flags: --debug turn on debug output Use &amp;#34;co-pilot merge [command] --help&amp;#34; for more information about a command.</description>
     </item>
     
     <item>
@@ -134,7 +162,7 @@ Help Merge functionalities for files to a project Usage: co-pilot merge [command
       
       <guid>https://co-pilot-cli.github.io/commands/init/</guid>
       <description>Initializes a project with co-pilot files like co-pilot.json. The command also overwrites the pom.xml files with standard formatting and sorting.
-Help Initializes a maven project with co-pilot files and formatting Usage: co-pilot init [flags] Flags: --config-file string Optional config file --dry-run dry run does not write to pom.xml -h, --help help for init -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;quot;.&amp;quot;) Global Flags: --debug turn on debug output </description>
+Help Initializes a maven project with co-pilot files and formatting Usage: co-pilot init [flags] Flags: --config-file string Optional config file --dry-run dry run does not write to pom.xml -h, --help help for init -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output </description>
     </item>
     
     <item>
@@ -154,8 +182,7 @@ Help Prints info on spring version, dependencies etc Usage: co-pilot info [flags
       
       <guid>https://co-pilot-cli.github.io/commands/generate/</guid>
       <description>Generate initializes a spring boot project using https://start.spring.io.
-Example co-pilot.json file { &amp;quot;language&amp;quot;: &amp;quot;kotlin&amp;quot;, &amp;quot;groupId&amp;quot;: &amp;quot;com.example&amp;quot;, &amp;quot;artifactId&amp;quot;: &amp;quot;app&amp;quot;, &amp;quot;package&amp;quot;: &amp;quot;com.example.app&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;Example REST basic app&amp;quot;, &amp;quot;team&amp;quot;: { &amp;quot;name&amp;quot;: &amp;quot;demo-name&amp;quot;, &amp;quot;email&amp;quot;: &amp;quot;demo-email@example.com&amp;quot; }, &amp;quot;description&amp;quot;: &amp;quot;Demo of new app, generated with spring-boot and co-pilot templates&amp;quot;, &amp;quot;dependencies&amp;quot;: [&amp;quot;web-services&amp;quot;], &amp;quot;templates&amp;quot; : [&amp;quot;dockerfile&amp;quot;, &amp;quot;rest-basic&amp;quot;] } This file is the same file used for project-configuration, and is described at project configuration
-Example usage Help Initializes a maven project with co-pilot files and formatting Usage: co-pilot generate [flags] Flags: --config-file string Optional config file -h, --help help for generate --target string Optional target directory (default &amp;quot;.</description>
+Help Initializes a maven project with co-pilot files and formatting Usage: co-pilot generate [flags] Flags: --config-file string Optional config file --disable-upgrading dont upgrade dependencies -h, --help help for generate -i, --interactive Interactive mode --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Example co-pilot.json file { &amp;#34;language&amp;#34;: &amp;#34;kotlin&amp;#34;, &amp;#34;groupId&amp;#34;: &amp;#34;com.example&amp;#34;, &amp;#34;artifactId&amp;#34;: &amp;#34;app&amp;#34;, &amp;#34;package&amp;#34;: &amp;#34;com.example.app&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;Example REST basic app&amp;#34;, &amp;#34;team&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;demo-name&amp;#34;, &amp;#34;email&amp;#34;: &amp;#34;demo-email@example.</description>
     </item>
     
     <item>
@@ -164,7 +191,7 @@ Example usage Help Initializes a maven project with co-pilot files and formattin
       <pubDate>Wed, 30 Sep 2020 10:27:18 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/commands/format/</guid>
-      <description>Example usage co-pilot format pom --target webservice Example output INFO[0000] formatting for file webservice/pom.xml INFO[0000] sorting pom file with default dependencySort INFO[0000] writing model to pom file: webservice/pom.xml Help Format functionality for a project Usage: co-pilot format [command] Available Commands: inherit Removes manual versions from spring dependencies pom Formats pom.xml and sorts dependencies version Removes version tags and replaces them with property tags Flags: --dry-run dry run does not write to pom.</description>
+      <description>Help Format functionality for a project Usage: co-pilot format [command] Available Commands: inherit Removes manual versions from spring dependencies pom Formats pom.xml and sorts dependencies version Removes version tags and replaces them with property tags Flags: --dry-run dry run does not write to pom.xml -h, --help help for format -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot format [command] --help&amp;#34; for more information about a command.</description>
     </item>
     
     <item>
@@ -182,7 +209,7 @@ Example usage Help Initializes a maven project with co-pilot files and formattin
       <pubDate>Wed, 30 Sep 2020 10:27:03 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/commands/clean/</guid>
-      <description>Example usage co-pilot clean --ide --target webservice Example output INFO[0000] Deleted 0 files and 0 directories Help Clean files and folder in a project Usage: co-pilot clean [flags] Flags: --dry-run dry run does not write to pom.xml -h, --help help for clean --ide removes .idea folders and *.iml files -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;quot;.&amp;quot;) Global Flags: --debug turn on debug output </description>
+      <description>Help Clean files and folder in a project Usage: co-pilot clean [flags] Flags: --dry-run dry run does not write to pom.xml -h, --help help for clean --ide removes .idea folders and *.iml files -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Example usage co-pilot clean --ide --target webservice Example output INFO[0000] Deleted 0 files and 0 directories </description>
     </item>
     
     <item>
@@ -191,7 +218,8 @@ Example usage Help Initializes a maven project with co-pilot files and formattin
       <pubDate>Wed, 30 Sep 2020 10:27:00 +0200</pubDate>
       
       <guid>https://co-pilot-cli.github.io/commands/analyze/</guid>
-      <description>Example usage co-pilot analyze --deps --target webservice Example output INFO[0000] Undeclared and unused dependencies for file webservice/pom.xml INFO[0005] unused declared dependencies com.microsoft.sqlserver:mssql-jdbc INFO[0005] unused declared dependencies org.flywaydb:flyway-core INFO[0005] unused declared dependencies org.jetbrains.kotlin:kotlin-reflect INFO[0005] unused declared dependencies org.jetbrains.kotlin:kotlin-stdlib-jdk8 INFO[0005] unused declared dependencies org.springframework.boot:spring-boot-starter-data-jpa INFO[0005] unused declared dependencies com.h2database:h2 INFO[0005] unused declared dependencies org.springframework.boot:spring-boot-starter-test INFO[0005] unused declared dependencies Finished at: 2020-09-30T12 INFO[0005] used undeclared dependencies org.springframework:spring-beans INFO[0005] used undeclared dependencies org.springframework:spring-context INFO[0005] used undeclared dependencies org.</description>
+      <description>Dependencies Some of these commands depends on:
+ mvn  Help Perform an analyze on a projects Usage: co-pilot analyze [flags] Flags: --deps Show dependency usage -h, --help help for analyze -r, --recursive recursive mode -t, --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Example usage co-pilot analyze --deps --target webservice Example output INFO[0000] Undeclared and unused dependencies for file webservice/pom.xml INFO[0005] unused declared dependencies com.</description>
     </item>
     
   </channel>
