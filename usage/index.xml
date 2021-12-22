@@ -14,9 +14,9 @@
       <guid>https://co-pilot-cli.github.io/usage/install/</guid>
       <description>Co-pilot is created with Go and supports multiple platforms including:
  GNU/Linux Windows MacOs  Download co-pilot Install co-pilot with one of the two alternatives
-Alternative 1: Binaries  Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases  Alternative 2: Sources Co-pilot sources are available at https://github.com/co-pilot-cli/co-pilot
-Clone sources git clone https://github.com/co-pilot-cli/co-pilot.git Compile and install make no need to run make install separately
-Help co-pilot </description>
+Alternative 1: Binaries  Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases  Alternative 2: Snapcraft Co-pilot is available on snapcraft: https://snapcraft.io/co-pilot-cli
+Install sudo snap install co-pilot-cli --edge --devmode Run co-pilot-cli.co-pilot Alternative 3: Brew Instructions are pending&amp;hellip;
+Alternative 4: Docker Co-pilot is available as a docker image on: https://hub.</description>
     </item>
     
     <item>
