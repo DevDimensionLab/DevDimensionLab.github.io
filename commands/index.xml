@@ -5,7 +5,16 @@
     <link>https://co-pilot-cli.github.io/commands/</link>
     <description>Recent content in Commands on Co-pilot-cli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 21 Dec 2021 10:27:32 +0200</lastBuildDate><atom:link href="https://co-pilot-cli.github.io/commands/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 10:27:32 +0200</lastBuildDate><atom:link href="https://co-pilot-cli.github.io/commands/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://co-pilot-cli.github.io/commands/git/</link>
+      <pubDate>Wed, 22 Dec 2021 10:27:32 +0200</pubDate>
+      
+      <guid>https://co-pilot-cli.github.io/commands/git/</guid>
+      <description>Help Git commands Usage: co-pilot git [command] Available Commands: install-hooks install git hooks from cloud config Flags: --cloud-sync force cloud sync -h, --help help for git -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot git [command] --help&amp;#34; for more information about a command. Example usage co-pilot git install-hooks </description>
+    </item>
+    
     <item>
       <title>Lint</title>
       <link>https://co-pilot-cli.github.io/commands/lint/</link>
@@ -23,7 +32,7 @@
       
       <guid>https://co-pilot-cli.github.io/commands/maven/</guid>
       <description>Dependencies Some of these commands depends on:
- mvn dot (graphviz)  Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: graph creates a graph for dependencies in a project Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command. Example usage co-pilot maven </description>
+ mvn dot (graphviz)  Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: checkstyle runs checkstyle enforcer runs enforcer graph creates a graph for dependencies in a project owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command.</description>
     </item>
     
     <item>
