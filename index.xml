@@ -15,8 +15,7 @@
       <description>Co-pilot is created with Go and supports multiple platforms including:
  GNU/Linux Windows MacOs  Download co-pilot Install co-pilot with one of the two alternatives
 Alternative 1: Binaries  Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases  Alternative 2: Snapcraft Co-pilot is available on snapcraft: https://snapcraft.io/co-pilot-cli
-Install sudo snap install co-pilot-cli --edge --devmode Run co-pilot-cli.co-pilot Alternative 3: Brew Instructions are pending&amp;hellip;
-Alternative 4: Docker Co-pilot is available as a docker image on: https://hub.</description>
+Install sudo snap install co-pilot-cli --edge --devmode Run co-pilot-cli.co-pilot Alternative 3: Brew Add a new tap brew tap co-pilot-cli/co-pilot Install brew install co-pilot Alternative 4: Docker Co-pilot is available as a docker image on: https://hub.</description>
     </item>
     
     <item>
@@ -45,7 +44,7 @@ Alternative 4: Docker Co-pilot is available as a docker image on: https://hub.</
       
       <guid>https://co-pilot-cli.github.io/commands/maven/</guid>
       <description>Dependencies Some of these commands depends on:
- mvn dot (graphviz)  Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: checkstyle runs checkstyle enforcer runs enforcer graph creates a graph for dependencies in a project owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command.</description>
+ mvn dot (graphviz)  Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: boot-run runs a spring boot application checkstyle runs checkstyle enforcer runs enforcer graph creates a graph for dependencies in a project owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command.</description>
     </item>
     
     <item>

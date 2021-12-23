@@ -32,7 +32,7 @@
       
       <guid>https://co-pilot-cli.github.io/commands/maven/</guid>
       <description>Dependencies Some of these commands depends on:
- mvn dot (graphviz)  Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: checkstyle runs checkstyle enforcer runs enforcer graph creates a graph for dependencies in a project owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command.</description>
+ mvn dot (graphviz)  Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: boot-run runs a spring boot application checkstyle runs checkstyle enforcer runs enforcer graph creates a graph for dependencies in a project owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command.</description>
     </item>
     
     <item>
