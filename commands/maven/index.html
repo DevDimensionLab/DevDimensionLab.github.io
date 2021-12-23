@@ -100,6 +100,21 @@
             <li>
             
                 <span class="flex">
+                    <a href="/commands/bitbucket/" class="gdoc-nav__entry ">
+                        Bitbucket
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
                     <a href="/commands/clean/" class="gdoc-nav__entry ">
                         Clean
                     </a>
@@ -710,8 +725,10 @@ Available Commands:
   2party      creates a graph only <span class="k">for</span> 2party dependencies in a project
 
 Flags:
-      --exclude-test-scope   exclude <span class="nb">test</span> scope from graph
-  -h, --help                 <span class="nb">help</span> <span class="k">for</span> graph
+      --exclude-filters stringArray   exclude filter rules
+      --exclude-test-scope            exclude <span class="nb">test</span> scope from graph
+  -h, --help                          <span class="nb">help</span> <span class="k">for</span> graph
+      --include-filters stringArray   include filter rules
 
 Global Flags:
       --debug           turn on debug output

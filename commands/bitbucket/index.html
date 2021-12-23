@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Format">
+<meta name="description" content="Bitbucket">
 
-<title>Format | Co-pilot-cli</title>
+<title>Bitbucket | Co-pilot-cli</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -100,7 +100,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/bitbucket/" class="gdoc-nav__entry ">
+                    <a href="/commands/bitbucket/" class="gdoc-nav__entry is-active">
                         Bitbucket
                     </a>
                 </span>
@@ -145,7 +145,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/format/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/format/" class="gdoc-nav__entry ">
                         Format
                     </a>
                 </span>
@@ -660,7 +660,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Format
+        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Bitbucket
     
 
     
@@ -677,7 +677,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Format</h1>
+        <h1>Bitbucket</h1>
         
 
 
@@ -685,34 +685,28 @@
     
 
 
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/format/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Format functionality <span class="k">for</span> a project
+<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/bitbucket/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Bitbucket functionality
 
 Usage:
-  co-pilot format <span class="o">[</span>command<span class="o">]</span>
+  co-pilot bitbucket <span class="o">[</span>command<span class="o">]</span>
 
 Available Commands:
-  inherit     Removes manual versions from spring dependencies
-  pom         Formats pom.xml and sorts dependencies
-  version     Removes version tags and replaces them with property tags
+  sync        Synchronizes projects from bitbucket
 
 Flags:
-      --dry-run         dry run does not write to pom.xml
-  -h, --help            <span class="nb">help</span> <span class="k">for</span> format
-  -r, --recursive       turn on recursive mode
-      --target string   Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
+  -h, --help   <span class="nb">help</span> <span class="k">for</span> bitbucket
 
 Global Flags:
       --debug   turn on debug output
 
-Use <span class="s2">&#34;co-pilot format [command] --help&#34;</span> <span class="k">for</span> more information about a command.
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/format/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">co-pilot format pom --target webservice
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://co-pilot-cli.github.io/commands/format/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">INFO<span class="o">[</span>0000<span class="o">]</span> formatting <span class="k">for</span> file webservice/pom.xml
-INFO<span class="o">[</span>0000<span class="o">]</span> sorting pom file with default dependencySort
-INFO<span class="o">[</span>0000<span class="o">]</span> writing model to pom file: webservice/pom.xml
-</code></pre></div>
+Use <span class="s2">&#34;co-pilot bitbucket [command] --help&#34;</span> <span class="k">for</span> more information about a command.
+</code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="sync">Sync<a data-clipboard-text="https://co-pilot-cli.github.io/commands/bitbucket/#sync" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sync" href="#sync"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<p>The <code>bitbucket sync</code> commands depends on valid credentials and HTTP address inn <code>~/.co-pilot/local-config.yaml</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">sourceProvider</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://...&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">access_token</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;...&#34;</span><span class="w">
+</span></code></pre></div>
 
     </article>
 
