@@ -130,21 +130,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/format/" class="gdoc-nav__entry ">
                         Format
                     </a>
@@ -252,6 +237,21 @@
                 <span class="flex">
                     <a href="/commands/merge/" class="gdoc-nav__entry ">
                         Merge
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/profiles/" class="gdoc-nav__entry ">
+                        Profiles
                     </a>
                 </span>
             
@@ -686,25 +686,25 @@
 
 
 <div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/clean/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Clean files and folder in a project
-
-Usage:
-  co-pilot clean <span class="o">[</span>flags<span class="o">]</span>
-
-Flags:
-      --dry-run         dry run does not write to pom.xml
-  -h, --help            <span class="nb">help</span> <span class="k">for</span> clean
-      --ide             removes .idea folders and *.iml files
-  -r, --recursive       turn on recursive mode
-      --target string   Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
-
-Global Flags:
-      --debug   turn on debug output
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/clean/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">co-pilot clean --ide --target webservice
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://co-pilot-cli.github.io/commands/clean/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">INFO<span class="o">[</span>0000<span class="o">]</span> Deleted <span class="m">0</span> files and <span class="m">0</span> directories
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Clean files and folder in a project
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Usage:
+</span></span><span class="line"><span class="cl">  co-pilot clean <span class="o">[</span>flags<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Flags:
+</span></span><span class="line"><span class="cl">      --dry-run         dry run does not write to pom.xml
+</span></span><span class="line"><span class="cl">  -h, --help            <span class="nb">help</span> <span class="k">for</span> clean
+</span></span><span class="line"><span class="cl">      --ide             removes .idea folders and *.iml files
+</span></span><span class="line"><span class="cl">  -r, --recursive       turn on recursive mode
+</span></span><span class="line"><span class="cl">      --target string   Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Global Flags:
+</span></span><span class="line"><span class="cl">      --debug   turn on debug output
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/clean/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">co-pilot clean --ide --target webservice
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://co-pilot-cli.github.io/commands/clean/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> Deleted <span class="m">0</span> files and <span class="m">0</span> directories
+</span></span></code></pre></div>
 
     </article>
 

@@ -130,21 +130,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/format/" class="gdoc-nav__entry ">
                         Format
                     </a>
@@ -252,6 +237,21 @@
                 <span class="flex">
                     <a href="/commands/merge/" class="gdoc-nav__entry ">
                         Merge
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/profiles/" class="gdoc-nav__entry ">
+                        Profiles
                     </a>
                 </span>
             
@@ -688,18 +688,18 @@
 <p>During the merge process of a template into a target directory co-pilot ignores the following files:</p>
 <div class="gdoc-page__anchorwrap"><h2 id="default-ignore">Default ignore<a data-clipboard-text="https://co-pilot-cli.github.io/template/ignore/#default-ignore" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Default ignore" href="#default-ignore"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>Regardless what is defined in the ignore files, co-pilot will ignore filenames matching:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">[</span>
-    <span class="s2">&#34;Application&#34;</span><span class="p">,</span>
-    <span class="s2">&#34;co-pilot.json&#34;</span><span class="p">,</span>
-    <span class="s2">&#34;.co-pilot.ignore&#34;</span><span class="p">,</span>
-    <span class="s2">&#34;.gitignore&#34;</span><span class="p">,</span>
-    <span class="s2">&#34;.mvn&#34;</span><span class="p">,</span>
-    <span class="s2">&#34;mvnw&#34;</span><span class="p">,</span>
-    <span class="s2">&#34;mvnw.cmd&#34;</span><span class="p">,</span>
-    <span class="s2">&#34;.idea&#34;</span><span class="p">,</span>
-    <span class="s2">&#34;.iml&#34;</span>
-<span class="p">]</span>
-</code></pre></div><blockquote class="gdoc-hint warning">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;Application&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;co-pilot.json&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;.co-pilot.ignore&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;.gitignore&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;.mvn&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;mvnw&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;mvnw.cmd&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;.idea&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;.iml&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span></code></pre></div><blockquote class="gdoc-hint warning">
   <p><strong>Ignoring filesnames matching Application</strong></p>
 <p>The first entry <code>Application</code>, in the list above, enables co-pilot to ignore files like <code>WebApplication.kt</code> or <code>FooApplication.java</code>. Files which are typically files containing the <code>@SpringBootApplication</code>. It is important that no template contain critical code inside of these files, as they are ignored during the merge process.</p>
 

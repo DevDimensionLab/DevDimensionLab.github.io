@@ -130,21 +130,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/format/" class="gdoc-nav__entry ">
                         Format
                     </a>
@@ -252,6 +237,21 @@
                 <span class="flex">
                     <a href="/commands/merge/" class="gdoc-nav__entry ">
                         Merge
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/profiles/" class="gdoc-nav__entry ">
+                        Profiles
                     </a>
                 </span>
             
@@ -687,37 +687,36 @@
 
 <p>Generate initializes a spring boot project using <a href="https://start.spring.io">https://start.spring.io</a>.</p>
 <div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/generate/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Initializes a maven project with co-pilot files and formatting
-
-Usage:
-  co-pilot generate <span class="o">[</span>flags<span class="o">]</span>
-
-Flags:
-      --config-file string   Optional config file
-      --disable-upgrading    dont upgrade dependencies
-  -h, --help                 <span class="nb">help</span> <span class="k">for</span> generate
-  -i, --interactive          Interactive mode
-      --target string        Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
-
-Global Flags:
-      --debug   turn on debug output
-
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-co-pilotjson-file">Example co-pilot.json file<a data-clipboard-text="https://co-pilot-cli.github.io/commands/generate/#example-co-pilotjson-file" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example co-pilot.json file" href="#example-co-pilotjson-file"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-  <span class="nt">&#34;language&#34;</span><span class="p">:</span> <span class="s2">&#34;kotlin&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;app&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;package&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example.app&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Example REST basic app&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;team&#34;</span><span class="p">:</span> <span class="p">{</span>
-	<span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;demo-name&#34;</span><span class="p">,</span>
-	<span class="nt">&#34;email&#34;</span><span class="p">:</span> <span class="s2">&#34;demo-email@example.com&#34;</span>
-  <span class="p">},</span>
-  <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;Demo of new app, generated with spring-boot and co-pilot templates&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;dependencies&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;web-services&#34;</span><span class="p">],</span>
-  <span class="nt">&#34;templates&#34;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&#34;dockerfile&#34;</span><span class="p">,</span> <span class="s2">&#34;rest-basic&#34;</span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div><p>This file is the same file used for project-configuration, and is described at <a href="/configuration/project/">project configuration</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Initializes a maven project with co-pilot files and formatting
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Usage:
+</span></span><span class="line"><span class="cl">  co-pilot generate <span class="o">[</span>flags<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Flags:
+</span></span><span class="line"><span class="cl">      --config-file string   Optional config file
+</span></span><span class="line"><span class="cl">      --disable-upgrading    dont upgrade dependencies
+</span></span><span class="line"><span class="cl">  -h, --help                 <span class="nb">help</span> <span class="k">for</span> generate
+</span></span><span class="line"><span class="cl">  -i, --interactive          Interactive mode
+</span></span><span class="line"><span class="cl">      --target string        Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Global Flags:
+</span></span><span class="line"><span class="cl">      --debug   turn on debug output
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-co-pilotjson-file">Example co-pilot.json file<a data-clipboard-text="https://co-pilot-cli.github.io/commands/generate/#example-co-pilotjson-file" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example co-pilot.json file" href="#example-co-pilotjson-file"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;language&#34;</span><span class="p">:</span> <span class="s2">&#34;kotlin&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;package&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example.app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Example REST basic app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;team&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;demo-name&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&#34;email&#34;</span><span class="p">:</span> <span class="s2">&#34;demo-email@example.com&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;Demo of new app, generated with spring-boot and co-pilot templates&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;dependencies&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;web-services&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;templates&#34;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&#34;dockerfile&#34;</span><span class="p">,</span> <span class="s2">&#34;rest-basic&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This file is the same file used for project-configuration, and is described at <a href="/configuration/project/">project configuration</a></p>
 <div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/generate/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p><img src="/static/co-pilot-generate-simple.gif" alt="Simple generate gif"></p>
 

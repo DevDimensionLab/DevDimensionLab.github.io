@@ -130,21 +130,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/format/" class="gdoc-nav__entry ">
                         Format
                     </a>
@@ -252,6 +237,21 @@
                 <span class="flex">
                     <a href="/commands/merge/" class="gdoc-nav__entry ">
                         Merge
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/profiles/" class="gdoc-nav__entry ">
+                        Profiles
                     </a>
                 </span>
             
@@ -689,82 +689,82 @@
 <div class="gdoc-page__anchorwrap"><h2 id="requirements">Requirements<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#requirements" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Requirements" href="#requirements"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>The requirements for the cloud config repository is that there exists a template folder, and a <code>deprecated.json</code> and <code>services.json</code>,file on the root level.</p>
 <div class="gdoc-page__anchorwrap"><h2 id="example---deprecatedjson">Example - Deprecated.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#example---deprecatedjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Deprecated.json" href="#example---deprecatedjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;deprecated&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&#34;dependencies&#34;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="p">{</span>
-        <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;log4j&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;log4j&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;files&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;src/main/resources/log4j.properties&#34;</span><span class="p">],</span>
-        <span class="nt">&#34;associated&#34;</span><span class="p">:</span> <span class="p">{</span>
-          <span class="nt">&#34;files&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;src/main/resources...&#34;</span><span class="p">],</span>
-          <span class="nt">&#34;dependencies&#34;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-              <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;org.slf4j&#34;</span><span class="p">,</span>
-              <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;slf4j-log4j12&#34;</span><span class="p">,</span>
-              <span class="nt">&#34;files&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;src/main/resources...&#34;</span><span class="p">]</span>
-            <span class="p">}</span>
-          <span class="p">]</span>
-        <span class="p">},</span>
-        <span class="nt">&#34;replacement_templates&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;logstash-logback&#34;</span><span class="p">]</span>
-      <span class="p">}</span>
-    <span class="p">]</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="example---servicesjson">Example - Services.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#example---servicesjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Services.json" href="#example---servicesjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;services&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
-      <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;flyway-demo&#34;</span><span class="p">,</span>
-      <span class="nt">&#34;defaultEnvironment&#34;</span><span class="p">:</span> <span class="s2">&#34;prod&#34;</span><span class="p">,</span>
-      <span class="nt">&#34;environments&#34;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-          <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;prod&#34;</span><span class="p">,</span>
-          <span class="nt">&#34;_links&#34;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&#34;info&#34;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&#34;href&#34;</span><span class="p">:</span> <span class="s2">&#34;http://localhost:8080/actuator/info&#34;</span>
-            <span class="p">}</span>
-          <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-          <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;staging&#34;</span><span class="p">,</span>
-          <span class="nt">&#34;_links&#34;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&#34;info&#34;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&#34;href&#34;</span><span class="p">:</span> <span class="s2">&#34;http://localhost:8081/actuator/info&#34;</span>
-            <span class="p">}</span>
-          <span class="p">}</span>
-        <span class="p">}</span>
-      <span class="p">]</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="example---project-defaultsjson">Example - Project-defaults.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#example---project-defaultsjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Project-defaults.json" href="#example---project-defaultsjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;deprecated&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;dependencies&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;log4j&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;log4j&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;files&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;src/main/resources/log4j.properties&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;associated&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">&#34;files&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;src/main/resources...&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">&#34;dependencies&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">              <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;org.slf4j&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">              <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;slf4j-log4j12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">              <span class="nt">&#34;files&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;src/main/resources...&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;replacement_templates&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;logstash-logback&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="example---servicesjson">Example - Services.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#example---servicesjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Services.json" href="#example---servicesjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;services&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;flyway-demo&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;defaultEnvironment&#34;</span><span class="p">:</span> <span class="s2">&#34;prod&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;environments&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;prod&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">&#34;_links&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;info&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">              <span class="nt">&#34;href&#34;</span><span class="p">:</span> <span class="s2">&#34;http://localhost:8080/actuator/info&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;staging&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">&#34;_links&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;info&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">              <span class="nt">&#34;href&#34;</span><span class="p">:</span> <span class="s2">&#34;http://localhost:8081/actuator/info&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="example---project-defaultsjson">Example - Project-defaults.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#example---project-defaultsjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Project-defaults.json" href="#example---project-defaultsjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>This file is overriding the project settings for each working project. <code>disableUpdatesFor</code>, and <code>maxVersionForDependencies</code> adds to the existing co-pilot.json file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;project-defaults&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;settings&#34;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&#34;disableDependencySort&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&#34;disableKotlinUpgrade&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&#34;disableSpringBootUpgrade&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&#34;disableUpgradesFor&#34;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="p">{</span>
-        <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;artifactId&#34;</span>
-      <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">&#34;maxVersionForDependencies&#34;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="p">{</span>
-        <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;artifactId&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;maxVersion&#34;</span><span class="p">:</span> <span class="s2">&#34;0.0.1&#34;</span>
-      <span class="p">}</span>
-    <span class="p">]</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;project-defaults&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;settings&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;disableDependencySort&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;disableKotlinUpgrade&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;disableSpringBootUpgrade&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;disableUpgradesFor&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;artifactId&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;maxVersionForDependencies&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;artifactId&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;maxVersion&#34;</span><span class="p">:</span> <span class="s2">&#34;0.0.1&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
 
     </article>
 

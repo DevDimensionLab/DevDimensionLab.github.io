@@ -130,21 +130,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/format/" class="gdoc-nav__entry ">
                         Format
                     </a>
@@ -252,6 +237,21 @@
                 <span class="flex">
                     <a href="/commands/merge/" class="gdoc-nav__entry ">
                         Merge
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/profiles/" class="gdoc-nav__entry ">
+                        Profiles
                     </a>
                 </span>
             
@@ -687,44 +687,44 @@
 
 <p>Upgrade is a command for upgrading all or specific parts of a project.</p>
 <div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Perform upgrade on existing projects
-
-Usage:
-  co-pilot upgrade <span class="o">[</span>command<span class="o">]</span>
-
-Available Commands:
-  2party      Upgrade all 2party dependencies to project
-  3party      Upgrade all 3party dependencies to project
-  all         Upgrade everything in project
-  dependency  Upgrade a specific dependency on a project
-  deprecated  Remove and replace deprecated dependencies in a project
-  interactive Interactively upgrade the project
-  kotlin      Upgrade kotlin version in project
-  plugins     Upgrade all plugins found in project
-  spring-boot Upgrade spring-boot to the latest version
-
-Flags:
-      --cloud-sync      force cloud sync
-      --dry-run         dry run does not write to pom.xml
-  -h, --help            <span class="nb">help</span> <span class="k">for</span> upgrade
-  -r, --recursive       turn on recursive mode
-      --target string   Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
-
-Global Flags:
-      --debug   turn on debug output
-
-Use <span class="s2">&#34;co-pilot upgrade [command] --help&#34;</span> <span class="k">for</span> more information about a command.
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">co-pilot upgrade all --target webservice
-</code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">INFO<span class="o">[</span>0000<span class="o">]</span> upgrading everything <span class="k">for</span> file webservice/pom.xml
-INFO<span class="o">[</span>0000<span class="o">]</span> outdated kotlin version <span class="o">[</span>1.4.8 <span class="o">=</span>&gt; 1.4.10<span class="o">]</span>
-INFO<span class="o">[</span>0000<span class="o">]</span> outdated spring-boot version <span class="o">[</span>2.3.1.RELEASE <span class="o">=</span>&gt; 2.3.4.RELEASE<span class="o">]</span>
-INFO<span class="o">[</span>0000<span class="o">]</span> outdated dependency org.hibernate:hibernate-core <span class="o">[</span>5.2.21.Final <span class="o">=</span>&gt; 5.4.21.Final<span class="o">]</span>
-INFO<span class="o">[</span>0000<span class="o">]</span> outdated dependency net.logstash.logback:logstash-logback-encoder <span class="o">[</span>6.2 <span class="o">=</span>&gt; 6.4<span class="o">]</span>
-INFO<span class="o">[</span>0000<span class="o">]</span> sorting pom file with default dependencySort
-INFO<span class="o">[</span>0000<span class="o">]</span> writing model to pom file: webservice/pom.xml
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Perform upgrade on existing projects
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Usage:
+</span></span><span class="line"><span class="cl">  co-pilot upgrade <span class="o">[</span>command<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Available Commands:
+</span></span><span class="line"><span class="cl">  2party      Upgrade all 2party dependencies to project
+</span></span><span class="line"><span class="cl">  3party      Upgrade all 3party dependencies to project
+</span></span><span class="line"><span class="cl">  all         Upgrade everything in project
+</span></span><span class="line"><span class="cl">  dependency  Upgrade a specific dependency on a project
+</span></span><span class="line"><span class="cl">  deprecated  Remove and replace deprecated dependencies in a project
+</span></span><span class="line"><span class="cl">  interactive Interactively upgrade the project
+</span></span><span class="line"><span class="cl">  kotlin      Upgrade kotlin version in project
+</span></span><span class="line"><span class="cl">  plugins     Upgrade all plugins found in project
+</span></span><span class="line"><span class="cl">  spring-boot Upgrade spring-boot to the latest version
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Flags:
+</span></span><span class="line"><span class="cl">      --cloud-sync      force cloud sync
+</span></span><span class="line"><span class="cl">      --dry-run         dry run does not write to pom.xml
+</span></span><span class="line"><span class="cl">  -h, --help            <span class="nb">help</span> <span class="k">for</span> upgrade
+</span></span><span class="line"><span class="cl">  -r, --recursive       turn on recursive mode
+</span></span><span class="line"><span class="cl">      --target string   Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Global Flags:
+</span></span><span class="line"><span class="cl">      --debug   turn on debug output
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Use <span class="s2">&#34;co-pilot upgrade [command] --help&#34;</span> <span class="k">for</span> more information about a command.
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">co-pilot upgrade all --target webservice
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://co-pilot-cli.github.io/commands/upgrade/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> upgrading everything <span class="k">for</span> file webservice/pom.xml
+</span></span><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> outdated kotlin version <span class="o">[</span>1.4.8 <span class="o">=</span>&gt; 1.4.10<span class="o">]</span>
+</span></span><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> outdated spring-boot version <span class="o">[</span>2.3.1.RELEASE <span class="o">=</span>&gt; 2.3.4.RELEASE<span class="o">]</span>
+</span></span><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> outdated dependency org.hibernate:hibernate-core <span class="o">[</span>5.2.21.Final <span class="o">=</span>&gt; 5.4.21.Final<span class="o">]</span>
+</span></span><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> outdated dependency net.logstash.logback:logstash-logback-encoder <span class="o">[</span>6.2 <span class="o">=</span>&gt; 6.4<span class="o">]</span>
+</span></span><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> sorting pom file with default dependencySort
+</span></span><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> writing model to pom file: webservice/pom.xml
+</span></span></code></pre></div>
 
     </article>
 

@@ -212,12 +212,12 @@ Help Initializes a maven project with co-pilot files and formatting Usage: co-pi
     </item>
     
     <item>
-      <title>Config</title>
-      <link>https://co-pilot-cli.github.io/commands/config/</link>
+      <title>Profiles</title>
+      <link>https://co-pilot-cli.github.io/commands/profiles/</link>
       <pubDate>Wed, 30 Sep 2020 10:27:11 +0200</pubDate>
       
-      <guid>https://co-pilot-cli.github.io/commands/config/</guid>
-      <description>Help Config settings for co-pilot Usage: co-pilot config [flags] Flags: --cloud-sync sync with cloud config repo -h, --help help for config --reset reset local config --show show local config Global Flags: --debug turn on debug output </description>
+      <guid>https://co-pilot-cli.github.io/commands/profiles/</guid>
+      <description>Help Manage profiles settings for co-pilot Usage: co-pilot profiles [flags] Flags: --cloud-sync sync with cloud config repo -h, --help help for profiles --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output </description>
     </item>
     
     <item>

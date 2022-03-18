@@ -131,21 +131,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/format/" class="gdoc-nav__entry ">
                         Format
                     </a>
@@ -253,6 +238,21 @@
                 <span class="flex">
                     <a href="/commands/merge/" class="gdoc-nav__entry ">
                         Merge
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/profiles/" class="gdoc-nav__entry ">
+                        Profiles
                     </a>
                 </span>
             
@@ -678,16 +678,15 @@
     
 
 
-<pre tabindex="0"><code>   _____                  _ _       _
-  / ____|                (_) |     | |
- | |     ___ ______ _ __  _| | ___ | |_
- | |    / _ \______| '_ \| | |/ _ \| __|
- | |___| (_) |     | |_) | | | (_) | |_
-  \_____\___/      | .__/|_|_|\___/ \__|
-                   | |
-                   |_|
-== version: v0.4.11 ==
-Co-pilot is a developer tool for automating common tasks on a spring boot project
+<pre tabindex="0"><code>  _____                  _ _       _
+ / ____|                (_) |     | |
+| |     ___ ______ _ __  _| | ___ | |_
+| |    / _ \______| &#39;_ \| | |/ _ \| __|
+| |___| (_) |     | |_) | | | (_) | |_
+ \_____\___/      | .__/|_|_|\___/ \__|
+                  | |
+                  |_|
+== version: v0.5.2 ==
 
 Usage:
   co-pilot [command]
@@ -697,16 +696,17 @@ Available Commands:
   bitbucket   Bitbucket functionality
   clean       Clean files and folder in a project
   completion  Generate the autocompletion script for the specified shell
-  config      Config settings for co-pilot
   format      Format functionality for a project
   generate    Initializes a maven project with co-pilot files and formatting
   git         Git commands
   help        Help about any command
   info        Prints info on spring version, dependencies etc
   init        Initializes a maven project with co-pilot files and formatting
+  install     Various install options for generating autocompletion etc
   lint        Linting commands
   maven       Run maven (mvn) commands
   merge       Merge functionalities for files to a project
+  profiles    Manage profiles settings for co-pilot
   query       Query dependencies in a project
   status      Status functionality for a project
   upgrade     Upgrade options
@@ -715,7 +715,10 @@ Flags:
       --debug   turn on debug output
   -h, --help    help for co-pilot
 
-Use &quot;co-pilot [command] --help&quot; for more information about a command.
+Additional help topics:
+  co-pilot about      About co-pilot
+
+Use &#34;co-pilot [command] --help&#34; for more information about a command.
 </code></pre>
 
     </article>
