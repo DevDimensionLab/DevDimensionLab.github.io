@@ -29,7 +29,7 @@
             <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
         </label>
         
-        <a class="gdoc-header__link" href="https://co-pilot-cli.github.io">
+        <a class="gdoc-header__link" href="https://devdimensionlab.github.io">
             <span class="gdoc-brand flex align-center">
                 <img class="gdoc-brand__img" src="/brand.svg" alt="Co-pilot-cli" width=38 height=38>
                 Co-pilot-cli
@@ -686,28 +686,28 @@
 
 
 <p>Templates is a concept where co-pilot effectively merges one project into another. Templates are added to the cloud-config repo under a <code>templates</code> folder, <a href="https://github.com/co-pilot-cli/co-pilot-config/tree/master/templates">example</a>, and are later referred to by their folder name in the <code>co-pilot.json</code> file. A template, like most projects, consists of these filetypes:</p>
-<div class="gdoc-page__anchorwrap"><h2 id="filetypes">Filetypes<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#filetypes" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Filetypes" href="#filetypes"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="filetypes">Filetypes<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#filetypes" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Filetypes" href="#filetypes"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>Filetypes in templates are</p>
-<div class="gdoc-page__anchorwrap"><h3 id="kt-and-java-files">.kt and .java files<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#kt-and-java-files" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor .kt and .java files" href="#kt-and-java-files"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="gdoc-page__anchorwrap"><h3 id="kt-and-java-files">.kt and .java files<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#kt-and-java-files" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor .kt and .java files" href="#kt-and-java-files"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>If a template supplies a .kt or a .java file, the file is copied to its right destination and the <code>package com.example...</code> line in top of the file is replaced to support the target. I with the same path and filename is found in the target, the file is ignored.</p>
-<div class="gdoc-page__anchorwrap"><h3 id="properties-files">*.properties files<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#properties-files" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor *.properties files" href="#properties-files"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="gdoc-page__anchorwrap"><h3 id="properties-files">*.properties files<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#properties-files" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor *.properties files" href="#properties-files"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>If a template supplies a *.properties file the file is parsed by <code>key=value</code> pairs, and merged correctly into the target. If the target is missing a properties file with the same name as the template supplies, the whole file is copied. Co-pilot does not check <code>key=value</code> pairs across properties files.</p>
-<div class="gdoc-page__anchorwrap"><h3 id="pomxml-files">pom.xml files<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#pomxml-files" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor pom.xml files" href="#pomxml-files"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="gdoc-page__anchorwrap"><h3 id="pomxml-files">pom.xml files<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#pomxml-files" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor pom.xml files" href="#pomxml-files"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>If a template and the target supplies a pom.xml file, the templates pom.xml following definitions are merged over:</p>
 <ul>
 <li><code>&lt;dependencies&gt;</code></li>
 <li><code>&lt;dependencyManagement&gt;</code></li>
 <li><code>&lt;build&gt;&lt;plugins&gt;</code></li>
 </ul>
-<div class="gdoc-page__anchorwrap"><h3 id="text-files-default">text files (default)<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#text-files-default" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor text files (default)" href="#text-files-default"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="gdoc-page__anchorwrap"><h3 id="text-files-default">text files (default)<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#text-files-default" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor text files (default)" href="#text-files-default"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>All files not matching the above is eighter copied over if the target does not contain it, or the differences are merged into the end of the targetfile.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="situations">Situations<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#situations" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Situations" href="#situations"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="situations">Situations<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#situations" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Situations" href="#situations"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>Templates is used in the following situations</p>
-<div class="gdoc-page__anchorwrap"><h3 id="during-generate">During generate<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#during-generate" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor During generate" href="#during-generate"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="gdoc-page__anchorwrap"><h3 id="during-generate">During generate<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#during-generate" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor During generate" href="#during-generate"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>See <a href="/commands/generate">commands generate</a></p>
-<div class="gdoc-page__anchorwrap"><h3 id="during-merge">During merge<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#during-merge" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor During merge" href="#during-merge"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="gdoc-page__anchorwrap"><h3 id="during-merge">During merge<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#during-merge" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor During merge" href="#during-merge"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>See <a href="/commands/merge">commands merge</a></p>
-<div class="gdoc-page__anchorwrap"><h3 id="during-upgrade---deprecated">During upgrade &ndash;deprecated<a data-clipboard-text="https://co-pilot-cli.github.io/template/basics/#during-upgrade---deprecated" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor During upgrade &ndash;deprecated" href="#during-upgrade---deprecated"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+<div class="gdoc-page__anchorwrap"><h3 id="during-upgrade---deprecated">During upgrade &ndash;deprecated<a data-clipboard-text="https://devdimensionlab.github.io/template/basics/#during-upgrade---deprecated" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor During upgrade &ndash;deprecated" href="#during-upgrade---deprecated"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>See <a href="/commands/deprecated">commands upgrade</a></p>
 
 

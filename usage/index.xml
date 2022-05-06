@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Usages on Co-pilot-cli</title>
-    <link>https://co-pilot-cli.github.io/usage/</link>
+    <link>https://devdimensionlab.github.io/usage/</link>
     <description>Recent content in Usages on Co-pilot-cli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Oct 2020 11:15:08 +0200</lastBuildDate><atom:link href="https://co-pilot-cli.github.io/usage/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Oct 2020 11:15:08 +0200</lastBuildDate><atom:link href="https://devdimensionlab.github.io/usage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install</title>
-      <link>https://co-pilot-cli.github.io/usage/install/</link>
+      <link>https://devdimensionlab.github.io/usage/install/</link>
       <pubDate>Wed, 30 Sep 2020 10:29:19 +0200</pubDate>
       
-      <guid>https://co-pilot-cli.github.io/usage/install/</guid>
+      <guid>https://devdimensionlab.github.io/usage/install/</guid>
       <description>Co-pilot is created with Go and supports multiple platforms including:
  GNU/Linux Windows MacOs  Download co-pilot Install co-pilot with one of the two alternatives
 Alternative 1: Binaries  Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases  Alternative 2: Snapcraft Co-pilot is available on snapcraft: https://snapcraft.io/co-pilot-cli
@@ -20,10 +20,10 @@ Install sudo snap install co-pilot-cli --edge --devmode Run co-pilot-cli.co-pilo
     
     <item>
       <title>Dependencies</title>
-      <link>https://co-pilot-cli.github.io/usage/dependencies/</link>
+      <link>https://devdimensionlab.github.io/usage/dependencies/</link>
       <pubDate>Mon, 05 Oct 2020 11:15:08 +0200</pubDate>
       
-      <guid>https://co-pilot-cli.github.io/usage/dependencies/</guid>
+      <guid>https://devdimensionlab.github.io/usage/dependencies/</guid>
       <description>Co-pilot strives to depend on as few third parties as possible, but some dependencies are optional
 Git Co-pilot uses git for various operations related to cloud-config and templates. Without git installed some functionality might not work as expected.
 Without git A clean Windows 10 installation without git:
@@ -33,10 +33,10 @@ Maven Co-pilot uses mvn Maven for some analytics commands.</description>
     
     <item>
       <title>Basics</title>
-      <link>https://co-pilot-cli.github.io/usage/basics/</link>
+      <link>https://devdimensionlab.github.io/usage/basics/</link>
       <pubDate>Wed, 30 Sep 2020 12:17:56 +0200</pubDate>
       
-      <guid>https://co-pilot-cli.github.io/usage/basics/</guid>
+      <guid>https://devdimensionlab.github.io/usage/basics/</guid>
       <description>Most of the co-pilot commands operate on some common principles, target, recursive, and dry-run.
 --target By default co-pilot operates on the current folder similar to tools like git. However a custom --target flag is available for most commands and enables the used to use co-pilot ... --target outside of the working folder.
 --recursive Recursive mode is enabled with --recursive or -r for most commands. This mode starts by building a list of subprojects on the current target, and iteratively working on each subproject.</description>

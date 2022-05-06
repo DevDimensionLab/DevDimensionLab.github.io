@@ -29,7 +29,7 @@
             <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
         </label>
         
-        <a class="gdoc-header__link" href="https://co-pilot-cli.github.io">
+        <a class="gdoc-header__link" href="https://devdimensionlab.github.io">
             <span class="gdoc-brand flex align-center">
                 <img class="gdoc-brand__img" src="/brand.svg" alt="Co-pilot-cli" width=38 height=38>
                 Co-pilot-cli
@@ -686,9 +686,9 @@
 
 
 <p>Co-pilot supports cloud configuration for some of its more advanced features. A cloud configuration is simply an available git repository referred to in the local config file <code>~/.co-pilot/local-config.yaml</code>. An example is shipped with co-pilot at <a href="https://github.com/co-pilot-cli/co-pilot-config">https://github.com/co-pilot-cli/co-pilot-config</a>.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="requirements">Requirements<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#requirements" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Requirements" href="#requirements"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="requirements">Requirements<a data-clipboard-text="https://devdimensionlab.github.io/configuration/cloud/#requirements" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Requirements" href="#requirements"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>The requirements for the cloud config repository is that there exists a template folder, and a <code>deprecated.json</code> and <code>services.json</code>,file on the root level.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="example---deprecatedjson">Example - Deprecated.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#example---deprecatedjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Deprecated.json" href="#example---deprecatedjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="example---deprecatedjson">Example - Deprecated.json<a data-clipboard-text="https://devdimensionlab.github.io/configuration/cloud/#example---deprecatedjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Deprecated.json" href="#example---deprecatedjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;deprecated&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
@@ -712,7 +712,7 @@
 </span></span><span class="line"><span class="cl">    <span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="example---servicesjson">Example - Services.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#example---servicesjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Services.json" href="#example---servicesjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="example---servicesjson">Example - Services.json<a data-clipboard-text="https://devdimensionlab.github.io/configuration/cloud/#example---servicesjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Services.json" href="#example---servicesjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;services&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
@@ -741,7 +741,7 @@
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="example---project-defaultsjson">Example - Project-defaults.json<a data-clipboard-text="https://co-pilot-cli.github.io/configuration/cloud/#example---project-defaultsjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Project-defaults.json" href="#example---project-defaultsjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="example---project-defaultsjson">Example - Project-defaults.json<a data-clipboard-text="https://devdimensionlab.github.io/configuration/cloud/#example---project-defaultsjson" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example - Project-defaults.json" href="#example---project-defaultsjson"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>This file is overriding the project settings for each working project. <code>disableUpdatesFor</code>, and <code>maxVersionForDependencies</code> adds to the existing co-pilot.json file.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;project-defaults&#34;</span><span class="p">,</span>
