@@ -12,7 +12,8 @@
       <pubDate>Thu, 23 Dec 2021 10:27:32 +0200</pubDate>
       
       <guid>https://devdimensionlab.github.io/commands/bitbucket/</guid>
-      <description>Help Bitbucket functionality Usage: co-pilot bitbucket [command] Available Commands: sync Synchronizes projects from bitbucket Flags: -h, --help help for bitbucket Global Flags: --debug turn on debug output Use &amp;#34;co-pilot bitbucket [command] --help&amp;#34; for more information about a command. Sync The bitbucket sync commands depends on valid credentials and HTTP address inn ~/.co-pilot/local-config.yaml</description>
+      <description>Help Bitbucket functionality Usage: co-pilot bitbucket [command] Available Commands: sync Synchronizes projects from bitbucket Flags: -h, --help help for bitbucket Global Flags: --debug turn on debug output Use &amp;#34;co-pilot bitbucket [command] --help&amp;#34; for more information about a command. Sync The bitbucket sync commands depends on valid credentials and HTTP address inn ~/.co-pilot/local-config.yaml
+sourceProvider: host: &amp;#34;https://...&amp;#34; access_token: &amp;#34;...&amp;#34; </description>
     </item>
     
     <item>
@@ -31,7 +32,7 @@
       
       <guid>https://devdimensionlab.github.io/commands/lint/</guid>
       <description>Dependencies Some of these commands depends on:
- ktlint  Help Linting commands Usage: co-pilot lint [command] Available Commands: kotlin uses ktlint for linting kotlin code Flags: -h, --help help for lint -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot lint [command] --help&amp;#34; for more information about a command. Example usage co-pilot lint </description>
+ktlint Help Linting commands Usage: co-pilot lint [command] Available Commands: kotlin uses ktlint for linting kotlin code Flags: -h, --help help for lint -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot lint [command] --help&amp;#34; for more information about a command. Example usage co-pilot lint </description>
     </item>
     
     <item>
@@ -41,7 +42,7 @@
       
       <guid>https://devdimensionlab.github.io/commands/maven/</guid>
       <description>Dependencies Some of these commands depends on:
- mvn dot (graphviz)  Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: boot-run runs a spring boot application checkstyle runs checkstyle enforcer runs enforcer graph creates a graph for dependencies in a project owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command.</description>
+mvn dot (graphviz) Help Run maven (mvn) commands Usage: co-pilot maven [command] Available Commands: boot-run runs a spring boot application checkstyle runs checkstyle enforcer runs enforcer graph creates a graph for dependencies in a project owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Use &amp;#34;co-pilot maven [command] --help&amp;#34; for more information about a command.</description>
     </item>
     
     <item>
@@ -123,6 +124,15 @@ Help Initializes a maven project with co-pilot files and formatting Usage: co-pi
     </item>
     
     <item>
+      <title>Config</title>
+      <link>https://devdimensionlab.github.io/commands/config/</link>
+      <pubDate>Wed, 30 Sep 2020 10:27:11 +0200</pubDate>
+      
+      <guid>https://devdimensionlab.github.io/commands/config/</guid>
+      <description>Help Config settings for co-pilot Usage: co-pilot config [flags] Flags: --cloud-sync sync with cloud config repo -h, --help help for config --reset reset local config --show show local config Global Flags: --debug turn on debug output </description>
+    </item>
+    
+    <item>
       <title>Profiles</title>
       <link>https://devdimensionlab.github.io/commands/profiles/</link>
       <pubDate>Wed, 30 Sep 2020 10:27:11 +0200</pubDate>
@@ -147,7 +157,7 @@ Help Initializes a maven project with co-pilot files and formatting Usage: co-pi
       
       <guid>https://devdimensionlab.github.io/commands/analyze/</guid>
       <description>Dependencies Some of these commands depends on:
- mvn  Help Perform an analyze on a projects Usage: co-pilot analyze [flags] Flags: --deps Show dependency usage -h, --help help for analyze -r, --recursive recursive mode -t, --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Example usage co-pilot analyze --deps --target webservice Example output INFO[0000] Undeclared and unused dependencies for file webservice/pom.xml INFO[0005] unused declared dependencies com.</description>
+mvn Help Perform an analyze on a projects Usage: co-pilot analyze [flags] Flags: --deps Show dependency usage -h, --help help for analyze -r, --recursive recursive mode -t, --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output Example usage co-pilot analyze --deps --target webservice Example output INFO[0000] Undeclared and unused dependencies for file webservice/pom.xml INFO[0005] unused declared dependencies com.microsoft.sqlserver:mssql-jdbc INFO[0005] unused declared dependencies org.</description>
     </item>
     
   </channel>
