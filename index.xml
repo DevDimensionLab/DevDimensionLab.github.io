@@ -15,7 +15,7 @@
       <description>Co-pilot is created with Go and supports multiple platforms including:
 GNU/Linux Windows MacOs Download co-pilot Install co-pilot with one of the two alternatives
 Alternative 1: Binaries Download the latest binaries from https://github.com/co-pilot-cli/co-pilot/releases Alternative 2: Snapcraft Co-pilot is available on snapcraft: https://snapcraft.io/co-pilot
-Install sudo snap install co-pilot Run co-pilot-cli.co-pilot Alternative 3: Brew Add a new tap brew tap co-pilot-cli/co-pilot Install brew install co-pilot Alternative 4: Docker Co-pilot is available as a docker image on: https://hub.</description>
+Install sudo snap install co-pilot --devmode Run co-pilot-cli.co-pilot Alternative 3: Brew Add a new tap brew tap co-pilot-cli/co-pilot Install brew install co-pilot Alternative 4: Docker Co-pilot is available as a docker image on: https://hub.</description>
     </item>
     
     <item>
