@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Generate">
 
-<title>Generate | Co-pilot-cli</title>
+<title>Generate | PlyBuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -31,8 +31,8 @@
         
         <a class="gdoc-header__link" href="https://devdimensionlab.github.io">
             <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="/brand.svg" alt="Co-pilot-cli" width=38 height=38>
-                Co-pilot-cli
+                <img class="gdoc-brand__img" src="/brand.svg" alt="PlyBuild" width=38 height=38>
+                PlyBuild
             </span>
         </a>
     </div>
@@ -85,21 +85,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/analyze/" class="gdoc-nav__entry ">
-                        Analyze
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/bitbucket/" class="gdoc-nav__entry ">
                         Bitbucket
                     </a>
@@ -130,8 +115,53 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
+                    <a href="/commands/completion/" class="gdoc-nav__entry ">
+                        Completion
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/diagrams/" class="gdoc-nav__entry ">
+                        Diagrams
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/doc/" class="gdoc-nav__entry ">
+                        Doc
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/examples/" class="gdoc-nav__entry ">
+                        Examples
                     </a>
                 </span>
             
@@ -207,6 +237,21 @@
                 <span class="flex">
                     <a href="/commands/init/" class="gdoc-nav__entry ">
                         Init
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/install/" class="gdoc-nav__entry ">
+                        Install
                     </a>
                 </span>
             
@@ -297,6 +342,21 @@
                 <span class="flex">
                     <a href="/commands/status/" class="gdoc-nav__entry ">
                         Status
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/tips/" class="gdoc-nav__entry ">
+                        Tips
                     </a>
                 </span>
             
@@ -546,7 +606,7 @@
 
             <span class="flex">
                 <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://github.com/co-pilot-cli/co-pilot/releases"
+                <a href="https://github.com/DevDimensionLab/plybuild/releases"
                     class="gdoc-nav__entry ">
                     Releases
                 </a>
@@ -570,58 +630,8 @@
             
 
             <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://hub.docker.com/repository/docker/copilotcli/co-pilot-cli"
-                    class="gdoc-nav__entry ">
-                    Docker
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://snapcraft.io/co-pilot-cli"
-                    class="gdoc-nav__entry ">
-                    Snapcraft
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
                 <svg class="icon github"><use xlink:href="#github"></use></svg>
-                <a href="https://github.com/co-pilot-cli/co-pilot"
+                <a href="https://github.com/DevDimensionLab/plybuild"
                     class="gdoc-nav__entry ">
                     View Source
                 </a>
@@ -675,7 +685,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Generate
+        <a href='/'>PlyBuild</a> / <a href='/commands/'>Commands</a> / Generate
     
 
     
@@ -702,38 +712,55 @@
 
 <p>Generate initializes a spring boot project using <a href="https://start.spring.io">https://start.spring.io</a>.</p>
 <div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://devdimensionlab.github.io/commands/generate/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Initializes a maven project with co-pilot files and formatting
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Initializes a maven project with ply files and formatting
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Usage:
-</span></span><span class="line"><span class="cl">  co-pilot generate <span class="o">[</span>flags<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  ply generate <span class="o">[</span>flags<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  ply generate <span class="o">[</span>command<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Available Commands:
+</span></span><span class="line"><span class="cl">  clean          Cleans a maven project with ply files and formatting
+</span></span><span class="line"><span class="cl">  list-templates Lists all available templates
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Flags:
-</span></span><span class="line"><span class="cl">      --config-file string   Optional config file
-</span></span><span class="line"><span class="cl">      --disable-upgrading    dont upgrade dependencies
-</span></span><span class="line"><span class="cl">  -h, --help                 <span class="nb">help</span> <span class="k">for</span> generate
-</span></span><span class="line"><span class="cl">  -i, --interactive          Interactive mode
-</span></span><span class="line"><span class="cl">      --target string        Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">      --application-name string   Overrides applicationName from config file
+</span></span><span class="line"><span class="cl">      --artifact-id string        Overrides artifactId from config file
+</span></span><span class="line"><span class="cl">      --boot-version string       Defines spring-boot version to use
+</span></span><span class="line"><span class="cl">      --cloud-sync                Cloud sync <span class="o">(</span>default <span class="nb">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">      --config-file string        Optional config file <span class="o">(</span>default <span class="s2">&#34;ply.json&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">      --disable-upgrading         dont upgrade dependencies
+</span></span><span class="line"><span class="cl">      --group-id string           Overrides groupId from config file
+</span></span><span class="line"><span class="cl">  -h, --help                      <span class="nb">help</span> <span class="k">for</span> generate
+</span></span><span class="line"><span class="cl">  -i, --interactive               Interactive mode
+</span></span><span class="line"><span class="cl">      --name string               Overrides name from config file
+</span></span><span class="line"><span class="cl">      --package string            Overrides package from config file
+</span></span><span class="line"><span class="cl">      --target string             Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Global Flags:
 </span></span><span class="line"><span class="cl">      --debug   turn on debug output
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-co-pilotjson-file">Example co-pilot.json file<a data-clipboard-text="https://devdimensionlab.github.io/commands/generate/#example-co-pilotjson-file" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example co-pilot.json file" href="#example-co-pilotjson-file"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;language&#34;</span><span class="p">:</span> <span class="s2">&#34;kotlin&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;app&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;package&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example.app&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Example REST basic app&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;team&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;demo-name&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nt">&#34;email&#34;</span><span class="p">:</span> <span class="s2">&#34;demo-email@example.com&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;Demo of new app, generated with spring-boot and co-pilot templates&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;dependencies&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;web-services&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;templates&#34;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&#34;dockerfile&#34;</span><span class="p">,</span> <span class="s2">&#34;rest-basic&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">      --json    turn on json output logging
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Use <span class="s2">&#34;ply generate [command] --help&#34;</span> <span class="k">for</span> more information about a command.<span class="sb">```</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Example plybuild.json file</span>
+</span></span><span class="line"><span class="cl"><span class="sb">```</span>json
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;language&#34;</span>: <span class="s2">&#34;kotlin&#34;</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;groupId&#34;</span>: <span class="s2">&#34;com.example&#34;</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;artifactId&#34;</span>: <span class="s2">&#34;app&#34;</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;package&#34;</span>: <span class="s2">&#34;com.example.app&#34;</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;name&#34;</span>: <span class="s2">&#34;Example REST basic app&#34;</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;team&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">	<span class="s2">&#34;name&#34;</span>: <span class="s2">&#34;demo-name&#34;</span>,
+</span></span><span class="line"><span class="cl">	<span class="s2">&#34;email&#34;</span>: <span class="s2">&#34;demo-email@example.com&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;description&#34;</span>: <span class="s2">&#34;Demo of new app, generated with spring-boot and plybuild templates&#34;</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;dependencies&#34;</span>: <span class="o">[</span><span class="s2">&#34;web-services&#34;</span><span class="o">]</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;templates&#34;</span> : <span class="o">[</span><span class="s2">&#34;dockerfile&#34;</span>, <span class="s2">&#34;rest-basic&#34;</span><span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><p>This file is the same file used for project-configuration, and is described at <a href="/configuration/project/">project configuration</a></p>
 <div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://devdimensionlab.github.io/commands/generate/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<p><img src="/static/co-pilot-generate-simple.gif" alt="Simple generate gif"></p>
+<p><img src="/static/plybuild-generate-simple.gif" alt="Simple generate gif"></p>
 
 
     </article>

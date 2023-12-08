@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Commands">
 
-<title>Commands | Co-pilot-cli</title>
+<title>Commands | PlyBuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
 <link rel="stylesheet" href="/custom.css" media="screen">
 
-<link rel="alternate" type="application/rss+xml" href="https://devdimensionlab.github.io/commands/index.xml" title="Co-pilot-cli" />
+<link rel="alternate" type="application/rss+xml" href="https://devdimensionlab.github.io/commands/index.xml" title="PlyBuild" />
 <!--Made with Geekdoc theme https://github.com/xoxys/hugo-geekdoc-->
 
 </head>
@@ -32,8 +32,8 @@
         
         <a class="gdoc-header__link" href="https://devdimensionlab.github.io">
             <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="/brand.svg" alt="Co-pilot-cli" width=38 height=38>
-                Co-pilot-cli
+                <img class="gdoc-brand__img" src="/brand.svg" alt="PlyBuild" width=38 height=38>
+                PlyBuild
             </span>
         </a>
     </div>
@@ -86,21 +86,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/analyze/" class="gdoc-nav__entry ">
-                        Analyze
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/bitbucket/" class="gdoc-nav__entry ">
                         Bitbucket
                     </a>
@@ -131,8 +116,53 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
+                    <a href="/commands/completion/" class="gdoc-nav__entry ">
+                        Completion
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/diagrams/" class="gdoc-nav__entry ">
+                        Diagrams
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/doc/" class="gdoc-nav__entry ">
+                        Doc
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/examples/" class="gdoc-nav__entry ">
+                        Examples
                     </a>
                 </span>
             
@@ -208,6 +238,21 @@
                 <span class="flex">
                     <a href="/commands/init/" class="gdoc-nav__entry ">
                         Init
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/install/" class="gdoc-nav__entry ">
+                        Install
                     </a>
                 </span>
             
@@ -298,6 +343,21 @@
                 <span class="flex">
                     <a href="/commands/status/" class="gdoc-nav__entry ">
                         Status
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/tips/" class="gdoc-nav__entry ">
+                        Tips
                     </a>
                 </span>
             
@@ -547,7 +607,7 @@
 
             <span class="flex">
                 <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://github.com/co-pilot-cli/co-pilot/releases"
+                <a href="https://github.com/DevDimensionLab/plybuild/releases"
                     class="gdoc-nav__entry ">
                     Releases
                 </a>
@@ -571,58 +631,8 @@
             
 
             <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://hub.docker.com/repository/docker/copilotcli/co-pilot-cli"
-                    class="gdoc-nav__entry ">
-                    Docker
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://snapcraft.io/co-pilot-cli"
-                    class="gdoc-nav__entry ">
-                    Snapcraft
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
                 <svg class="icon github"><use xlink:href="#github"></use></svg>
-                <a href="https://github.com/co-pilot-cli/co-pilot"
+                <a href="https://github.com/DevDimensionLab/plybuild"
                     class="gdoc-nav__entry ">
                     View Source
                 </a>
@@ -671,7 +681,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / Commands
+        <a href='/'>PlyBuild</a> / Commands
     
 
     
@@ -693,47 +703,51 @@
     
 
 
-<pre tabindex="0"><code>  _____                  _ _       _
- / ____|                (_) |     | |
-| |     ___ ______ _ __  _| | ___ | |_
-| |    / _ \______| &#39;_ \| | |/ _ \| __|
-| |___| (_) |     | |_) | | | (_) | |_
- \_____\___/      | .__/|_|_|\___/ \__|
-                  | |
-                  |_|
-== version: v0.5.2 ==
+<pre tabindex="0"><code>
+    ____  __      ____        _ __    __
+   / __ \/ /_  __/ __ )__  __(_) /___/ /
+  / /_/ / / / / / __  / / / / / / __  /
+ / ____/ / /_/ / /_/ / /_/ / / / /_/ /
+/_/   /_/\__, /_____/\__,_/_/_/\__,_/
+        /____/
+
+== version: v1.0.0 ==
 
 Usage:
-  co-pilot [command]
+  ply [command]
 
 Available Commands:
-  analyze     Perform an analyze on a projects
   bitbucket   Bitbucket functionality
   clean       Clean files and folder in a project
   completion  Generate the autocompletion script for the specified shell
+  diagrams    Various tools for generating diagrams
+  doc         Opens documentation in default browser
+  examples    Examples found in cloud-config
   format      Format functionality for a project
-  generate    Initializes a maven project with co-pilot files and formatting
+  generate    Initializes a maven project with ply files and formatting
   git         Git commands
   help        Help about any command
   info        Prints info on spring version, dependencies etc
-  init        Initializes a maven project with co-pilot files and formatting
+  init        Initializes a maven project with ply files and formatting
   install     Various install options for generating autocompletion etc
   lint        Linting commands
   maven       Run maven (mvn) commands
   merge       Merge functionalities for files to a project
-  profiles    Manage profiles settings for co-pilot
+  profiles    Manage profiles settings for ply
   query       Query dependencies in a project
   status      Status functionality for a project
+  tips        Use tips to learn information faster
   upgrade     Upgrade options
 
 Flags:
       --debug   turn on debug output
-  -h, --help    help for co-pilot
+  -h, --help    help for ply
+      --json    turn on json output logging
 
 Additional help topics:
-  co-pilot about      About co-pilot
+  ply about      About ply
 
-Use &#34;co-pilot [command] --help&#34; for more information about a command.
+Use &#34;ply [command] --help&#34; for more information about a command.
 </code></pre>
 
     </article>

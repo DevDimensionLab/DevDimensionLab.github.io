@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Upgrade">
 
-<title>Upgrade | Co-pilot-cli</title>
+<title>Upgrade | PlyBuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -31,8 +31,8 @@
         
         <a class="gdoc-header__link" href="https://devdimensionlab.github.io">
             <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="/brand.svg" alt="Co-pilot-cli" width=38 height=38>
-                Co-pilot-cli
+                <img class="gdoc-brand__img" src="/brand.svg" alt="PlyBuild" width=38 height=38>
+                PlyBuild
             </span>
         </a>
     </div>
@@ -85,21 +85,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/analyze/" class="gdoc-nav__entry ">
-                        Analyze
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/bitbucket/" class="gdoc-nav__entry ">
                         Bitbucket
                     </a>
@@ -130,8 +115,53 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
+                    <a href="/commands/completion/" class="gdoc-nav__entry ">
+                        Completion
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/diagrams/" class="gdoc-nav__entry ">
+                        Diagrams
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/doc/" class="gdoc-nav__entry ">
+                        Doc
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/examples/" class="gdoc-nav__entry ">
+                        Examples
                     </a>
                 </span>
             
@@ -207,6 +237,21 @@
                 <span class="flex">
                     <a href="/commands/init/" class="gdoc-nav__entry ">
                         Init
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/install/" class="gdoc-nav__entry ">
+                        Install
                     </a>
                 </span>
             
@@ -297,6 +342,21 @@
                 <span class="flex">
                     <a href="/commands/status/" class="gdoc-nav__entry ">
                         Status
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/tips/" class="gdoc-nav__entry ">
+                        Tips
                     </a>
                 </span>
             
@@ -546,7 +606,7 @@
 
             <span class="flex">
                 <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://github.com/co-pilot-cli/co-pilot/releases"
+                <a href="https://github.com/DevDimensionLab/plybuild/releases"
                     class="gdoc-nav__entry ">
                     Releases
                 </a>
@@ -570,58 +630,8 @@
             
 
             <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://hub.docker.com/repository/docker/copilotcli/co-pilot-cli"
-                    class="gdoc-nav__entry ">
-                    Docker
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://snapcraft.io/co-pilot-cli"
-                    class="gdoc-nav__entry ">
-                    Snapcraft
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
                 <svg class="icon github"><use xlink:href="#github"></use></svg>
-                <a href="https://github.com/co-pilot-cli/co-pilot"
+                <a href="https://github.com/DevDimensionLab/plybuild"
                     class="gdoc-nav__entry ">
                     View Source
                 </a>
@@ -675,7 +685,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Upgrade
+        <a href='/'>PlyBuild</a> / <a href='/commands/'>Commands</a> / Upgrade
     
 
     
@@ -705,32 +715,35 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Perform upgrade on existing projects
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Usage:
-</span></span><span class="line"><span class="cl">  co-pilot upgrade <span class="o">[</span>command<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  ply upgrade <span class="o">[</span>command<span class="o">]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Available Commands:
-</span></span><span class="line"><span class="cl">  2party      Upgrade all 2party dependencies to project
-</span></span><span class="line"><span class="cl">  3party      Upgrade all 3party dependencies to project
-</span></span><span class="line"><span class="cl">  all         Upgrade everything in project
-</span></span><span class="line"><span class="cl">  dependency  Upgrade a specific dependency on a project
-</span></span><span class="line"><span class="cl">  deprecated  Remove and replace deprecated dependencies in a project
-</span></span><span class="line"><span class="cl">  interactive Interactively upgrade the project
-</span></span><span class="line"><span class="cl">  kotlin      Upgrade kotlin version in project
-</span></span><span class="line"><span class="cl">  plugins     Upgrade all plugins found in project
-</span></span><span class="line"><span class="cl">  spring-boot Upgrade spring-boot to the latest version
+</span></span><span class="line"><span class="cl">  2party        Upgrade all 2party dependencies to project
+</span></span><span class="line"><span class="cl">  3party        Upgrade all 3party dependencies to project
+</span></span><span class="line"><span class="cl">  all           Upgrade everything in project
+</span></span><span class="line"><span class="cl">  dependency    Upgrade a specific dependency on a project
+</span></span><span class="line"><span class="cl">  deprecated    Remove and replace deprecated dependencies in a project
+</span></span><span class="line"><span class="cl">  interactive   Interactively upgrade the project
+</span></span><span class="line"><span class="cl">  kotlin        Upgrade kotlin version in project
+</span></span><span class="line"><span class="cl">  plugins       Upgrade all plugins found in project
+</span></span><span class="line"><span class="cl">  spring-boot   Upgrade spring-boot to the latest version
+</span></span><span class="line"><span class="cl">  with-versions Upgrade using mvn versions in a project
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Flags:
 </span></span><span class="line"><span class="cl">      --cloud-sync      force cloud sync
 </span></span><span class="line"><span class="cl">      --dry-run         dry run does not write to pom.xml
 </span></span><span class="line"><span class="cl">  -h, --help            <span class="nb">help</span> <span class="k">for</span> upgrade
 </span></span><span class="line"><span class="cl">  -r, --recursive       turn on recursive mode
+</span></span><span class="line"><span class="cl">      --stealth         use alternative pom.xml writer
 </span></span><span class="line"><span class="cl">      --target string   Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Global Flags:
 </span></span><span class="line"><span class="cl">      --debug   turn on debug output
+</span></span><span class="line"><span class="cl">      --json    turn on json output logging
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Use <span class="s2">&#34;co-pilot upgrade [command] --help&#34;</span> <span class="k">for</span> more information about a command.
+</span></span><span class="line"><span class="cl">Use <span class="s2">&#34;ply upgrade [command] --help&#34;</span> <span class="k">for</span> more information about a command.
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://devdimensionlab.github.io/commands/upgrade/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">co-pilot upgrade all --target webservice
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">plybuild upgrade all --target webservice
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="example-output">Example output<a data-clipboard-text="https://devdimensionlab.github.io/commands/upgrade/#example-output" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example output" href="#example-output"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> upgrading everything <span class="k">for</span> file webservice/pom.xml
 </span></span><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> outdated kotlin version <span class="o">[</span>1.4.8 <span class="o">=</span>&gt; 1.4.10<span class="o">]</span>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Co-pilot-cli</title>
+    <title>Categories on PlyBuild</title>
     <link>https://devdimensionlab.github.io/categories/</link>
-    <description>Recent content in Categories on Co-pilot-cli</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://devdimensionlab.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Categories on PlyBuild</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://devdimensionlab.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

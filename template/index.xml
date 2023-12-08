@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Templates on Co-pilot-cli</title>
+    <title>Templates on PlyBuild</title>
     <link>https://devdimensionlab.github.io/template/</link>
-    <description>Recent content in Templates on Co-pilot-cli</description>
+    <description>Recent content in Templates on PlyBuild</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Sep 2020 13:07:42 +0200</lastBuildDate><atom:link href="https://devdimensionlab.github.io/template/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Sep 2020 13:07:42 +0200</lastBuildDate>
+    <atom:link href="https://devdimensionlab.github.io/template/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ignores</title>
       <link>https://devdimensionlab.github.io/template/ignore/</link>
       <pubDate>Wed, 30 Sep 2020 13:07:42 +0200</pubDate>
-      
       <guid>https://devdimensionlab.github.io/template/ignore/</guid>
-      <description>During the merge process of a template into a target directory co-pilot ignores the following files:
-Default ignore Regardless what is defined in the ignore files, co-pilot will ignore filenames matching:
-[ &amp;#34;Application&amp;#34;, &amp;#34;co-pilot.json&amp;#34;, &amp;#34;.co-pilot.ignore&amp;#34;, &amp;#34;.gitignore&amp;#34;, &amp;#34;.mvn&amp;#34;, &amp;#34;mvnw&amp;#34;, &amp;#34;mvnw.cmd&amp;#34;, &amp;#34;.idea&amp;#34;, &amp;#34;.iml&amp;#34; ] Ignoring filesnames matching Application
-The first entry Application, in the list above, enables co-pilot to ignore files like WebApplication.kt or FooApplication.java. Files which are typically files containing the @SpringBootApplication.</description>
+      <description>During the merge process of a template into a target directory plybuild ignores the following files:&#xA;Default ignore Regardless what is defined in the ignore files, plybuild will ignore filenames matching:&#xA;[ &amp;#34;Application&amp;#34;, &amp;#34;plybuild.json&amp;#34;, &amp;#34;.plybuild.ignore&amp;#34;, &amp;#34;.gitignore&amp;#34;, &amp;#34;.mvn&amp;#34;, &amp;#34;mvnw&amp;#34;, &amp;#34;mvnw.cmd&amp;#34;, &amp;#34;.idea&amp;#34;, &amp;#34;.iml&amp;#34; ] Ignoring filesnames matching Application&#xA;The first entry Application, in the list above, enables plybuild to ignore files like WebApplication.kt or FooApplication.java. Files which are typically files containing the @SpringBootApplication.</description>
     </item>
-    
     <item>
       <title>Basics</title>
       <link>https://devdimensionlab.github.io/template/basics/</link>
       <pubDate>Wed, 30 Sep 2020 13:07:36 +0200</pubDate>
-      
       <guid>https://devdimensionlab.github.io/template/basics/</guid>
-      <description>Templates is a concept where co-pilot effectively merges one project into another. Templates are added to the cloud-config repo under a templates folder, example, and are later referred to by their folder name in the co-pilot.json file. A template, like most projects, consists of these filetypes:
-Filetypes Filetypes in templates are
-.kt and .java files If a template supplies a .kt or a .java file, the file is copied to its right destination and the package com.</description>
+      <description>Templates is a concept where plybuild effectively merges one project into another. Templates are added to the cloud-config repo under a templates folder, example, and are later referred to by their folder name in the plybuild.json file. A template, like most projects, consists of these filetypes:&#xA;Filetypes Filetypes in templates are&#xA;.kt and .java files If a template supplies a .kt or a .java file, the file is copied to its right destination and the package com.</description>
     </item>
-    
   </channel>
 </rss>

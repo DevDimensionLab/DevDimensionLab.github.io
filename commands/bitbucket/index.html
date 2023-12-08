@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Bitbucket">
 
-<title>Bitbucket | Co-pilot-cli</title>
+<title>Bitbucket | PlyBuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -31,8 +31,8 @@
         
         <a class="gdoc-header__link" href="https://devdimensionlab.github.io">
             <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="/brand.svg" alt="Co-pilot-cli" width=38 height=38>
-                Co-pilot-cli
+                <img class="gdoc-brand__img" src="/brand.svg" alt="PlyBuild" width=38 height=38>
+                PlyBuild
             </span>
         </a>
     </div>
@@ -85,21 +85,6 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/analyze/" class="gdoc-nav__entry ">
-                        Analyze
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
                     <a href="/commands/bitbucket/" class="gdoc-nav__entry is-active">
                         Bitbucket
                     </a>
@@ -130,8 +115,53 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/config/" class="gdoc-nav__entry ">
-                        Config
+                    <a href="/commands/completion/" class="gdoc-nav__entry ">
+                        Completion
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/diagrams/" class="gdoc-nav__entry ">
+                        Diagrams
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/doc/" class="gdoc-nav__entry ">
+                        Doc
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/examples/" class="gdoc-nav__entry ">
+                        Examples
                     </a>
                 </span>
             
@@ -207,6 +237,21 @@
                 <span class="flex">
                     <a href="/commands/init/" class="gdoc-nav__entry ">
                         Init
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/install/" class="gdoc-nav__entry ">
+                        Install
                     </a>
                 </span>
             
@@ -297,6 +342,21 @@
                 <span class="flex">
                     <a href="/commands/status/" class="gdoc-nav__entry ">
                         Status
+                    </a>
+                </span>
+            
+
+            
+            
+            </li>
+            
+            
+            
+            <li>
+            
+                <span class="flex">
+                    <a href="/commands/tips/" class="gdoc-nav__entry ">
+                        Tips
                     </a>
                 </span>
             
@@ -546,7 +606,7 @@
 
             <span class="flex">
                 <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://github.com/co-pilot-cli/co-pilot/releases"
+                <a href="https://github.com/DevDimensionLab/plybuild/releases"
                     class="gdoc-nav__entry ">
                     Releases
                 </a>
@@ -570,58 +630,8 @@
             
 
             <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://hub.docker.com/repository/docker/copilotcli/co-pilot-cli"
-                    class="gdoc-nav__entry ">
-                    Docker
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://snapcraft.io/co-pilot-cli"
-                    class="gdoc-nav__entry ">
-                    Snapcraft
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
                 <svg class="icon github"><use xlink:href="#github"></use></svg>
-                <a href="https://github.com/co-pilot-cli/co-pilot"
+                <a href="https://github.com/DevDimensionLab/plybuild"
                     class="gdoc-nav__entry ">
                     View Source
                 </a>
@@ -675,7 +685,7 @@
         
     
     
-        <a href='/'>Co-pilot</a> / <a href='/commands/'>Commands</a> / Bitbucket
+        <a href='/'>PlyBuild</a> / <a href='/commands/'>Commands</a> / Bitbucket
     
 
     
@@ -704,7 +714,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Bitbucket functionality
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Usage:
-</span></span><span class="line"><span class="cl">  co-pilot bitbucket <span class="o">[</span>command<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  ply bitbucket <span class="o">[</span>command<span class="o">]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Available Commands:
 </span></span><span class="line"><span class="cl">  sync        Synchronizes projects from bitbucket
@@ -714,10 +724,11 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Global Flags:
 </span></span><span class="line"><span class="cl">      --debug   turn on debug output
+</span></span><span class="line"><span class="cl">      --json    turn on json output logging
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Use <span class="s2">&#34;co-pilot bitbucket [command] --help&#34;</span> <span class="k">for</span> more information about a command.
+</span></span><span class="line"><span class="cl">Use <span class="s2">&#34;ply bitbucket [command] --help&#34;</span> <span class="k">for</span> more information about a command.
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="sync">Sync<a data-clipboard-text="https://devdimensionlab.github.io/commands/bitbucket/#sync" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Sync" href="#sync"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
-<p>The <code>bitbucket sync</code> commands depends on valid credentials and HTTP address inn <code>~/.co-pilot/local-config.yaml</code></p>
+<p>The <code>bitbucket sync</code> commands depends on valid credentials and HTTP address inn <code>~/.plybuild/local-config.yaml</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">sourceProvider</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://...&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">access_token</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;...&#34;</span><span class="w">
