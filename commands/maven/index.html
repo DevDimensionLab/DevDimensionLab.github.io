@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Maven">
 
-<title>Maven | PlyBuild</title>
+<title>Maven | Plybuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -29,10 +29,10 @@
             <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
         </label>
         
-        <a class="gdoc-header__link" href="https://devdimensionlab.github.io">
+        <a class="gdoc-header__link" href="https://plybuild.io">
             <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="/brand.svg" alt="PlyBuild" width=38 height=38>
-                PlyBuild
+                <img class="gdoc-brand__img" src="/brand.svg" alt="Plybuild" width=38 height=38>
+                Plybuild
             </span>
         </a>
     </div>
@@ -710,13 +710,13 @@
     
 
 
-<div class="gdoc-page__anchorwrap"><h2 id="dependencies">Dependencies<a data-clipboard-text="https://devdimensionlab.github.io/commands/maven/#dependencies" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Dependencies" href="#dependencies"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="dependencies">Dependencies<a data-clipboard-text="https://plybuild.io/commands/maven/#dependencies" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Dependencies" href="#dependencies"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>Some of these commands depends on:</p>
 <ul>
 <li><code>mvn</code></li>
 <li><code>dot</code> (graphviz)</li>
 </ul>
-<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://devdimensionlab.github.io/commands/maven/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://plybuild.io/commands/maven/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Run maven <span class="o">(</span>mvn<span class="o">)</span> commands
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Usage:
@@ -739,7 +739,7 @@
 </span></span><span class="line"><span class="cl">      --json    turn on json output logging
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Use <span class="s2">&#34;ply maven [command] --help&#34;</span> <span class="k">for</span> more information about a command.
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="graphing">Graphing<a data-clipboard-text="https://devdimensionlab.github.io/commands/maven/#graphing" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Graphing" href="#graphing"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h2 id="graphing">Graphing<a data-clipboard-text="https://plybuild.io/commands/maven/#graphing" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Graphing" href="#graphing"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>plybuild supports graphing of dependencies through the maven plugin: <a href="https://github.com/ferstl/depgraph-maven-plugin">https://github.com/ferstl/depgraph-maven-plugin</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">creates a graph <span class="k">for</span> dependencies in a project
 </span></span><span class="line"><span class="cl">
@@ -762,12 +762,12 @@
 </span></span><span class="line"><span class="cl">      --target string   optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Use <span class="s2">&#34;plybuild maven graph [command] --help&#34;</span> <span class="k">for</span> more information about a command.
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="graph-filters">Graph filters<a data-clipboard-text="https://devdimensionlab.github.io/commands/maven/#graph-filters" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Graph filters" href="#graph-filters"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="graph-filters">Graph filters<a data-clipboard-text="https://plybuild.io/commands/maven/#graph-filters" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Graph filters" href="#graph-filters"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>By default, no filters are applied to the graph. However, both exclude and include filter are supported.
 Both of these filers are proxies for the filters supported by the plugin: <a href="https://github.com/ferstl/depgraph-maven-plugin/wiki/Filtering">https://github.com/ferstl/depgraph-maven-plugin/wiki/Filtering</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">plybuild maven graph --include-filters<span class="o">=</span><span class="s2">&#34;org.springframework*&#34;</span> --include-filters<span class="o">=</span><span class="s2">&#34;org.jetbrains*&#34;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">plybuild maven graph --exclude-filters<span class="o">=</span><span class="s2">&#34;org.springframework*&#34;</span> --exclude-filters<span class="o">=</span><span class="s2">&#34;org.jetbrains*&#34;</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="graph-style">Graph style<a data-clipboard-text="https://devdimensionlab.github.io/commands/maven/#graph-style" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Graph style" href="#graph-style"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap"><h3 id="graph-style">Graph style<a data-clipboard-text="https://plybuild.io/commands/maven/#graph-style" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Graph style" href="#graph-style"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h3></div>
 <p>Before generating the graph a style definition file is placed in <code>target/dependency-graph-styles.json</code>.
 This file is generated with the following defaults (&ldquo;com.example*&rdquo; is replaced with the actual groupId of the project):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>

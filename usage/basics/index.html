@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Basics">
 
-<title>Basics | PlyBuild</title>
+<title>Basics | Plybuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -29,10 +29,10 @@
             <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
         </label>
         
-        <a class="gdoc-header__link" href="https://devdimensionlab.github.io">
+        <a class="gdoc-header__link" href="https://plybuild.io">
             <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="/brand.svg" alt="PlyBuild" width=38 height=38>
-                PlyBuild
+                <img class="gdoc-brand__img" src="/brand.svg" alt="Plybuild" width=38 height=38>
+                Plybuild
             </span>
         </a>
     </div>
@@ -711,15 +711,15 @@
 
 
 <p>Most of the <code>ply</code> commands operate on some common principles, target, recursive, and dry-run.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="--target"><code>--target</code><a data-clipboard-text="https://devdimensionlab.github.io/usage/basics/#--target" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor <code>--target</code>" href="#--target"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="--target"><code>--target</code><a data-clipboard-text="https://plybuild.io/usage/basics/#--target" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor <code>--target</code>" href="#--target"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>By default <code>ply</code> operates on the current folder similar to tools like <code>git</code>. However a custom <code>--target</code> flag is available for most commands and enables the used to use <code>ply ... --target</code> outside of the working folder.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="--recursive"><code>--recursive</code><a data-clipboard-text="https://devdimensionlab.github.io/usage/basics/#--recursive" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor <code>--recursive</code>" href="#--recursive"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="--recursive"><code>--recursive</code><a data-clipboard-text="https://plybuild.io/usage/basics/#--recursive" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor <code>--recursive</code>" href="#--recursive"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>Recursive mode is enabled with <code>--recursive</code> or <code>-r</code> for most commands. This mode starts by building a list of subprojects on the current target, and iteratively working on each subproject. Example of this is the upgrade <code>ply upgrade all -r</code> command which will upgrade the current and all subprojects found in the working directory.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="--dry-run"><code>--dry-run</code><a data-clipboard-text="https://devdimensionlab.github.io/usage/basics/#--dry-run" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor <code>--dry-run</code>" href="#--dry-run"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="--dry-run"><code>--dry-run</code><a data-clipboard-text="https://plybuild.io/usage/basics/#--dry-run" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor <code>--dry-run</code>" href="#--dry-run"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <p>Dry-run mode is enabled with the <code>--dry-run</code> flag, and are meant commands which overwrites files. When dry-run in enabled no files is changed or overwritten. Example <code>ply upgrade all --dry-run</code> is effectively the same as a status printout.</p>
 <h1 id="git">Git</h1>
 <p>plybuild is git aware on the working projects, and will warn the user if it operates on a <em>dirty</em> repository. It will however continue as normal.</p>
-<div class="gdoc-page__anchorwrap"><h2 id="example">Example<a data-clipboard-text="https://devdimensionlab.github.io/usage/basics/#example" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example" href="#example"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="gdoc-page__anchorwrap"><h2 id="example">Example<a data-clipboard-text="https://plybuild.io/usage/basics/#example" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example" href="#example"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">INFO<span class="o">[</span>0000<span class="o">]</span> upgrading everything <span class="k">for</span> file webservice/pom.xml
 </span></span><span class="line"><span class="cl">WARN<span class="o">[</span>0000<span class="o">]</span> operating on a dirty git repo
 </span></span></code></pre></div>
