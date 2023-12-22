@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Plybuild</title>
+    <title>Plybuild on plybuild</title>
     <link>https://plybuild.io/</link>
-    <description>Recent content on Plybuild</description>
+    <description>Recent content in Plybuild on plybuild</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 30 Sep 2023 10:27:32 +0200</lastBuildDate>

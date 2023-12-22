@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Configurations on Plybuild</title>
+    <title>Configurations on plybuild</title>
     <link>https://plybuild.io/configuration/</link>
-    <description>Recent content in Configurations on Plybuild</description>
+    <description>Recent content in Configurations on plybuild</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 30 Sep 2020 12:55:39 +0200</lastBuildDate>
