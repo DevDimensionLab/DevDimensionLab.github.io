@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Local">
+<meta name="description" content="Install">
 
-<title>Local | plybuild</title>
+<title>Install | plybuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
@@ -263,7 +263,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/plugin/install/" class="gdoc-nav__entry ">
+                    <a href="/commands/plugin/install/" class="gdoc-nav__entry is-active">
                         Install
                     </a>
                 </span>
@@ -426,7 +426,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/configuration/local/" class="gdoc-nav__entry is-active">
+                    <a href="/configuration/local/" class="gdoc-nav__entry ">
                         Local
                     </a>
                 </span>
@@ -690,7 +690,14 @@
         
     
     
-        <a href='/'>plybuild</a> / <a href='/configuration/'>Configurations</a> / Local
+        
+        
+        
+    
+    
+        <a href='/'>plybuild</a> / <a href='/commands/'>Commands</a> / <a href='/commands/plugin/'>Plugin</a> / Install
+    
+
     
 
     
@@ -707,7 +714,7 @@
 
 
     <article class="gdoc-markdown">
-        <h1>Local</h1>
+        <h1>Install</h1>
         
 
 
@@ -715,12 +722,20 @@
     
 
 
-<p>The first time running plybuild a ~/.plybuild configuration folder is created with a ~/.plybuild/local-config.yaml file.
-The contents of this file by default are:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">cloudConfig</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">git</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://github.com/plybuild/plybuild-config.git</span><span class="w">
-</span></span></span></code></pre></div>
+<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://plybuild.io/commands/plugin/install/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Various install options <span class="k">for</span> generating autocompletion etc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Usage:
+</span></span><span class="line"><span class="cl">  ply install <span class="o">[</span>flags<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Flags:
+</span></span><span class="line"><span class="cl">      --autocomplete   Generate autocomplete files
+</span></span><span class="line"><span class="cl">  -h, --help           <span class="nb">help</span> <span class="k">for</span> install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Global Flags:
+</span></span><span class="line"><span class="cl">      --debug   turn on debug output
+</span></span><span class="line"><span class="cl">      --json    turn on json output logging
+</span></span></code></pre></div>
 
     </article>
 

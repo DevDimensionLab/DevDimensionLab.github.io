@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plugin on plybuild</title>
+    <link>https://plybuild.io/commands/plugin/</link>
+    <description>Recent content in Plugin on plybuild</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Sep 2023 10:27:32 +0200</lastBuildDate>
+    <atom:link href="https://plybuild.io/commands/plugin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install</title>
+      <link>https://plybuild.io/commands/plugin/install/</link>
+      <pubDate>Sat, 30 Sep 2023 10:27:32 +0200</pubDate>
+      <guid>https://plybuild.io/commands/plugin/install/</guid>
+      <description>Help Various install options for generating autocompletion etc Usage: ply install [flags] Flags: --autocomplete Generate autocomplete files -h, --help help for install Global Flags: --debug turn on debug output --json turn on json output logging </description>
+    </item>
+    <item>
+      <title>Diagrams</title>
+      <link>https://plybuild.io/commands/plugin/diagrams/</link>
+      <pubDate>Sat, 30 Sep 2023 10:27:03 +0200</pubDate>
+      <guid>https://plybuild.io/commands/plugin/diagrams/</guid>
+      <description>Help Various tools for generating diagrams Usage: ply diagrams [command] Available Commands: kibana Specialized (experimental) command for executing a kibana-query based on a fetch-request [arg: fetch-file] and exporting the result to a json-file [arg: output-file] maven-graph creates a graph using maven for dependencies in a project structurizr Adding PNG-output support for structurizr with the help of graphviz Flags: -h, --help help for diagrams -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.</description>
+    </item>
+    <item>
+      <title>Bitbucket</title>
+      <link>https://plybuild.io/commands/plugin/bitbucket/</link>
+      <pubDate>Thu, 23 Dec 2021 10:27:32 +0200</pubDate>
+      <guid>https://plybuild.io/commands/plugin/bitbucket/</guid>
+      <description>Help Bitbucket functionality Usage: ply bitbucket [command] Available Commands: sync Synchronizes projects from bitbucket Flags: -h, --help help for bitbucket Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply bitbucket [command] --help&amp;#34; for more information about a command. Sync The bitbucket sync commands depends on valid credentials and HTTP address inn ~/.plybuild/local-config.yaml&#xA;sourceProvider: host: &amp;#34;https://...&amp;#34; access_token: &amp;#34;...&amp;#34; </description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://plybuild.io/commands/plugin/git/</link>
+      <pubDate>Wed, 22 Dec 2021 10:27:32 +0200</pubDate>
+      <guid>https://plybuild.io/commands/plugin/git/</guid>
+      <description>Help Git commands Usage: ply git [command] Available Commands: install-hooks install git hooks from cloud config Flags: --cloud-sync force cloud sync -h, --help help for git -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply git [command] --help&amp;#34; for more information about a command. Example usage plybuild git install-hooks </description>
+    </item>
+    <item>
+      <title>Lint</title>
+      <link>https://plybuild.io/commands/plugin/lint/</link>
+      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
+      <guid>https://plybuild.io/commands/plugin/lint/</guid>
+      <description>Dependencies Some of these commands depends on:&#xA;ktlint Help Linting commands Usage: ply lint [command] Available Commands: kotlin uses ktlint for linting kotlin code Flags: -h, --help help for lint -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply lint [command] --help&amp;#34; for more information about a command. Example usage plybuild lint </description>
+    </item>
+    <item>
+      <title>Maven</title>
+      <link>https://plybuild.io/commands/plugin/maven/</link>
+      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
+      <guid>https://plybuild.io/commands/plugin/maven/</guid>
+      <description>Dependencies Some of these commands depends on:&#xA;mvn dot (graphviz) Help Run maven (mvn) commands Usage: ply maven [command] Available Commands: analyze Perform an analyze on a projects boot-run runs a spring boot application checkstyle runs checkstyle enforcer runs enforcer owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply maven [command] --help&amp;#34; for more information about a command.</description>
+    </item>
+    <item>
+      <title>Query</title>
+      <link>https://plybuild.io/commands/plugin/query/</link>
+      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
+      <guid>https://plybuild.io/commands/plugin/query/</guid>
+      <description>Help Query dependencies in a project Usage: ply query [flags] Flags: -a, --artifactId string artifactId -g, --groupId string groupId -h, --help help for query --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Example usage plybuild query </description>
+    </item>
+  </channel>
+</rss>

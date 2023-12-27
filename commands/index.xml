@@ -9,67 +9,11 @@
     <lastBuildDate>Sat, 30 Sep 2023 10:27:32 +0200</lastBuildDate>
     <atom:link href="https://plybuild.io/commands/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Install</title>
-      <link>https://plybuild.io/commands/install/</link>
-      <pubDate>Sat, 30 Sep 2023 10:27:32 +0200</pubDate>
-      <guid>https://plybuild.io/commands/install/</guid>
-      <description>Help Various install options for generating autocompletion etc Usage: ply install [flags] Flags: --autocomplete Generate autocomplete files -h, --help help for install Global Flags: --debug turn on debug output --json turn on json output logging </description>
-    </item>
-    <item>
-      <title>Diagrams</title>
-      <link>https://plybuild.io/commands/diagrams/</link>
-      <pubDate>Sat, 30 Sep 2023 10:27:03 +0200</pubDate>
-      <guid>https://plybuild.io/commands/diagrams/</guid>
-      <description>Help Various tools for generating diagrams Usage: ply diagrams [command] Available Commands: kibana Specialized (experimental) command for executing a kibana-query based on a fetch-request [arg: fetch-file] and exporting the result to a json-file [arg: output-file] maven-graph creates a graph using maven for dependencies in a project structurizr Adding PNG-output support for structurizr with the help of graphviz Flags: -h, --help help for diagrams -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.</description>
-    </item>
-    <item>
-      <title>Doc</title>
-      <link>https://plybuild.io/commands/doc/</link>
-      <pubDate>Sat, 30 Sep 2023 10:27:03 +0200</pubDate>
-      <guid>https://plybuild.io/commands/doc/</guid>
-      <description>Help Opens documentation in default browser Usage: ply doc [flags] Flags: -h, --help help for doc Global Flags: --debug turn on debug output --json turn on json output logging </description>
-    </item>
-    <item>
       <title>Tips</title>
       <link>https://plybuild.io/commands/tips/</link>
       <pubDate>Sat, 30 Sep 2023 10:27:03 +0200</pubDate>
       <guid>https://plybuild.io/commands/tips/</guid>
       <description>Help A concentrated version of things you need to know for a topic, typically internal know-how that you can&amp;#39;t find on the internet Usage: ply tips [flags] ply tips [command] Available Commands: list Lists all tips for current profile show Show tips Flags: -h, --help help for tips Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply tips [command] --help&amp;#34; for more information about a command.</description>
-    </item>
-    <item>
-      <title>Bitbucket</title>
-      <link>https://plybuild.io/commands/bitbucket/</link>
-      <pubDate>Thu, 23 Dec 2021 10:27:32 +0200</pubDate>
-      <guid>https://plybuild.io/commands/bitbucket/</guid>
-      <description>Help Bitbucket functionality Usage: ply bitbucket [command] Available Commands: sync Synchronizes projects from bitbucket Flags: -h, --help help for bitbucket Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply bitbucket [command] --help&amp;#34; for more information about a command. Sync The bitbucket sync commands depends on valid credentials and HTTP address inn ~/.plybuild/local-config.yaml&#xA;sourceProvider: host: &amp;#34;https://...&amp;#34; access_token: &amp;#34;...&amp;#34; </description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>https://plybuild.io/commands/git/</link>
-      <pubDate>Wed, 22 Dec 2021 10:27:32 +0200</pubDate>
-      <guid>https://plybuild.io/commands/git/</guid>
-      <description>Help Git commands Usage: ply git [command] Available Commands: install-hooks install git hooks from cloud config Flags: --cloud-sync force cloud sync -h, --help help for git -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply git [command] --help&amp;#34; for more information about a command. Example usage plybuild git install-hooks </description>
-    </item>
-    <item>
-      <title>Lint</title>
-      <link>https://plybuild.io/commands/lint/</link>
-      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
-      <guid>https://plybuild.io/commands/lint/</guid>
-      <description>Dependencies Some of these commands depends on:&#xA;ktlint Help Linting commands Usage: ply lint [command] Available Commands: kotlin uses ktlint for linting kotlin code Flags: -h, --help help for lint -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply lint [command] --help&amp;#34; for more information about a command. Example usage plybuild lint </description>
-    </item>
-    <item>
-      <title>Maven</title>
-      <link>https://plybuild.io/commands/maven/</link>
-      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
-      <guid>https://plybuild.io/commands/maven/</guid>
-      <description>Dependencies Some of these commands depends on:&#xA;mvn dot (graphviz) Help Run maven (mvn) commands Usage: ply maven [command] Available Commands: analyze Perform an analyze on a projects boot-run runs a spring boot application checkstyle runs checkstyle enforcer runs enforcer owasp runs owasp Flags: -h, --help help for maven -r, --recursive turn on recursive mode --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply maven [command] --help&amp;#34; for more information about a command.</description>
-    </item>
-    <item>
-      <title>Query</title>
-      <link>https://plybuild.io/commands/query/</link>
-      <pubDate>Tue, 21 Dec 2021 10:27:32 +0200</pubDate>
-      <guid>https://plybuild.io/commands/query/</guid>
-      <description>Help Query dependencies in a project Usage: ply query [flags] Flags: -a, --artifactId string artifactId -g, --groupId string groupId -h, --help help for query --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Example usage plybuild query </description>
     </item>
     <item>
       <title>Upgrade</title>
@@ -86,60 +30,11 @@
       <description>Status is a command for printing status on a plybuild project. By default it outputs available upgrades.&#xA;Help Status functionality for a project Usage: ply status [flags] Flags: --cloud-sync force cloud sync -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Example usage plybuild status Example output INFO[0000] Project status for file .</description>
     </item>
     <item>
-      <title>Merge</title>
-      <link>https://plybuild.io/commands/merge/</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:39 +0200</pubDate>
-      <guid>https://plybuild.io/commands/merge/</guid>
-      <description>Merge is a standalone command for merging a specific template into a target. It is the same process used iteratively by generate&#xA;Help Merge functionalities for files to a project Usage: ply merge [command] Available Commands: pom Merges a pom-file into a project template Merges a template from ply-config text Merges two text files Flags: --from string file to merge -h, --help help for merge Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply merge [command] --help&amp;#34; for more information about a command.</description>
-    </item>
-    <item>
-      <title>Init</title>
-      <link>https://plybuild.io/commands/init/</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:32 +0200</pubDate>
-      <guid>https://plybuild.io/commands/init/</guid>
-      <description>Initializes a project with plybuild files like plybuild.json. The command also overwrites the pom.xml files with standard formatting and sorting.&#xA;Help Initializes a maven project with ply files and formatting Usage: ply init [flags] Flags: --config-file string Optional config file --dry-run dry run does not write to pom.xml -h, --help help for init -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging </description>
-    </item>
-    <item>
-      <title>Info</title>
-      <link>https://plybuild.io/commands/info/</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:29 +0200</pubDate>
-      <guid>https://plybuild.io/commands/info/</guid>
-      <description>Info is a command for printing various non-project information like spring-info, spring-managed dependencies, and which maven-repositories are defined by mvn&#xA;Help Prints info on spring version, dependencies etc Usage: ply info [flags] Flags: -h, --help help for info --maven-repositories show current maven repositories --spring-info show spring boot status --spring-managed show spring boot managed dependencies info Global Flags: --debug turn on debug output --json turn on json output logging </description>
-    </item>
-    <item>
-      <title>Generate</title>
-      <link>https://plybuild.io/commands/generate/</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:20 +0200</pubDate>
-      <guid>https://plybuild.io/commands/generate/</guid>
-      <description>Generate initializes a spring boot project using https://start.spring.io.&#xA;Help Initializes a maven project with ply files and formatting Usage: ply generate [flags] ply generate [command] Available Commands: clean Cleans a maven project with ply files and formatting list-templates Lists all available templates Flags: --application-name string Overrides applicationName from config file --artifact-id string Overrides artifactId from config file --boot-version string Defines spring-boot version to use --cloud-sync Cloud sync (default true) --config-file string Optional config file (default &amp;#34;ply.</description>
-    </item>
-    <item>
-      <title>Format</title>
-      <link>https://plybuild.io/commands/format/</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:18 +0200</pubDate>
-      <guid>https://plybuild.io/commands/format/</guid>
-      <description>Help Format functionality for a project Usage: ply format [command] Available Commands: inherit Removes manual versions from spring dependencies pom Formats pom.xml and sorts dependencies version Removes version tags and replaces them with property tags Flags: --dry-run dry run does not write to pom.xml -h, --help help for format -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply format [command] --help&amp;#34; for more information about a command.</description>
-    </item>
-    <item>
-      <title>Profiles</title>
+      <title>Profile</title>
       <link>https://plybuild.io/commands/profiles/</link>
       <pubDate>Wed, 30 Sep 2020 10:27:11 +0200</pubDate>
       <guid>https://plybuild.io/commands/profiles/</guid>
       <description>Help Manage profiles settings for ply Usage: ply profiles [flags] ply profiles [command] Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profiles --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply profiles [command] --help&amp;#34; for more information about a command.</description>
-    </item>
-    <item>
-      <title>Clean</title>
-      <link>https://plybuild.io/commands/clean/</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:03 +0200</pubDate>
-      <guid>https://plybuild.io/commands/clean/</guid>
-      <description>Help Clean files and folder in a project Usage: ply clean [flags] Flags: --dry-run dry run does not write to pom.xml -h, --help help for clean --ide removes .idea folders and *.iml files -r, --recursive turn on recursive mode --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Example usage ply clean --ide --target webservice Example output INFO[0000] Deleted 0 files and 0 directories </description>
-    </item>
-    <item>
-      <title>Completion</title>
-      <link>https://plybuild.io/commands/completion/</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:03 +0200</pubDate>
-      <guid>https://plybuild.io/commands/completion/</guid>
-      <description>Help Generate the autocompletion script for ply for the specified shell. See each sub-command&amp;#39;s help for details on how to use the generated script. Usage: ply completion [command] Available Commands: bash Generate the autocompletion script for bash fish Generate the autocompletion script for fish powershell Generate the autocompletion script for powershell zsh Generate the autocompletion script for zsh Flags: -h, --help help for completion Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply completion [command] --help&amp;#34; for more information about a command.</description>
     </item>
   </channel>
 </rss>
