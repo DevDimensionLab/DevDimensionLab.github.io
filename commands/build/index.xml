@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Build on plybuild</title>
+    <link>https://plybuild.io/commands/build/</link>
+    <description>Recent content in Build on plybuild</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Sep 2023 10:27:03 +0200</lastBuildDate>
+    <atom:link href="https://plybuild.io/commands/build/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example</title>
+      <link>https://plybuild.io/commands/build/example/</link>
+      <pubDate>Sat, 30 Sep 2023 10:27:03 +0200</pubDate>
+      <guid>https://plybuild.io/commands/build/example/</guid>
+      <description>Help Examples found in cloud-config Usage: ply examples [flags] ply examples [command] Available Commands: install install example from cloud-config Flags: --dry-run dry run does not write to pom.xml -h, --help help for examples --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply examples [command] --help&amp;#34; for more information about a command. </description>
+    </item>
+  </channel>
+</rss>

@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Commands">
+<meta name="description" content="Example">
 
-<title>Commands | plybuild</title>
+<title>Example | plybuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
 <link rel="stylesheet" href="/custom.css" media="screen">
 
-<link rel="alternate" type="application/rss+xml" href="https://plybuild.io/commands/index.xml" title="plybuild" />
 <!--Made with Geekdoc theme https://github.com/xoxys/hugo-geekdoc-->
 
 </head>
@@ -68,7 +67,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/" class="gdoc-nav__entry ">
                         Commands
                     </a>
                 </span>
@@ -119,7 +118,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/build/example/" class="gdoc-nav__entry ">
+                    <a href="/commands/build/example/" class="gdoc-nav__entry is-active">
                         Example
                     </a>
                 </span>
@@ -706,7 +705,21 @@
         
     
     
-        <a href='/'>plybuild</a> / Commands
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <a href='/'>plybuild</a> / <a href='/commands/'>Commands</a> / <a href='/commands/build/'>Build</a> / Example
+    
+
+    
+
     
 
     
@@ -719,8 +732,9 @@
     </span>
 </div>
 
+
     <article class="gdoc-markdown">
-        <h1>Commands</h1>
+        <h1>Example</h1>
         
 
 
@@ -728,39 +742,27 @@
     
 
 
-<pre tabindex="0"><code>           __      __          _ __    __
-    ____  / /_  __/ /_  __  __(_) /___/ /
-   / __ \/ / / / / __ \/ / / / / / __  /
-  / /_/ / / /_/ / /_/ / /_/ / / / /_/ /
- / .___/_/\__, /_.___/\__,_/_/_/\__,_/
-/_/      /____/
-
-== version: v1.0.1 ==
-
-Usage:
-  ply [command]
-
-Available Commands:
-  build       Builds a maven project with ply files and formatting
-  help        Help about any command
-  plugin      Plugin functionality for plybuild
-  profile     Manage profiles settings for ply
-  status      Status functionality for a project
-  tips        Use tips to learn information faster
-  upgrade     Upgrade options
-
-Flags:
-      --debug   turn on debug output
-      --doc     open documentation website
-      --force   uses default for prompts
-  -h, --help    help for ply
-      --json    turn on json output logging
-
-Additional help topics:
-  ply about      About ply
-
-Use &#34;ply [command] --help&#34; for more information about a command.
-</code></pre>
+<div class="gdoc-page__anchorwrap"><h2 id="help">Help<a data-clipboard-text="https://plybuild.io/commands/build/example/#help" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Help" href="#help"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Examples found in cloud-config
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Usage:
+</span></span><span class="line"><span class="cl">  ply examples <span class="o">[</span>flags<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  ply examples <span class="o">[</span>command<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Available Commands:
+</span></span><span class="line"><span class="cl">  install     install example from cloud-config
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Flags:
+</span></span><span class="line"><span class="cl">      --dry-run         dry run does not write to pom.xml
+</span></span><span class="line"><span class="cl">  -h, --help            <span class="nb">help</span> <span class="k">for</span> examples
+</span></span><span class="line"><span class="cl">      --target string   Optional target directory <span class="o">(</span>default <span class="s2">&#34;.&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Global Flags:
+</span></span><span class="line"><span class="cl">      --debug   turn on debug output
+</span></span><span class="line"><span class="cl">      --json    turn on json output logging
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Use <span class="s2">&#34;ply examples [command] --help&#34;</span> <span class="k">for</span> more information about a command.
+</span></span></code></pre></div>
 
     </article>
 

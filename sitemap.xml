@@ -14,13 +14,16 @@
     <loc>https://plybuild.io/</loc>
     <lastmod>2023-09-30T10:27:32+02:00</lastmod>
   </url><url>
+    <loc>https://plybuild.io/commands/build/</loc>
+    <lastmod>2023-09-30T10:27:03+02:00</lastmod>
+  </url><url>
     <loc>https://plybuild.io/commands/diagrams/</loc>
     <lastmod>2023-09-30T10:27:03+02:00</lastmod>
   </url><url>
     <loc>https://plybuild.io/commands/doc/</loc>
     <lastmod>2023-09-30T10:27:03+02:00</lastmod>
   </url><url>
-    <loc>https://plybuild.io/commands/examples/</loc>
+    <loc>https://plybuild.io/commands/build/example/</loc>
     <lastmod>2023-09-30T10:27:03+02:00</lastmod>
   </url><url>
     <loc>https://plybuild.io/commands/tips/</loc>

@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Commands">
+<meta name="description" content="Build">
 
-<title>Commands | plybuild</title>
+<title>Build | plybuild</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="/main.min.css" media="screen">
 <link rel="stylesheet" href="/custom.css" media="screen">
 
-<link rel="alternate" type="application/rss+xml" href="https://plybuild.io/commands/index.xml" title="plybuild" />
+<link rel="alternate" type="application/rss+xml" href="https://plybuild.io/commands/build/index.xml" title="plybuild" />
 <!--Made with Geekdoc theme https://github.com/xoxys/hugo-geekdoc-->
 
 </head>
@@ -68,7 +68,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/" class="gdoc-nav__entry is-active">
+                    <a href="/commands/" class="gdoc-nav__entry ">
                         Commands
                     </a>
                 </span>
@@ -101,7 +101,7 @@
             <li>
             
                 <span class="flex">
-                    <a href="/commands/build/" class="gdoc-nav__entry ">
+                    <a href="/commands/build/" class="gdoc-nav__entry is-active">
                         Build
                     </a>
                 </span>
@@ -706,7 +706,14 @@
         
     
     
-        <a href='/'>plybuild</a> / Commands
+        
+        
+        
+    
+    
+        <a href='/'>plybuild</a> / <a href='/commands/'>Commands</a> / Build
+    
+
     
 
     
@@ -720,7 +727,7 @@
 </div>
 
     <article class="gdoc-markdown">
-        <h1>Commands</h1>
+        <h1>Build</h1>
         
 
 
@@ -728,38 +735,46 @@
     
 
 
-<pre tabindex="0"><code>           __      __          _ __    __
-    ____  / /_  __/ /_  __  __(_) /___/ /
-   / __ \/ / / / / __ \/ / / / / / __  /
-  / /_/ / / /_/ / /_/ / /_/ / / / /_/ /
- / .___/_/\__, /_.___/\__,_/_/_/\__,_/
-/_/      /____/
-
-== version: v1.0.1 ==
+<pre tabindex="0"><code>Builds a maven project with ply files and formatting
 
 Usage:
-  ply [command]
+  ply build [flags]
+  ply build [command]
+
+Aliases:
+  build, generate
 
 Available Commands:
-  build       Builds a maven project with ply files and formatting
-  help        Help about any command
-  plugin      Plugin functionality for plybuild
-  profile     Manage profiles settings for ply
-  status      Status functionality for a project
-  tips        Use tips to learn information faster
-  upgrade     Upgrade options
+  Add            Add templates and functionalities for files to a build
+  clean          Removes intellij files and folder in a project
+  clear          Clears a maven project with ply files and formatting
+  example        Examples found in cloud-config
+  format         Format functionality for a project
+  info           Prints info on spring version, dependencies etc
+  init           Initializes build with ply files and formatting
+  list-templates Lists all available templates
 
 Flags:
+      --application-name string   Overrides applicationName from config file
+      --artifact-id string        Overrides artifactId from config file
+      --boot-version string       Defines spring-boot version to use
+      --cloud-sync                Cloud sync (default true)
+      --config-file string        Optional config file (default &#34;ply.json&#34;)
+      --disable-upgrading         dont upgrade dependencies
+      --group-id string           Overrides groupId from config file
+  -h, --help                      help for build
+  -i, --interactive               Interactive mode
+      --name string               Overrides name from config file
+      --package string            Overrides package from config file
+      --target string             Optional target directory (default &#34;.&#34;)
+
+Global Flags:
       --debug   turn on debug output
       --doc     open documentation website
       --force   uses default for prompts
-  -h, --help    help for ply
       --json    turn on json output logging
 
-Additional help topics:
-  ply about      About ply
-
-Use &#34;ply [command] --help&#34; for more information about a command.
+Use &#34;ply build [command] --help&#34; for more information about a command.
 </code></pre>
 
     </article>

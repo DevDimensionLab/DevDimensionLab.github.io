@@ -37,10 +37,10 @@
       <description>Help Opens documentation in default browser Usage: ply doc [flags] Flags: -h, --help help for doc Global Flags: --debug turn on debug output --json turn on json output logging </description>
     </item>
     <item>
-      <title>Examples</title>
-      <link>https://plybuild.io/commands/examples/</link>
+      <title>Example</title>
+      <link>https://plybuild.io/commands/build/example/</link>
       <pubDate>Sat, 30 Sep 2023 10:27:03 +0200</pubDate>
-      <guid>https://plybuild.io/commands/examples/</guid>
+      <guid>https://plybuild.io/commands/build/example/</guid>
       <description>Help Examples found in cloud-config Usage: ply examples [flags] ply examples [command] Available Commands: install install example from cloud-config Flags: --dry-run dry run does not write to pom.xml -h, --help help for examples --target string Optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply examples [command] --help&amp;#34; for more information about a command. </description>
     </item>
     <item>
