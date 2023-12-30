@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.121.1">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Global flags :: plybuild">
+    <meta name="twitter:description" content="Most of the ply commands operate on some common principles, target, recursive, and dry-run.
+--json Json output formatting
+--force Force defaults for prompts
+--doc Open documentation website
+--target By default ply operates on the current folder similar to tools like git. However a custom --target flag is available for most commands and enables the used to use ply ... --target outside of the working folder.
+--recursive Recursive mode is enabled with --recursive or -r for most commands.">
+    <meta property="og:title" content="Global flags :: plybuild">
+    <meta property="og:description" content="Most of the ply commands operate on some common principles, target, recursive, and dry-run.
+--json Json output formatting
+--force Force defaults for prompts
+--doc Open documentation website
+--target By default ply operates on the current folder similar to tools like git. However a custom --target flag is available for most commands and enables the used to use ply ... --target outside of the working folder.
+--recursive Recursive mode is enabled with --recursive or -r for most commands.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://plybuild.io/basics/global-flags/index.html">
+    <meta property="article:section" content=" 1. Basics :: plybuild">
+    <meta property="og:site_name" content="plybuild">
+    <title>Global flags :: plybuild</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1703951238" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1703951238" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1703951238" rel="stylesheet">
+    <link href="/css/auto-complete.css?1703951238" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1703951238" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1703951238" rel="stylesheet">
+    <link href="/css/fonts.css?1703951238" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1703951238" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1703951238" rel="stylesheet">
+    <link href="/css/theme-auto.css?1703951238" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1703951238" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1703951238" rel="stylesheet">
+    <link href="/css/print.css?1703951238" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1703951238" rel="stylesheet">
+    <script src="/js/url.js?1703951238"></script>
+    <script src="/js/variant.js?1703951238"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='https:\/\/plybuild.io/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/basics/global-flags/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#--json"><code>--json</code></a></li>
+        <li><a href="#--force"><code>--force</code></a></li>
+        <li><a href="#--doc"><code>--doc</code></a></li>
+        <li><a href="#--target"><code>--target</code></a></li>
+        <li><a href="#--recursive"><code>--recursive</code></a></li>
+        <li><a href="#--dry-run"><code>--dry-run</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#git">Git</a>
+      <ul>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">plybuild</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/basics/index.html"><span itemprop="name"> 1. Basics</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Global flags</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/basics/installation/index.html" title="Installation (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/index.html" title="2. Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="global-flags">Global flags</h1>
+
+<p>Most of the <code>ply</code> commands operate on some common principles, target, recursive, and dry-run.</p>
+<h2 id="--json"><code>--json</code></h2>
+<p>Json output formatting</p>
+<h2 id="--force"><code>--force</code></h2>
+<p>Force defaults for prompts</p>
+<h2 id="--doc"><code>--doc</code></h2>
+<p>Open documentation website</p>
+<h2 id="--target"><code>--target</code></h2>
+<p>By default <code>ply</code> operates on the current folder similar to tools like <code>git</code>. However a custom <code>--target</code> flag is available for most commands and enables the used to use <code>ply ... --target</code> outside of the working folder.</p>
+<h2 id="--recursive"><code>--recursive</code></h2>
+<p>Recursive mode is enabled with <code>--recursive</code> or <code>-r</code> for most commands. This mode starts by building a list of subprojects on the current target, and iteratively working on each subproject. Example of this is the upgrade <code>ply upgrade all -r</code> command which will upgrade the current and all subprojects found in the working directory.</p>
+<h2 id="--dry-run"><code>--dry-run</code></h2>
+<p>Dry-run mode is enabled with the <code>--dry-run</code> flag, and are meant commands which overwrites files. When dry-run in enabled no files is changed or overwritten. Example <code>ply upgrade all --dry-run</code> is effectively the same as a status printout.</p>
+<h1 id="git">Git</h1>
+<p>plybuild is git aware on the working projects, and will warn the user if it operates on a <em>dirty</em> repository. It will however continue as normal.</p>
+<h2 id="example">Example</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>INFO<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> upgrading everything <span style="color:#66d9ef">for</span> file webservice/pom.xml
+</span></span><span style="display:flex;"><span>WARN<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> operating on a dirty git repo</span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<h1>plybuild</h1>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/basics/index.html" class="parent "><input type="checkbox" id="R-section-3494ad44d160b070fd31576fe4a3841e" aria-controls="R-subsections-3494ad44d160b070fd31576fe4a3841e" checked><label for="R-section-3494ad44d160b070fd31576fe4a3841e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  1. Basics</span></label><a class="padding" href="/basics/index.html"> 1. Basics</a><ul id="R-subsections-3494ad44d160b070fd31576fe4a3841e" class="morespace collapsible-menu">
+          <li data-nav-id="/basics/whats-new/index.html" class=""><a class="padding" href="/basics/whats-new/index.html">Whats New</a></li>
+          <li data-nav-id="/basics/installation/index.html" class=""><a class="padding" href="/basics/installation/index.html">Installation</a></li>
+          <li data-nav-id="/basics/global-flags/index.html" class="active"><a class="padding" href="/basics/global-flags/index.html">Global flags</a></li></ul></li>
+          <li data-nav-id="/commands/index.html" class=""><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148"><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/plugin/index.html" class=""><input type="checkbox" id="R-section-49c10f7f425fb4a677fb5836fe0e69df" aria-controls="R-subsections-49c10f7f425fb4a677fb5836fe0e69df"><label for="R-section-49c10f7f425fb4a677fb5836fe0e69df"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Plugin</span></label><a class="padding" href="/commands/plugin/index.html">Plugin</a><ul id="R-subsections-49c10f7f425fb4a677fb5836fe0e69df" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/plugin/install/index.html" class=""><a class="padding" href="/commands/plugin/install/index.html">Install</a></li>
+          <li data-nav-id="/commands/plugin/diagrams/index.html" class=""><a class="padding" href="/commands/plugin/diagrams/index.html">Diagrams</a></li>
+          <li data-nav-id="/commands/plugin/bitbucket/index.html" class=""><a class="padding" href="/commands/plugin/bitbucket/index.html">Bitbucket</a></li>
+          <li data-nav-id="/commands/plugin/git/index.html" class=""><a class="padding" href="/commands/plugin/git/index.html">Git</a></li>
+          <li data-nav-id="/commands/plugin/lint/index.html" class=""><a class="padding" href="/commands/plugin/lint/index.html">Lint</a></li>
+          <li data-nav-id="/commands/plugin/maven/index.html" class=""><a class="padding" href="/commands/plugin/maven/index.html">Maven</a></li>
+          <li data-nav-id="/commands/plugin/query/index.html" class=""><a class="padding" href="/commands/plugin/query/index.html">Query</a></li></ul></li>
+          <li data-nav-id="/commands/build/index.html" class=""><input type="checkbox" id="R-section-8a6be015729fa57d08f917abbee0bbb3" aria-controls="R-subsections-8a6be015729fa57d08f917abbee0bbb3"><label for="R-section-8a6be015729fa57d08f917abbee0bbb3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Build</span></label><a class="padding" href="/commands/build/index.html">Build</a><ul id="R-subsections-8a6be015729fa57d08f917abbee0bbb3" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/build/example/index.html" class=""><a class="padding" href="/commands/build/example/index.html">Example</a></li>
+          <li data-nav-id="/commands/build/merge/index.html" class=""><a class="padding" href="/commands/build/merge/index.html">Merge</a></li>
+          <li data-nav-id="/commands/build/init/index.html" class=""><a class="padding" href="/commands/build/init/index.html">Init</a></li>
+          <li data-nav-id="/commands/build/info/index.html" class=""><a class="padding" href="/commands/build/info/index.html">Info</a></li>
+          <li data-nav-id="/commands/build/format/index.html" class=""><a class="padding" href="/commands/build/format/index.html">Format</a></li>
+          <li data-nav-id="/commands/build/clean/index.html" class=""><a class="padding" href="/commands/build/clean/index.html">Clean</a></li></ul></li>
+          <li data-nav-id="/commands/tips/index.html" class=""><a class="padding" href="/commands/tips/index.html">Tips</a></li>
+          <li data-nav-id="/commands/upgrade/index.html" class=""><a class="padding" href="/commands/upgrade/index.html">Upgrade</a></li>
+          <li data-nav-id="/commands/status/index.html" class=""><a class="padding" href="/commands/status/index.html">Status</a></li>
+          <li data-nav-id="/commands/profiles/index.html" class=""><a class="padding" href="/commands/profiles/index.html">Profile</a></li></ul></li>
+          <li data-nav-id="/configuration/index.html" class=""><input type="checkbox" id="R-section-632bb56b075027697eb90eb7e3d29a12" aria-controls="R-subsections-632bb56b075027697eb90eb7e3d29a12"><label for="R-section-632bb56b075027697eb90eb7e3d29a12"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  3. Configuration</span></label><a class="padding" href="/configuration/index.html"> 3. Configuration</a><ul id="R-subsections-632bb56b075027697eb90eb7e3d29a12" class="morespace collapsible-menu">
+          <li data-nav-id="/configuration/cloud/index.html" class=""><a class="padding" href="/configuration/cloud/index.html">Cloud</a></li>
+          <li data-nav-id="/configuration/project/index.html" class=""><a class="padding" href="/configuration/project/index.html">Project</a></li>
+          <li data-nav-id="/configuration/local/index.html" class=""><a class="padding" href="/configuration/local/index.html">Local</a></li></ul></li>
+          <li data-nav-id="/template/index.html" class=""><input type="checkbox" id="R-section-83f30eaf50f55daeb4d665945dc38775" aria-controls="R-subsections-83f30eaf50f55daeb4d665945dc38775"><label for="R-section-83f30eaf50f55daeb4d665945dc38775"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  4. Template</span></label><a class="padding" href="/template/index.html"> 4. Template</a><ul id="R-subsections-83f30eaf50f55daeb4d665945dc38775" class="morespace collapsible-menu">
+          <li data-nav-id="/template/basics/index.html" class=""><a class="padding" href="/template/basics/index.html">Basics</a></li>
+          <li data-nav-id="/template/ignore/index.html" class=""><a class="padding" href="/template/ignore/index.html">Ignores</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/DevDimensionLab/plybuild"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="https://github.com/DevDimensionLab/plybuild/releases"><i class='fab fa-fw fa-github'></i> Releases</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1703951238" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1703951238" defer></script>
+    <script src="/js/theme.js?1703951238" defer></script>
+  </body>
+</html>

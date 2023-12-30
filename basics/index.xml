@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> 1. Basics on plybuild</title>
+    <link>https://plybuild.io/basics/index.html</link>
+    <description>Recent content in  1. Basics on plybuild</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://plybuild.io/basics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whats New</title>
+      <link>https://plybuild.io/basics/whats-new/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://plybuild.io/basics/whats-new/index.html</guid>
+      <description>1.0.0 Changed name from co-pilot to plybuild</description>
+    </item>
+    <item>
+      <title>Installation</title>
+      <link>https://plybuild.io/basics/installation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://plybuild.io/basics/installation/index.html</guid>
+      <description>Plybuild is created with Go and supports multiple platforms including:
+GNU/Linux Windows MacOs Download plybuild Install plybuild with one of the two alternatives
+Alternative 1: Binaries Download the latest binaries from https://github.com/DevDimensionLab/plybuild/releases Alternative 2: Brew Add a new tap brew tap devdimensionlab/plybuildInstall brew install plybuildAlternative 3: Sources plybuild sources are available at https://github.com/DevDimensionLab/plybuild
+Clone sources git clone https://github.com/DevDimensionLab/plybuild.gitCompile and install make install</description>
+    </item>
+    <item>
+      <title>Global flags</title>
+      <link>https://plybuild.io/basics/global-flags/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://plybuild.io/basics/global-flags/index.html</guid>
+      <description>Most of the ply commands operate on some common principles, target, recursive, and dry-run.
+--json Json output formatting
+--force Force defaults for prompts
+--doc Open documentation website
+--target By default ply operates on the current folder similar to tools like git. However a custom --target flag is available for most commands and enables the used to use ply ... --target outside of the working folder.
+--recursive Recursive mode is enabled with --recursive or -r for most commands.</description>
+    </item>
+  </channel>
+</rss>

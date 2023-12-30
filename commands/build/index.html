@@ -1,721 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Build">
-
-<title>Build | plybuild</title>
-
-<link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
-<link rel="stylesheet" href="/main.min.css" media="screen">
-<link rel="stylesheet" href="/custom.css" media="screen">
-
-<link rel="alternate" type="application/rss+xml" href="https://plybuild.io/commands/build/index.xml" title="plybuild" />
-<!--Made with Geekdoc theme https://github.com/xoxys/hugo-geekdoc-->
-
-</head>
-
-<body>
-    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 11.016v1.969H7.828l5.578 5.625L12 20.016 3.984 12 12 3.984l1.406 1.406-5.578 5.625h12.188z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M7.969 11.016v-3L3.985 12l3.984 3.984v-3h12.047v-1.969H7.969z"/></symbol><symbol viewBox="0 0 24 24" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M16.031 11.016v-3L20.015 12l-3.984 3.984v-3H3.984v-1.969h12.047z"/></symbol><symbol viewBox="0 0 24 24" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15 5.016q.797 0 1.406.586t.609 1.383v16.031l-7.031-3-6.984 3V6.985q0-.797.609-1.383t1.406-.586h9.984zM18.984 18V5.016q0-.797-.586-1.406t-1.383-.609H6.984q0-.797.609-1.406T8.999.986h9.984q.797 0 1.406.609t.609 1.406v15.984z"/></symbol><symbol viewBox="0 0 16 28" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 23a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 23zm0-18a1.5 1.5 0 10-3.001.001A1.5 1.5 0 004.5 5zm10 2a1.5 1.5 0 10-3.001.001A1.5 1.5 0 0014.5 7zM16 7a3.002 3.002 0 01-1.5 2.594c-.047 5.641-4.047 6.891-6.703 7.734C5.313 18.109 4.5 18.484 4.5 20v.406A3 3 0 016 23a3.001 3.001 0 01-6 0c0-1.109.609-2.078 1.5-2.594V7.594A3 3 0 010 5a3.001 3.001 0 016 0 3.002 3.002 0 01-1.5 2.594v7.766c.797-.391 1.641-.656 2.406-.891 2.906-.922 4.562-1.609 4.594-4.875A3 3 0 0110 7a3.001 3.001 0 016 0z"/></symbol><symbol viewBox="0 0 24 24" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M18.984 20.016V9H5.015v11.016h13.969zm0-16.032q.797 0 1.406.609t.609 1.406v14.016q0 .797-.609 1.383t-1.406.586H5.015q-.844 0-1.43-.563t-.586-1.406V5.999q0-.797.586-1.406t1.43-.609h.984V2.015h2.016v1.969h7.969V2.015H18v1.969h.984zm-1.968 7.032v1.969H15v-1.969h2.016zm-4.032 0v1.969h-1.969v-1.969h1.969zm-3.984 0v1.969H6.984v-1.969H9z"/></symbol><symbol viewBox="0 0 24 24" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M5.016 18h13.969v2.016H5.016V18zm13.968-9L12 15.984 5.016 9H9V3h6v6h3.984z"/></symbol><symbol viewBox="0 0 24 24" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M20.016 8.016V6L12 11.016 3.984 6v2.016L12 12.985zm0-4.032q.797 0 1.383.609t.586 1.406v12q0 .797-.586 1.406t-1.383.609H3.985q-.797 0-1.383-.609t-.586-1.406v-12q0-.797.586-1.406t1.383-.609h16.031z"/></symbol><symbol viewBox="0 0 24 28" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-.609.109-.828-.266-.828-.578 0-.391.016-1.687.016-3.297 0-1.125-.375-1.844-.812-2.219 2.672-.297 5.484-1.313 5.484-5.922 0-1.313-.469-2.375-1.234-3.219.125-.313.531-1.531-.125-3.187-1-.313-3.297 1.234-3.297 1.234a11.28 11.28 0 00-6 0S6.704 6.656 5.704 6.969c-.656 1.656-.25 2.875-.125 3.187-.766.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-.344.313-.656.844-.766 1.609-.688.313-2.438.844-3.484-1-.656-1.141-1.844-1.234-1.844-1.234-1.172-.016-.078.734-.078.734.781.359 1.328 1.75 1.328 1.75.703 2.141 4.047 1.422 4.047 1.422 0 1 .016 1.937.016 2.234 0 .313-.219.688-.828.578C3.439 23.796.002 19.296.002 13.999c0-6.625 5.375-12 12-12zM4.547 19.234c.031-.063-.016-.141-.109-.187-.094-.031-.172-.016-.203.031-.031.063.016.141.109.187.078.047.172.031.203-.031zm.484.532c.063-.047.047-.156-.031-.25-.078-.078-.187-.109-.25-.047-.063.047-.047.156.031.25.078.078.187.109.25.047zm.469.703c.078-.063.078-.187 0-.297-.063-.109-.187-.156-.266-.094-.078.047-.078.172 0 .281s.203.156.266.109zm.656.656c.063-.063.031-.203-.063-.297-.109-.109-.25-.125-.313-.047-.078.063-.047.203.063.297.109.109.25.125.313.047zm.891.391c.031-.094-.063-.203-.203-.25-.125-.031-.266.016-.297.109s.063.203.203.234c.125.047.266 0 .297-.094zm.984.078c0-.109-.125-.187-.266-.172-.141 0-.25.078-.25.172 0 .109.109.187.266.172.141 0 .25-.078.25-.172zm.906-.156c-.016-.094-.141-.156-.281-.141-.141.031-.234.125-.219.234.016.094.141.156.281.125s.234-.125.219-.219z"/></symbol><symbol viewBox="0 0 28 28" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M14 26c-.25 0-.5-.094-.688-.281l-9.75-9.406c-.125-.109-3.563-3.25-3.563-7C-.001 4.735 2.796 2 7.468 2c2.734 0 5.297 2.156 6.531 3.375C15.233 4.156 17.796 2 20.53 2c4.672 0 7.469 2.734 7.469 7.313 0 3.75-3.437 6.891-3.578 7.031l-9.734 9.375a.972.972 0 01-.688.281z"/></symbol><symbol viewBox="0 0 24 24" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M17.016 6.984q2.063 0 3.516 1.477T21.985 12t-1.453 3.539-3.516 1.477h-4.031v-1.922h4.031q1.266 0 2.18-.914T20.11 12t-.914-2.18-2.18-.914h-4.031V6.984h4.031zm-9 6v-1.969h7.969v1.969H8.016zM3.891 12q0 1.266.914 2.18t2.18.914h4.031v1.922H6.985q-2.063 0-3.516-1.477T2.016 12t1.453-3.539 3.516-1.477h4.031v1.922H6.985q-1.266 0-2.18.914T3.891 12z"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2.016H3V6zm0 6.984v-1.969h18v1.969H3zM3 18v-2.016h18V18H3z"/></symbol><symbol viewBox="0 0 24 24" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.984L20.016 18v.984H3.985V18l2.016-2.016v-4.969q0-2.344 1.195-4.078t3.305-2.25v-.703q0-.609.422-1.055t1.078-.445 1.078.445.422 1.055v.703q2.109.516 3.305 2.25t1.195 4.078v4.969zm-6 6q-.844 0-1.43-.563t-.586-1.406h4.031q0 .797-.609 1.383T12 21.984z"/></symbol><symbol viewBox="0 0 24 24" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M21.984 11.016H15v-3h-2.016v7.969H15v-3h6.984v8.016H15v-3h-3.984V8.017H9v3H2.016V3.001H9v3h6v-3h6.984v8.016z"/></symbol><symbol viewBox="0 0 24 24" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016H3.984v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172T8.015 8.015t1.172-2.836T12 3.984t2.813 1.195 1.172 2.836-1.172 2.813T12 12z"/></symbol><symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zm6 0l4.969 4.969-1.5 1.5-4.969-4.969v-.797l-.281-.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875T3.001 9.516t1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 .984-.469 2.227t-1.078 1.992l.281.281h.797z"/></symbol><symbol viewBox="0 0 20 28" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M17 15V5h-7v17.766c.797-.422 2.078-1.156 3.328-2.141C15 19.312 17 17.266 17 15zm3-12v12c0 6.578-9.203 10.734-9.594 10.906-.125.063-.266.094-.406.094s-.281-.031-.406-.094C9.203 25.734 0 21.578 0 15V3c0-.547.453-1 1-1h18c.547 0 1 .453 1 1z"/></symbol><symbol viewBox="0 0 32 32" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M5 5c-1.104 0-2 .887-2 2v8l13.381 13.381c.716.716 1.838.78 2.62.191L5 14.5V5.007 5zm11-1l13.381 13.381c.783.783.787 2.051.008 2.831l-7.177 7.177a2.003 2.003 0 01-2.831-.008L6 14V6c0-1.112.895-2 2-2h8zm-4.5 7a1.5 1.5 0 10-.001-3.001A1.5 1.5 0 0011.5 11z"/></symbol><symbol viewBox="0 0 35 32" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M27.464 2.314a.501.501 0 00-.698-.257L14.86 8.339a.499.499 0 00-.233.621l.245.641-6.873 3.769a.5.5 0 00-.222.63l.228.549-7.299 3.488a.5.5 0 00-.246.643l1.498 3.61a.5.5 0 00.629.28l7.625-2.701.228.549a.5.5 0 00.601.289l7.276-2.097.218.569a.497.497 0 00.612.299l13-4a.498.498 0 00.317-.663l-5-12.501zM2.7 21.469l-1.134-2.734 6.823-3.261 1.439 3.47L2.7 21.469zm8.491-1.846l-.238-.574-1.843-4.445-.238-.573 6.336-3.475 2.374 6.134.375.981-6.766 1.952zm8.109-1.238l-.203-.531c-.003-.011-.001-.024-.006-.035l-.618-1.597-2.754-7.206 11.023-5.815 4.592 11.48L19.3 18.385zM28.964.314a.5.5 0 00-.929.371l6 15a.502.502 0 00.651.279.501.501 0 00.279-.65l-6.001-15zM18 21h-3c-1.14 0-2 .86-2 2v1.315l-5.879 6.859a.5.5 0 10.758.651L13.73 25H16v6.5a.5.5 0 001 0V25h2.27l5.85 6.825a.497.497 0 00.705.054.5.5 0 00.054-.705L20 24.315v-1.24C20 21.912 19.122 21 18 21zm1 3h-5v-1c0-.589.411-1 1-1h3c.57 0 1 .462 1 1.075V24z"/></symbol></svg>
-
-    <div class="wrapper">
-        <input type="checkbox" class="hidden" id="menu-control" />
-        <header class="gdoc-header">
-    <div class="container flex align-center justify-between">
-        
-        <label for="menu-control" class="gdoc-nav__control">
-            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
-            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
-        </label>
-        
-        <a class="gdoc-header__link" href="https://plybuild.io">
-            <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="/brand.svg" alt="plybuild" width=38 height=38>
-                plybuild
-            </span>
-        </a>
-    </div>
-</header>
-
-
-        <main class="container flex flex-even">
-            <aside class="gdoc-nav">
-                <nav>
-    
-    <div class="gdoc-search">
-        <svg class="icon search"><use xlink:href="#search"></use></svg>
-        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
-            aria-label="Search" maxlength="64" />
-        <div class="gdoc-search__spinner spinner hidden"></div>
-        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
-    </div>
-
-
-
-    <section class="gdoc-nav--main">
-        <h2>Navigation</h2>
-        
-            
-
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/" class="gdoc-nav__entry ">
-                        Commands
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/build/" class="gdoc-nav__entry is-active">
-                        Build
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/build/clean/" class="gdoc-nav__entry ">
-                        Clean
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/build/example/" class="gdoc-nav__entry ">
-                        Example
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/build/format/" class="gdoc-nav__entry ">
-                        Format
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/build/info/" class="gdoc-nav__entry ">
-                        Info
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/build/init/" class="gdoc-nav__entry ">
-                        Init
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/build/merge/" class="gdoc-nav__entry ">
-                        Merge
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/plugin/" class="gdoc-nav__entry ">
-                        Plugin
-                    </a>
-                </span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/plugin/bitbucket/" class="gdoc-nav__entry ">
-                        Bitbucket
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/plugin/diagrams/" class="gdoc-nav__entry ">
-                        Diagrams
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/plugin/git/" class="gdoc-nav__entry ">
-                        Git
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/plugin/install/" class="gdoc-nav__entry ">
-                        Install
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/plugin/lint/" class="gdoc-nav__entry ">
-                        Lint
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/plugin/maven/" class="gdoc-nav__entry ">
-                        Maven
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/plugin/query/" class="gdoc-nav__entry ">
-                        Query
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/profiles/" class="gdoc-nav__entry ">
-                        Profile
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/status/" class="gdoc-nav__entry ">
-                        Status
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/tips/" class="gdoc-nav__entry ">
-                        Tips
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/commands/upgrade/" class="gdoc-nav__entry ">
-                        Upgrade
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">Configurations</span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/configuration/cloud/" class="gdoc-nav__entry ">
-                        Cloud
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/configuration/local/" class="gdoc-nav__entry ">
-                        Local
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/configuration/project/" class="gdoc-nav__entry ">
-                        Project
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">Templates</span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/template/basics/" class="gdoc-nav__entry ">
-                        Basics
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/template/ignore/" class="gdoc-nav__entry ">
-                        Ignores
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">Usages</span>
-            
-
-            
-            
-                
-    
-
-    <ul class="gdoc-nav__list">
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/usage/install/" class="gdoc-nav__entry ">
-                        Install
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/usage/basics/" class="gdoc-nav__entry ">
-                        Basics
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-            
-            <li>
-            
-                <span class="flex">
-                    <a href="/usage/dependencies/" class="gdoc-nav__entry ">
-                        Dependencies
-                    </a>
-                </span>
-            
-
-            
-            
-            </li>
-            
-            
-        
-    </ul>
-
-            
-            </li>
-            
-            
-        
-    </ul>
-
-
-
-
-
-        
-    </section>
-
-    <section class="gdoc-nav--more">
-        
-            <h2>More</h2>
-            
-
-
-
-
-<ul class="gdoc-nav__list">
-
-    
-    
-
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.121.1">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Build :: plybuild">
+    <meta name="twitter:description" content="">
+    <meta property="og:title" content="Build :: plybuild">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plybuild.io/commands/build/index.html">
+    <meta property="og:site_name" content="plybuild">
+    <title>Build :: plybuild</title>
+    <link href="/commands/build/index.xml" rel="alternate" type="application/rss+xml" title="Build :: plybuild">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1703951238" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1703951238" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1703951238" rel="stylesheet">
+    <link href="/css/auto-complete.css?1703951238" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1703951238" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1703951238" rel="stylesheet">
+    <link href="/css/fonts.css?1703951238" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1703951238" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1703951238" rel="stylesheet">
+    <link href="/css/theme-auto.css?1703951238" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1703951238" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1703951238" rel="stylesheet">
+    <link href="/css/print.css?1703951238" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1703951238" rel="stylesheet">
+    <script src="/js/url.js?1703951238"></script>
+    <script src="/js/variant.js?1703951238"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='https:\/\/plybuild.io/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/commands/build/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
     <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
-                <svg class="icon download"><use xlink:href="#download"></use></svg>
-                <a href="https://github.com/DevDimensionLab/plybuild/releases"
-                    class="gdoc-nav__entry ">
-                    Releases
-                </a>
-            </span>
-        
-
-        
-        
+      <ul>
+        <li><a href="#example-plybuildjson-file">Example plybuild.json file</a></li>
+        <li><a href="#example-usage">Example usage</a></li>
+      </ul>
     </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-
-            <span class="flex">
-                <svg class="icon github"><use xlink:href="#github"></use></svg>
-                <a href="https://github.com/DevDimensionLab/plybuild"
-                    class="gdoc-nav__entry ">
-                    View Source
-                </a>
-            </span>
-        
-
-        
-        
-    </li>
-
-
-</ul>
-
-
-
-
-        
-    </section>
+  </ul>
 </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">plybuild</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/commands/index.html"><span itemprop="name"> 2. Commands</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Build</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/plugin/query/index.html" title="Query (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/example/index.html" title="Example (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="build">Build</h1>
 
-            </aside>
-
-            <div class="gdoc-page">
-                
-    
-
-
-    
-
-
-
-
-
-
-<div class="gdoc-page__header flex flex-wrap justify-between hidden-mobile" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-    <span>
-        
-            <span class="breadcrumb">
-                <svg class="icon path"><use xlink:href="#path"></use></svg>
-                
-                
-    
-    
-        
-        
-        
-    
-    
-        
-        
-        
-    
-    
-        <a href='/'>plybuild</a> / <a href='/commands/'>Commands</a> / Build
-    
-
-    
-
-    
-
-            </span>
-        
-    </span>
-    <span>
-        
-    </span>
-</div>
-
-    <article class="gdoc-markdown">
-        <h1>Build</h1>
-        
-
-
-
-    
-
-
-<pre tabindex="0"><code>Builds a ply project with ply files and formatting
+<div class="wrap-code highlight"><pre tabindex="0"><code>Builds a ply project with ply files and formatting
 
 Usage:
   ply build [flags]
@@ -754,84 +146,138 @@ Global Flags:
       --force   uses default for prompts
       --json    turn on json output logging
 
-Use &#34;ply build [command] --help&#34; for more information about a command.
-</code></pre><div class="gdoc-page__anchorwrap"><h2 id="example-plybuildjson-file">Example plybuild.json file<a data-clipboard-text="https://plybuild.io/commands/build/#example-plybuildjson-file" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example plybuild.json file" href="#example-plybuildjson-file"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;language&#34;</span><span class="p">:</span> <span class="s2">&#34;kotlin&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;groupId&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;artifactId&#34;</span><span class="p">:</span> <span class="s2">&#34;app&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;package&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example.app&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Example REST basic app&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;team&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;demo-name&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nt">&#34;email&#34;</span><span class="p">:</span> <span class="s2">&#34;demo-email@example.com&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;Demo of new app, generated with spring-boot and plybuild templates&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;dependencies&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;web-services&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;templates&#34;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&#34;dockerfile&#34;</span><span class="p">,</span> <span class="s2">&#34;rest-basic&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>This file is the same file used for project-configuration, and is described at <a href="/configuration/project/">project configuration</a></p>
-<div class="gdoc-page__anchorwrap"><h2 id="example-usage">Example usage<a data-clipboard-text="https://plybuild.io/commands/build/#example-usage" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example usage" href="#example-usage"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
-<p><img src="/static/plybuild-generate-simple.gif" alt="Simple generate gif"></p>
+Use &#34;ply build [command] --help&#34; for more information about a command.</code></pre></div><h2 id="example-plybuildjson-file">Example plybuild.json file</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;language&#34;</span>: <span style="color:#e6db74">&#34;kotlin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;groupId&#34;</span>: <span style="color:#e6db74">&#34;com.example&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;artifactId&#34;</span>: <span style="color:#e6db74">&#34;app&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;package&#34;</span>: <span style="color:#e6db74">&#34;com.example.app&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Example REST basic app&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;team&#34;</span>: {
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;demo-name&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;demo-email@example.com&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Demo of new app, generated with spring-boot and plybuild templates&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dependencies&#34;</span>: [<span style="color:#e6db74">&#34;web-services&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;templates&#34;</span> : [<span style="color:#e6db74">&#34;dockerfile&#34;</span>, <span style="color:#e6db74">&#34;rest-basic&#34;</span>]
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>This file is the same file used for project-configuration, and is described at <a href="/configuration/project/index.html">project configuration</a></p>
+<h2 id="example-usage">Example usage</h2>
+<p><a href="#R-image-c69c8fcc8e1584303e3f36a2211fd2a7" class="lightbox-link"><img src="/static/plybuild-generate-simple.gif" alt="Simple generate gif" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c69c8fcc8e1584303e3f36a2211fd2a7"><img src="/static/plybuild-generate-simple.gif" alt="Simple generate gif" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 
-
-    </article>
-
-                
-
-
-
-
-
-
-
-
-    
-    
-
-    
-
-
-
-
-
-<div class="gdoc-page__footer flex flex-wrap justify-between">
-    
-    
-</div>
-
-            </div>
-        </main>
-
-        <footer class="gdoc-footer">
-    <div class="container flex flex-wrap">
-        <span class="gdoc-footer__item">
-            Built with <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> and
-            <svg class="icon heart"><use xlink:href="#heart"></use></svg>
-        </span>
-        
-        
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
     </div>
-</footer>
-
-    </div>
-
-    
-
-
-
-
-<script defer src="/js/en.search.min.js"></script>
-
-
-
-<script defer src="/js/clipboard.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        var clipboard = new ClipboardJS('.clip');
-    });
-</script>
-
-
-</body>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<h1>plybuild</h1>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/basics/index.html" class=""><input type="checkbox" id="R-section-3494ad44d160b070fd31576fe4a3841e" aria-controls="R-subsections-3494ad44d160b070fd31576fe4a3841e"><label for="R-section-3494ad44d160b070fd31576fe4a3841e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  1. Basics</span></label><a class="padding" href="/basics/index.html"> 1. Basics</a><ul id="R-subsections-3494ad44d160b070fd31576fe4a3841e" class="morespace collapsible-menu">
+          <li data-nav-id="/basics/whats-new/index.html" class=""><a class="padding" href="/basics/whats-new/index.html">Whats New</a></li>
+          <li data-nav-id="/basics/installation/index.html" class=""><a class="padding" href="/basics/installation/index.html">Installation</a></li>
+          <li data-nav-id="/basics/global-flags/index.html" class=""><a class="padding" href="/basics/global-flags/index.html">Global flags</a></li></ul></li>
+          <li data-nav-id="/commands/index.html" class="parent "><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148" checked><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/plugin/index.html" class=""><input type="checkbox" id="R-section-49c10f7f425fb4a677fb5836fe0e69df" aria-controls="R-subsections-49c10f7f425fb4a677fb5836fe0e69df"><label for="R-section-49c10f7f425fb4a677fb5836fe0e69df"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Plugin</span></label><a class="padding" href="/commands/plugin/index.html">Plugin</a><ul id="R-subsections-49c10f7f425fb4a677fb5836fe0e69df" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/plugin/install/index.html" class=""><a class="padding" href="/commands/plugin/install/index.html">Install</a></li>
+          <li data-nav-id="/commands/plugin/diagrams/index.html" class=""><a class="padding" href="/commands/plugin/diagrams/index.html">Diagrams</a></li>
+          <li data-nav-id="/commands/plugin/bitbucket/index.html" class=""><a class="padding" href="/commands/plugin/bitbucket/index.html">Bitbucket</a></li>
+          <li data-nav-id="/commands/plugin/git/index.html" class=""><a class="padding" href="/commands/plugin/git/index.html">Git</a></li>
+          <li data-nav-id="/commands/plugin/lint/index.html" class=""><a class="padding" href="/commands/plugin/lint/index.html">Lint</a></li>
+          <li data-nav-id="/commands/plugin/maven/index.html" class=""><a class="padding" href="/commands/plugin/maven/index.html">Maven</a></li>
+          <li data-nav-id="/commands/plugin/query/index.html" class=""><a class="padding" href="/commands/plugin/query/index.html">Query</a></li></ul></li>
+          <li data-nav-id="/commands/build/index.html" class="active parent "><input type="checkbox" id="R-section-8a6be015729fa57d08f917abbee0bbb3" aria-controls="R-subsections-8a6be015729fa57d08f917abbee0bbb3" checked><label for="R-section-8a6be015729fa57d08f917abbee0bbb3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Build</span></label><a class="padding" href="/commands/build/index.html">Build</a><ul id="R-subsections-8a6be015729fa57d08f917abbee0bbb3" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/build/example/index.html" class=""><a class="padding" href="/commands/build/example/index.html">Example</a></li>
+          <li data-nav-id="/commands/build/merge/index.html" class=""><a class="padding" href="/commands/build/merge/index.html">Merge</a></li>
+          <li data-nav-id="/commands/build/init/index.html" class=""><a class="padding" href="/commands/build/init/index.html">Init</a></li>
+          <li data-nav-id="/commands/build/info/index.html" class=""><a class="padding" href="/commands/build/info/index.html">Info</a></li>
+          <li data-nav-id="/commands/build/format/index.html" class=""><a class="padding" href="/commands/build/format/index.html">Format</a></li>
+          <li data-nav-id="/commands/build/clean/index.html" class=""><a class="padding" href="/commands/build/clean/index.html">Clean</a></li></ul></li>
+          <li data-nav-id="/commands/tips/index.html" class=""><a class="padding" href="/commands/tips/index.html">Tips</a></li>
+          <li data-nav-id="/commands/upgrade/index.html" class=""><a class="padding" href="/commands/upgrade/index.html">Upgrade</a></li>
+          <li data-nav-id="/commands/status/index.html" class=""><a class="padding" href="/commands/status/index.html">Status</a></li>
+          <li data-nav-id="/commands/profiles/index.html" class=""><a class="padding" href="/commands/profiles/index.html">Profile</a></li></ul></li>
+          <li data-nav-id="/configuration/index.html" class=""><input type="checkbox" id="R-section-632bb56b075027697eb90eb7e3d29a12" aria-controls="R-subsections-632bb56b075027697eb90eb7e3d29a12"><label for="R-section-632bb56b075027697eb90eb7e3d29a12"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  3. Configuration</span></label><a class="padding" href="/configuration/index.html"> 3. Configuration</a><ul id="R-subsections-632bb56b075027697eb90eb7e3d29a12" class="morespace collapsible-menu">
+          <li data-nav-id="/configuration/cloud/index.html" class=""><a class="padding" href="/configuration/cloud/index.html">Cloud</a></li>
+          <li data-nav-id="/configuration/project/index.html" class=""><a class="padding" href="/configuration/project/index.html">Project</a></li>
+          <li data-nav-id="/configuration/local/index.html" class=""><a class="padding" href="/configuration/local/index.html">Local</a></li></ul></li>
+          <li data-nav-id="/template/index.html" class=""><input type="checkbox" id="R-section-83f30eaf50f55daeb4d665945dc38775" aria-controls="R-subsections-83f30eaf50f55daeb4d665945dc38775"><label for="R-section-83f30eaf50f55daeb4d665945dc38775"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  4. Template</span></label><a class="padding" href="/template/index.html"> 4. Template</a><ul id="R-subsections-83f30eaf50f55daeb4d665945dc38775" class="morespace collapsible-menu">
+          <li data-nav-id="/template/basics/index.html" class=""><a class="padding" href="/template/basics/index.html">Basics</a></li>
+          <li data-nav-id="/template/ignore/index.html" class=""><a class="padding" href="/template/ignore/index.html">Ignores</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://github.com/DevDimensionLab/plybuild"><i class='fab fa-fw fa-github'></i> GitHub repo</a></li>
+            <li><a class="padding" href="https://github.com/DevDimensionLab/plybuild/releases"><i class='fab fa-fw fa-github'></i> Releases</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1703951238" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1703951238" defer></script>
+    <script src="/js/theme.js?1703951238" defer></script>
+  </body>
 </html>

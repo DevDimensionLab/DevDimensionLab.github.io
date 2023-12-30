@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Templates on plybuild</title>
-    <link>https://plybuild.io/template/</link>
-    <description>Recent content in Templates on plybuild</description>
+    <title> 4. Template on plybuild</title>
+    <link>https://plybuild.io/template/index.html</link>
+    <description>Recent content in  4. Template on plybuild</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 30 Sep 2020 13:07:42 +0200</lastBuildDate>
     <atom:link href="https://plybuild.io/template/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ignores</title>
-      <link>https://plybuild.io/template/ignore/</link>
-      <pubDate>Wed, 30 Sep 2020 13:07:42 +0200</pubDate>
-      <guid>https://plybuild.io/template/ignore/</guid>
-      <description>During the merge process of a template into a target directory plybuild ignores the following files:&#xA;Default ignore Regardless what is defined in the ignore files, plybuild will ignore filenames matching:&#xA;[ &amp;#34;Application&amp;#34;, &amp;#34;plybuild.json&amp;#34;, &amp;#34;.plybuild.ignore&amp;#34;, &amp;#34;.gitignore&amp;#34;, &amp;#34;.mvn&amp;#34;, &amp;#34;mvnw&amp;#34;, &amp;#34;mvnw.cmd&amp;#34;, &amp;#34;.idea&amp;#34;, &amp;#34;.iml&amp;#34; ] Ignoring filesnames matching Application&#xA;The first entry Application, in the list above, enables plybuild to ignore files like WebApplication.kt or FooApplication.java. Files which are typically files containing the @SpringBootApplication.</description>
+      <title>Basics</title>
+      <link>https://plybuild.io/template/basics/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://plybuild.io/template/basics/index.html</guid>
+      <description>Templates is a concept where plybuild effectively merges one project into another. Templates are added to the cloud-config repo under a templates folder, example, and are later referred to by their folder name in the plybuild.json file. A template, like most projects, consists of these filetypes:
+Filetypes Filetypes in templates are
+.kt and .java files If a template supplies a .kt or a .java file, the file is copied to its right destination and the package com.</description>
     </item>
     <item>
-      <title>Basics</title>
-      <link>https://plybuild.io/template/basics/</link>
-      <pubDate>Wed, 30 Sep 2020 13:07:36 +0200</pubDate>
-      <guid>https://plybuild.io/template/basics/</guid>
-      <description>Templates is a concept where plybuild effectively merges one project into another. Templates are added to the cloud-config repo under a templates folder, example, and are later referred to by their folder name in the plybuild.json file. A template, like most projects, consists of these filetypes:&#xA;Filetypes Filetypes in templates are&#xA;.kt and .java files If a template supplies a .kt or a .java file, the file is copied to its right destination and the package com.</description>
+      <title>Ignores</title>
+      <link>https://plybuild.io/template/ignore/index.html</link>
+      <pubDate>Wed, 30 Sep 2020 13:07:42 +0200</pubDate>
+      <guid>https://plybuild.io/template/ignore/index.html</guid>
+      <description>During the merge process of a template into a target directory plybuild ignores the following files:
+Default ignore Regardless what is defined in the ignore files, plybuild will ignore filenames matching:
+[ &amp;#34;Application&amp;#34;, &amp;#34;plybuild.json&amp;#34;, &amp;#34;.plybuild.ignore&amp;#34;, &amp;#34;.gitignore&amp;#34;, &amp;#34;.mvn&amp;#34;, &amp;#34;mvnw&amp;#34;, &amp;#34;mvnw.cmd&amp;#34;, &amp;#34;.idea&amp;#34;, &amp;#34;.iml&amp;#34; ]Ignoring filesnames matching Application
+The first entry Application, in the list above, enables plybuild to ignore files like WebApplication.kt or FooApplication.java. Files which are typically files containing the @SpringBootApplication. It is important that no template contain critical code inside of these files, as they are ignored during the merge process.</description>
     </item>
   </channel>
 </rss>
