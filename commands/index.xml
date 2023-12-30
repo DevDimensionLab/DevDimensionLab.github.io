@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 30 Sep 2023 10:27:32 +0200</lastBuildDate>
     <atom:link href="https://plybuild.io/commands/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Plugin</title>
-      <link>https://plybuild.io/commands/plugin/index.html</link>
-      <pubDate>Sat, 30 Sep 2023 10:27:32 +0200</pubDate>
-      <guid>https://plybuild.io/commands/plugin/index.html</guid>
-      <description></description>
+      <title>Profile</title>
+      <link>https://plybuild.io/commands/profile/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://plybuild.io/commands/profile/index.html</guid>
+      <description>Help Manage profiles settings for ply Usage: ply profiles [flags] ply profiles [command] Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profiles --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply profiles [command] --help&amp;#34; for more information about a command.</description>
     </item>
     <item>
       <title>Build</title>
@@ -23,34 +23,34 @@
       <description>Builds a ply project with ply files and formatting Usage: ply build [flags] ply build [command] Aliases: build, generate Available Commands: Add Add templates and functionalities for files to a build clean Removes intellij files and folder in a project clear Clears a maven project with ply files and formatting example Examples found in cloud-config format Format functionality for a project info Prints info on spring version, dependencies etc init Initializes build with ply files and formatting list-templates Lists all available templates Flags: --application-name string Overrides applicationName from config file --artifact-id string Overrides artifactId from config file --boot-version string Defines spring-boot version to use --cloud-sync Cloud sync (default true) --config-file string Optional config file (default &amp;#34;ply.</description>
     </item>
     <item>
-      <title>Tips</title>
-      <link>https://plybuild.io/commands/tips/index.html</link>
-      <pubDate>Sat, 30 Sep 2023 10:27:03 +0200</pubDate>
-      <guid>https://plybuild.io/commands/tips/index.html</guid>
-      <description>Help A concentrated version of things you need to know for a topic, typically internal know-how that you can&amp;#39;t find on the internet Usage: ply tips [flags] ply tips [command] Available Commands: list Lists all tips for current profile show Show tips Flags: -h, --help help for tips Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply tips [command] --help&amp;#34; for more information about a command.</description>
-    </item>
-    <item>
-      <title>Upgrade</title>
-      <link>https://plybuild.io/commands/upgrade/index.html</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:44 +0200</pubDate>
-      <guid>https://plybuild.io/commands/upgrade/index.html</guid>
-      <description>Upgrade is a command for upgrading all or specific parts of a project.
-Help Perform upgrade on existing projects Usage: ply upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project interactive Interactively upgrade the project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version with-versions Upgrade using mvn versions in a project Flags: --cloud-sync force cloud sync --dry-run dry run does not write to pom.</description>
-    </item>
-    <item>
       <title>Status</title>
       <link>https://plybuild.io/commands/status/index.html</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:42 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://plybuild.io/commands/status/index.html</guid>
       <description>Status is a command for printing status on a plybuild project. By default it outputs available upgrades.
 Help Status functionality for a project Usage: ply status [flags] Flags: --cloud-sync force cloud sync -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output loggingExample usage plybuild statusExample output INFO[0000] Project status for file .</description>
     </item>
     <item>
-      <title>Profile</title>
-      <link>https://plybuild.io/commands/profiles/index.html</link>
-      <pubDate>Wed, 30 Sep 2020 10:27:11 +0200</pubDate>
-      <guid>https://plybuild.io/commands/profiles/index.html</guid>
-      <description>Help Manage profiles settings for ply Usage: ply profiles [flags] ply profiles [command] Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profiles --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply profiles [command] --help&amp;#34; for more information about a command.</description>
+      <title>Upgrade</title>
+      <link>https://plybuild.io/commands/upgrade/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://plybuild.io/commands/upgrade/index.html</guid>
+      <description>Upgrade is a command for upgrading all or specific parts of a project.
+Help Perform upgrade on existing projects Usage: ply upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project interactive Interactively upgrade the project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version with-versions Upgrade using mvn versions in a project Flags: --cloud-sync force cloud sync --dry-run dry run does not write to pom.</description>
+    </item>
+    <item>
+      <title>Plugin</title>
+      <link>https://plybuild.io/commands/plugin/index.html</link>
+      <pubDate>Sat, 30 Sep 2023 10:27:32 +0200</pubDate>
+      <guid>https://plybuild.io/commands/plugin/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>https://plybuild.io/commands/tips/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://plybuild.io/commands/tips/index.html</guid>
+      <description>Help A concentrated version of things you need to know for a topic, typically internal know-how that you can&amp;#39;t find on the internet Usage: ply tips [flags] ply tips [command] Available Commands: list Lists all tips for current profile show Show tips Flags: -h, --help help for tips Global Flags: --debug turn on debug output --json turn on json output logging Use &amp;#34;ply tips [command] --help&amp;#34; for more information about a command.</description>
     </item>
   </channel>
 </rss>

@@ -8,15 +8,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content=" 2. Commands :: plybuild">
-    <meta name="twitter:description" content="">
-    <meta property="og:title" content=" 2. Commands :: plybuild">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://plybuild.io/commands/index.html">
+    <meta name="twitter:title" content="Profile :: plybuild">
+    <meta name="twitter:description" content="Help Manage profiles settings for ply Usage: ply profiles [flags] ply profiles [command] Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profiles --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --json turn on json output logging Use &#34;ply profiles [command] --help&#34; for more information about a command.">
+    <meta property="og:title" content="Profile :: plybuild">
+    <meta property="og:description" content="Help Manage profiles settings for ply Usage: ply profiles [flags] ply profiles [command] Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profiles --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --json turn on json output logging Use &#34;ply profiles [command] --help&#34; for more information about a command.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://plybuild.io/commands/profile/index.html">
+    <meta property="article:section" content=" 2. Commands :: plybuild">
     <meta property="og:site_name" content="plybuild">
-    <title> 2. Commands :: plybuild</title>
-    <link href="/commands/index.xml" rel="alternate" type="application/rss+xml" title=" 2. Commands :: plybuild">
+    <title>Profile :: plybuild</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1703969333" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css?1703969333" rel="stylesheet">
@@ -53,7 +53,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/commands/index.html">
+  <body class="mobile-support html" data-url="/commands/profile/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -64,19 +64,28 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#help">Help</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">plybuild</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name"> 2. Commands</span><meta itemprop="position" content="2"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/commands/index.html"><span itemprop="name"> 2. Commands</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Profile</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/basics/global-flags/index.html" title="Global flags (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/index.html" title="2. Commands (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/profile/index.html" title="Profile (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/index.html" title="Build (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -90,46 +99,36 @@
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable chapter narrow" tabindex="-1">
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="chapter">
+          <article class="default">
             <header class="headline">
             </header>
-<div class="article-subheading">Chapter 2</div>
-<h1 id="2-commands"> 2. Commands</h1>
+<h1 id="profile">Profile</h1>
 
-<div class="wrap-code highlight"><pre tabindex="0"><code>           __      __          _ __    __
-    ____  / /_  __/ /_  __  __(_) /___/ /
-   / __ \/ / / / / __ \/ / / / / / __  /
-  / /_/ / / /_/ / /_/ / /_/ / / / /_/ /
- / .___/_/\__, /_.___/\__,_/_/_/\__,_/
-/_/      /____/
-
-== version: v1.0.1 ==
-
-Usage:
-  ply [command]
-
-Available Commands:
-  build       Builds a maven project with ply files and formatting
-  help        Help about any command
-  plugin      Plugin functionality for plybuild
-  profile     Manage profiles settings for ply
-  status      Status functionality for a project
-  tips        Use tips to learn information faster
-  upgrade     Upgrade options
-
-Flags:
-      --debug   turn on debug output
-      --doc     open documentation website
-      --force   uses default for prompts
-  -h, --help    help for ply
-      --json    turn on json output logging
-
-Additional help topics:
-  ply about      About ply
-
-Use &#34;ply [command] --help&#34; for more information about a command.</code></pre></div>
+<h2 id="help">Help</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Manage profiles settings <span style="color:#66d9ef">for</span> ply
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Usage:
+</span></span><span style="display:flex;"><span>  ply profiles <span style="color:#f92672">[</span>flags<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  ply profiles <span style="color:#f92672">[</span>command<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Available Commands:
+</span></span><span style="display:flex;"><span>  config      Config display in the terminal
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Flags:
+</span></span><span style="display:flex;"><span>      --cloud-sync   sync with cloud config repo
+</span></span><span style="display:flex;"><span>      --edit         edit active profile local config
+</span></span><span style="display:flex;"><span>  -h, --help         help <span style="color:#66d9ef">for</span> profiles
+</span></span><span style="display:flex;"><span>      --reset        reset local config
+</span></span><span style="display:flex;"><span>      --show         show local config
+</span></span><span style="display:flex;"><span>      --use string   switch to profile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Global Flags:
+</span></span><span style="display:flex;"><span>      --debug   turn on debug output
+</span></span><span style="display:flex;"><span>      --json    turn on json output logging
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Use <span style="color:#e6db74">&#34;ply profiles [command] --help&#34;</span> <span style="color:#66d9ef">for</span> more information about a command.</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -156,8 +155,8 @@ Use &#34;ply [command] --help&#34; for more information about a command.</code><
           <li data-nav-id="/basics/whats-new/index.html" class=""><a class="padding" href="/basics/whats-new/index.html">Whats New</a></li>
           <li data-nav-id="/basics/installation/index.html" class=""><a class="padding" href="/basics/installation/index.html">Installation</a></li>
           <li data-nav-id="/basics/global-flags/index.html" class=""><a class="padding" href="/basics/global-flags/index.html">Global flags</a></li></ul></li>
-          <li data-nav-id="/commands/index.html" class="active parent "><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148" checked><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
-          <li data-nav-id="/commands/profile/index.html" class=""><a class="padding" href="/commands/profile/index.html">Profile</a></li>
+          <li data-nav-id="/commands/index.html" class="parent "><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148" checked><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/profile/index.html" class="active"><a class="padding" href="/commands/profile/index.html">Profile</a></li>
           <li data-nav-id="/commands/build/index.html" class=""><input type="checkbox" id="R-section-8a6be015729fa57d08f917abbee0bbb3" aria-controls="R-subsections-8a6be015729fa57d08f917abbee0bbb3"><label for="R-section-8a6be015729fa57d08f917abbee0bbb3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Build</span></label><a class="padding" href="/commands/build/index.html">Build</a><ul id="R-subsections-8a6be015729fa57d08f917abbee0bbb3" class="morespace collapsible-menu">
           <li data-nav-id="/commands/build/example/index.html" class=""><a class="padding" href="/commands/build/example/index.html">Example</a></li>
           <li data-nav-id="/commands/build/merge/index.html" class=""><a class="padding" href="/commands/build/merge/index.html">Merge</a></li>
