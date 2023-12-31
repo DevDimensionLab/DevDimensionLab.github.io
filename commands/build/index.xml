@@ -21,7 +21,7 @@ Help Initializes build project with ply files and formatting Usage: ply build in
       <link>https://plybuild.io/commands/build/add/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://plybuild.io/commands/build/add/index.html</guid>
-      <description>Add is a standalone command for merging a specific template into a target. It is the same process used iteratively by generate
+      <description>Add is a standalone command for merging a specific template into a target. It is the same process used iteratively by build
 Help Add templates and functionalities for files to a build Usage: ply build add [command] Available Commands: pom Adds a pom-file into a project template Adds a template from ply-config text Merges two text files Flags: --from string file to add -h, --help help for add Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging --target string Optional target directory (default &amp;#34;.</description>
     </item>
     <item>

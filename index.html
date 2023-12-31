@@ -18,19 +18,19 @@
     <title>plybuild</title>
     <link href="/index.xml" rel="alternate" type="application/rss+xml" title="plybuild">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1704035779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704035779" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1704035779" rel="stylesheet">
-    <link href="/css/auto-complete.css?1704035779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704035779" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1704035779" rel="stylesheet">
-    <link href="/css/fonts.css?1704035779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704035779" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1704035779" rel="stylesheet">
-    <link href="/css/theme-plybuild-variant.css?1704035779" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1704035779" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1704035779" rel="stylesheet">
-    <link href="/css/print.css?1704035779" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1704035779" rel="stylesheet">
-    <script src="/js/url.js?1704035779"></script>
-    <script src="/js/variant.js?1704035779"></script>
+    <link href="/css/fontawesome-all.min.css?1704062723" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704062723" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1704062723" rel="stylesheet">
+    <link href="/css/auto-complete.css?1704062723" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704062723" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1704062723" rel="stylesheet">
+    <link href="/css/fonts.css?1704062723" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704062723" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1704062723" rel="stylesheet">
+    <link href="/css/theme-plybuild-variant.css?1704062723" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1704062723" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1704062723" rel="stylesheet">
+    <link href="/css/print.css?1704062723" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1704062723" rel="stylesheet">
+    <script src="/js/url.js?1704062723"></script>
+    <script src="/js/variant.js?1704062723"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -68,12 +68,12 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#_a-power-tool-platform-for-java-and-kotlin-developers_"><em>A power tool platform for Java and Kotlin developers</em></a></li>
-        <li><a href="#why">Why?</a>
+        <li><a href="#_a-power-tool-for-development-on-the-java-platform_"><em>A power tool for development on the Java Platform</em></a>
           <ul>
-            <li><a href="#starting-point-for-microservice-based-application-development">Starting Point for Microservice-Based Application Development</a></li>
-            <li><a href="#simplified-template-maintenance-for-efficient-collaboration">Simplified Template Maintenance for Efficient Collaboration</a></li>
+            <li><a href="#starting-point-for-microservices">Starting Point for Microservices</a></li>
+            <li><a href="#simplified-template-maintenance">Simplified Template Maintenance</a></li>
             <li><a href="#dependency-status-and-automated-project-upgrades">Dependency Status and Automated Project Upgrades</a></li>
+            <li><a href="#installation">Installation</a></li>
           </ul>
         </li>
       </ul>
@@ -111,25 +111,42 @@
             </header>
 <h1 id="plybuild">plybuild</h1>
 
-<h2 id="_a-power-tool-platform-for-java-and-kotlin-developers_"><em>A power tool platform for Java and Kotlin developers</em></h2>
+<h2 id="_a-power-tool-for-development-on-the-java-platform_"><em>A power tool for development on the Java Platform</em></h2>
 <ul>
 <li>Starting point for microservice-based application development</li>
 <li>Simplifies maintaining code templates for efficient collaboration</li>
 <li>Provides dependency status and automates project dependency upgrades</li>
 </ul>
-<h2 id="why">Why?</h2>
-<h3 id="starting-point-for-microservice-based-application-development">Starting Point for Microservice-Based Application Development</h3>
+<h3 id="starting-point-for-microservices">Starting Point for Microservices</h3>
 <p>Discover the ideal launchpad for your microservice-based projects. Plybuild offers a robust foundation to kickstart
 your development process, providing essential resources and structures tailored for microservice architecture.</p>
-<p>The heart of plybuild is the <a href="https://github.com/DevDimensionLab/ply-config" target="_blank">cloud-config</a>, simply run the following
-command to get a new app running:</p>
+<p>The heart of plybuild is the <a href="https://github.com/DevDimensionLab/ply-config/tree/master/examples" target="_blank">examples</a>, simply run the following
+command to get a new microservice running:</p>
 <p><code>ply build example --name rest-service</code></p>
-<h3 id="simplified-template-maintenance-for-efficient-collaboration">Simplified Template Maintenance for Efficient Collaboration</h3>
-<p>The strength of plybuild lies in creating a personalized <a href="https://github.com/DevDimensionLab/ply-config" target="_blank">cloud-config</a> for your organization,
-featuring live, executable code templates. Unlike static, purpose-rendered templates, these dynamic templates with actual running code
-simplify maintenance significantly. This live code capability ensures easier upkeep and adaptability for your projects.</p>
+<p>The <a href="https://github.com/DevDimensionLab/ply-config/blob/master/examples/rest-service/ply.json" target="_blank">ply.json</a> defines the project and accepts
+a list of  <a href="https://github.com/DevDimensionLab/ply-config/blob/master/examples/rest-service/ply.json#L13" target="_blank">dependencies</a>,
+identical to the input used by <a href="https://start.spring.io" target="_blank">Spring Initializr</a>. Default upstream is
+<a href="https://start.spring.io" target="_blank">Spring Initializr</a> and the starting shell for the application is generated by <a href="https://start.spring.io" target="_blank">https://start.spring.io</a>.<br>
+Moreover, the <a href="https://github.com/DevDimensionLab/ply-config/blob/master/examples/rest-service/ply.json#L16" target="_blank">templates element</a>
+can be employed, defined within the <a href="https://github.com/DevDimensionLab/ply-config/tree/master" target="_blank">cloud-config repository</a>.</p>
+<h3 id="simplified-template-maintenance">Simplified Template Maintenance</h3>
+<p>Plybuild&rsquo;s core strength resides in crafting tailored <a href="https://github.com/DevDimensionLab/ply-config/tree/master/templates" target="_blank">templates</a>
+unique to your organization. Unlike templates that is based on rendering, these templates are executable code,
+enabling effortless maintenance directly within your IDE.</p>
+<p>Recognizing that developers may be affiliated with multiple organizations plybuild introduces the concept of profiles:</p>
+<p><code>ply profile --use mybusiness</code></p>
+<p>In this context, the <a href="https://github.com/DevDimensionLab/ply-config/tree/master" target="_blank">plybuild cloud-config repository</a>
+serves as a blueprint outlining fundamental concepts, aiding developers in initiating the creation of their own
+templates and examples for their organizations.</p>
 <h3 id="dependency-status-and-automated-project-upgrades">Dependency Status and Automated Project Upgrades</h3>
-<p>Stay ahead with automated dependency management. Our tool keeps you informed about dependency status and takes the hassle out of upgrading project dependencies. With automated upgrades, your projects remain up-to-date, secure, and optimized without the usual manual intervention, ensuring smooth development cycles.</p>
+<p>Stay ahead with automated dependency management. Plybuild keeps you informed about dependency status and takes
+the hassle out of upgrading project dependencies. With automated upgrades, your projects remain up-to-date,
+secure, and optimized without the manual tedious work, ensuring smooth development cycles.</p>
+<p><code>ply status</code> displays outdated dependencies along with their respective latest release versions</p>
+<p><code>ply upgrade</code> offers multiple options to customize the automatic upgrade process based on preference</p>
+<h3 id="installation">Installation</h3>
+<p>Plybuild is built using Go, boasts compatibility across various platforms, such as GNU/Linux, Windows, and MacOS.</p>
+<p>For installation instructions, follow this <a href="/basics/installation/index.html">link</a>.</p>
 
             <footer class="footline">
             </footer>
@@ -242,8 +259,8 @@ simplify maintenance significantly. This live code capability ensures easier upk
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1704035779" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1704035779" defer></script>
-    <script src="/js/theme.js?1704035779" defer></script>
+    <script src="/js/clipboard.min.js?1704062724" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1704062724" defer></script>
+    <script src="/js/theme.js?1704062724" defer></script>
   </body>
 </html>
