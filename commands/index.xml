@@ -6,14 +6,14 @@
     <description>Recent content in  2. Commands on plybuild</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Sep 2023 10:27:32 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 30 Sep 2023 10:27:03 +0200</lastBuildDate>
     <atom:link href="https://plybuild.io/commands/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Profile</title>
       <link>https://plybuild.io/commands/profile/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://plybuild.io/commands/profile/index.html</guid>
-      <description>Help Manage profiles settings for ply Usage: ply profile [flags] ply profile [command] Aliases: profile, profiles Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profile --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use &amp;#34;ply profile [command] --help&amp;#34; for more information about a command.</description>
+      <description>The profile command in Plybuild is designed for efficient management of different user profiles, each with its unique configurations and settings. This feature allows users to create, modify, and switch between profiles, enabling a seamless transition across various project environments and personal preferences. It&amp;rsquo;s especially useful in collaborative settings or for individuals handling multiple projects, as it simplifies the complexity of managing distinct configurations. The command enhances Plybuilds&amp;rsquo;s customization capabilities, making it a valuable tool for organized and streamlined project management.</description>
     </item>
     <item>
       <title>Build</title>
@@ -27,8 +27,7 @@
       <link>https://plybuild.io/commands/status/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://plybuild.io/commands/status/index.html</guid>
-      <description>Status is a command for printing status on a plybuild project. By default it outputs available upgrades.
-Help Status functionality for a project Usage: ply status [flags] Flags: --cloud-sync force cloud sync -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default &amp;#34;.&amp;#34;) Global Flags: --debug turn on debug output --json turn on json output logging</description>
+      <description>The status command in Plybuild is a practical and informative feature designed to keep users up-to-date with dependency version information. This command serves as a quick and reliable way to check the current versions of dependencies used in a project, and more importantly, it identifies if there are any outdated versions that need attention. By running the status command, users can effortlessly monitor the health and currency of their project&amp;rsquo;s dependencies, ensuring that all components are running on the latest and most secure versions.</description>
     </item>
     <item>
       <title>Upgrade</title>
@@ -41,9 +40,9 @@ Help Perform upgrade on existing projects Usage: ply upgrade [command] Available
     <item>
       <title>Plugin</title>
       <link>https://plybuild.io/commands/plugin/index.html</link>
-      <pubDate>Sat, 30 Sep 2023 10:27:32 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://plybuild.io/commands/plugin/index.html</guid>
-      <description></description>
+      <description>Plybuild also boasts a versatile plugin section, expanding its functionality beyond the core features. This section enables the integration of additional, specialized features that cater to more specific needs, which might not be necessary for all users but are invaluable for those who require them. The plugin architecture allows for customization and extensibility, letting users tailor the tool to their unique workflows and preferences. Whether it&amp;rsquo;s adding support for different programming languages, integrating with third-party services, or enhancing existing features, the plugin system makes Plybuild adaptable and scalable.</description>
     </item>
     <item>
       <title>Tips</title>

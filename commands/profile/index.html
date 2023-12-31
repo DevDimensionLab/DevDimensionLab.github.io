@@ -9,28 +9,28 @@
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Profile :: plybuild">
-    <meta name="twitter:description" content="Help Manage profiles settings for ply Usage: ply profile [flags] ply profile [command] Aliases: profile, profiles Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profile --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use &#34;ply profile [command] --help&#34; for more information about a command.">
+    <meta name="twitter:description" content="The profile command in Plybuild is designed for efficient management of different user profiles, each with its unique configurations and settings. This feature allows users to create, modify, and switch between profiles, enabling a seamless transition across various project environments and personal preferences. It&rsquo;s especially useful in collaborative settings or for individuals handling multiple projects, as it simplifies the complexity of managing distinct configurations. The command enhances Plybuilds&rsquo;s customization capabilities, making it a valuable tool for organized and streamlined project management.">
     <meta property="og:title" content="Profile :: plybuild">
-    <meta property="og:description" content="Help Manage profiles settings for ply Usage: ply profile [flags] ply profile [command] Aliases: profile, profiles Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profile --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use &#34;ply profile [command] --help&#34; for more information about a command.">
+    <meta property="og:description" content="The profile command in Plybuild is designed for efficient management of different user profiles, each with its unique configurations and settings. This feature allows users to create, modify, and switch between profiles, enabling a seamless transition across various project environments and personal preferences. It&rsquo;s especially useful in collaborative settings or for individuals handling multiple projects, as it simplifies the complexity of managing distinct configurations. The command enhances Plybuilds&rsquo;s customization capabilities, making it a valuable tool for organized and streamlined project management.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://plybuild.io/commands/profile/index.html">
     <meta property="article:section" content=" 2. Commands :: plybuild">
     <meta property="og:site_name" content="plybuild">
     <title>Profile :: plybuild</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1704022905" rel="stylesheet">
-    <link href="/css/auto-complete.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704022905" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1704022905" rel="stylesheet">
-    <link href="/css/fonts.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704022905" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1704022905" rel="stylesheet">
-    <link href="/css/theme-plybuild-variant.css?1704022905" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1704022905" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1704022905" rel="stylesheet">
-    <link href="/css/print.css?1704022905" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1704022905" rel="stylesheet">
-    <script src="/js/url.js?1704022905"></script>
-    <script src="/js/variant.js?1704022905"></script>
+    <link href="/css/fontawesome-all.min.css?1704024856" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704024856" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1704024856" rel="stylesheet">
+    <link href="/css/auto-complete.css?1704024856" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704024856" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1704024856" rel="stylesheet">
+    <link href="/css/fonts.css?1704024856" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704024856" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1704024856" rel="stylesheet">
+    <link href="/css/theme-plybuild-variant.css?1704024856" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1704024856" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1704024856" rel="stylesheet">
+    <link href="/css/print.css?1704024856" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1704024856" rel="stylesheet">
+    <script src="/js/url.js?1704024856"></script>
+    <script src="/js/variant.js?1704024856"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -106,6 +106,10 @@
             </header>
 <h1 id="profile">Profile</h1>
 
+<p>The profile command in Plybuild is designed for efficient management of different user profiles, each with its unique configurations and settings.
+This feature allows users to create, modify, and switch between profiles, enabling a seamless transition across various project environments and personal preferences.
+It&rsquo;s especially useful in collaborative settings or for individuals handling multiple projects, as it simplifies the complexity of managing distinct configurations.
+The command enhances Plybuilds&rsquo;s customization capabilities, making it a valuable tool for organized and streamlined project management.</p>
 <h2 id="help">Help</h2>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Manage profiles settings <span style="color:#66d9ef">for</span> ply
 </span></span><span style="display:flex;"><span>
@@ -172,10 +176,10 @@
           <li data-nav-id="/commands/status/index.html" class=""><a class="padding" href="/commands/status/index.html">Status</a></li>
           <li data-nav-id="/commands/upgrade/index.html" class=""><a class="padding" href="/commands/upgrade/index.html">Upgrade</a></li>
           <li data-nav-id="/commands/plugin/index.html" class=""><input type="checkbox" id="R-section-49c10f7f425fb4a677fb5836fe0e69df" aria-controls="R-subsections-49c10f7f425fb4a677fb5836fe0e69df"><label for="R-section-49c10f7f425fb4a677fb5836fe0e69df"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Plugin</span></label><a class="padding" href="/commands/plugin/index.html">Plugin</a><ul id="R-subsections-49c10f7f425fb4a677fb5836fe0e69df" class="morespace collapsible-menu">
-          <li data-nav-id="/commands/plugin/install/index.html" class=""><a class="padding" href="/commands/plugin/install/index.html">Install</a></li>
-          <li data-nav-id="/commands/plugin/diagrams/index.html" class=""><a class="padding" href="/commands/plugin/diagrams/index.html">Diagrams</a></li>
           <li data-nav-id="/commands/plugin/bitbucket/index.html" class=""><a class="padding" href="/commands/plugin/bitbucket/index.html">Bitbucket</a></li>
+          <li data-nav-id="/commands/plugin/diagrams/index.html" class=""><a class="padding" href="/commands/plugin/diagrams/index.html">Diagrams</a></li>
           <li data-nav-id="/commands/plugin/git/index.html" class=""><a class="padding" href="/commands/plugin/git/index.html">Git</a></li>
+          <li data-nav-id="/commands/plugin/install/index.html" class=""><a class="padding" href="/commands/plugin/install/index.html">Install</a></li>
           <li data-nav-id="/commands/plugin/lint/index.html" class=""><a class="padding" href="/commands/plugin/lint/index.html">Lint</a></li>
           <li data-nav-id="/commands/plugin/maven/index.html" class=""><a class="padding" href="/commands/plugin/maven/index.html">Maven</a></li>
           <li data-nav-id="/commands/plugin/query/index.html" class=""><a class="padding" href="/commands/plugin/query/index.html">Query</a></li></ul></li>
@@ -245,8 +249,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1704022905" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1704022905" defer></script>
-    <script src="/js/theme.js?1704022905" defer></script>
+    <script src="/js/clipboard.min.js?1704024856" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1704024856" defer></script>
+    <script src="/js/theme.js?1704024856" defer></script>
   </body>
 </html>

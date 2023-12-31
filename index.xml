@@ -6,7 +6,7 @@
     <description>Recent content on plybuild</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Sep 2023 10:27:32 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 30 Sep 2023 10:27:03 +0200</lastBuildDate>
     <atom:link href="https://plybuild.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> 1. Basics</title>
@@ -19,7 +19,7 @@ GNU/Linux Windows MacOs </description>
     <item>
       <title> 2. Commands</title>
       <link>https://plybuild.io/commands/index.html</link>
-      <pubDate>Sat, 30 Sep 2023 10:27:32 +0200</pubDate>
+      <pubDate>Sat, 30 Sep 2023 10:27:03 +0200</pubDate>
       <guid>https://plybuild.io/commands/index.html</guid>
       <description>__ __ _ __ __ ____ / /_ __/ /_ __ __(_) /___/ / / __ \/ / / / / __ \/ / / / / / __ / / /_/ / / /_/ / /_/ / /_/ / / / /_/ / / .___/_/\__, /_.___/\__,_/_/_/\__,_/ /_/ /____/ == version: v1.0.1 == Usage: ply [command] Available Commands: build Builds a ply project with ply files and formatting help Help about any command plugin Plugin functionality for plybuild profile Manage profiles settings for ply status Status functionality for a project tips Use tips to learn information faster upgrade Upgrade options Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts -h, --help help for ply --json turn on json output logging Additional help topics: ply about About ply Use &amp;#34;ply [command] --help&amp;#34; for more information about a command.</description>
     </item>
@@ -28,14 +28,14 @@ GNU/Linux Windows MacOs </description>
       <link>https://plybuild.io/configuration/index.html</link>
       <pubDate>Wed, 30 Sep 2020 12:55:39 +0200</pubDate>
       <guid>https://plybuild.io/configuration/index.html</guid>
-      <description></description>
+      <description>Plybuilds offers a comprehensive and layered configuration system, encompassing cloud config, project config, and local config, to cater to varying scopes and requirements. The cloud config is designed for settings that need to be consistent across various environments, ideal for settings that must be shared or synchronized across a team or multiple deployments. Project config, on the other hand, focuses on configurations specific to individual projects, allowing for tailored settings that align with the unique needs of each project.</description>
     </item>
     <item>
       <title> 4. Template</title>
       <link>https://plybuild.io/template/index.html</link>
       <pubDate>Wed, 30 Sep 2020 13:07:42 +0200</pubDate>
       <guid>https://plybuild.io/template/index.html</guid>
-      <description></description>
+      <description>A core concept of Plybuild is its innovative use of code templates, which significantly streamlines and enhances the development process. These templates serve as pre-defined, reusable code structures that can be quickly inserted into projects, saving developers from the repetitive task of writing boilerplate code. By providing a library of customizable templates for common patterns and functions, Plybuild enables users to rapidly set up project scaffolds, enforce coding standards, and maintain consistency across various parts of an application.</description>
     </item>
   </channel>
 </rss>
