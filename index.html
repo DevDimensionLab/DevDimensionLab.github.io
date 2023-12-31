@@ -18,19 +18,19 @@
     <title>plybuild</title>
     <link href="/index.xml" rel="alternate" type="application/rss+xml" title="plybuild">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1704024858" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704024858" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1704024858" rel="stylesheet">
-    <link href="/css/auto-complete.css?1704024858" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704024858" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1704024858" rel="stylesheet">
-    <link href="/css/fonts.css?1704024858" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704024858" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1704024858" rel="stylesheet">
-    <link href="/css/theme-plybuild-variant.css?1704024858" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1704024858" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1704024858" rel="stylesheet">
-    <link href="/css/print.css?1704024858" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1704024858" rel="stylesheet">
-    <script src="/js/url.js?1704024858"></script>
-    <script src="/js/variant.js?1704024858"></script>
+    <link href="/css/fontawesome-all.min.css?1704035779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704035779" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1704035779" rel="stylesheet">
+    <link href="/css/auto-complete.css?1704035779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704035779" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1704035779" rel="stylesheet">
+    <link href="/css/fonts.css?1704035779" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704035779" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1704035779" rel="stylesheet">
+    <link href="/css/theme-plybuild-variant.css?1704035779" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1704035779" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1704035779" rel="stylesheet">
+    <link href="/css/print.css?1704035779" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1704035779" rel="stylesheet">
+    <script src="/js/url.js?1704035779"></script>
+    <script src="/js/variant.js?1704035779"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -68,12 +68,12 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#_a-little-go-help-for-the-javakotlin-developers-using-maven_"><em>A little “go help” for the Java/Kotlin developers using Maven.</em></a></li>
+        <li><a href="#_a-power-tool-platform-for-java-and-kotlin-developers_"><em>A power tool platform for Java and Kotlin developers</em></a></li>
         <li><a href="#why">Why?</a>
           <ul>
-            <li><a href="#no-requirements">No requirements</a></li>
-            <li><a href="#natural-semantics">Natural semantics</a></li>
-            <li><a href="#open-source">Open source</a></li>
+            <li><a href="#starting-point-for-microservice-based-application-development">Starting Point for Microservice-Based Application Development</a></li>
+            <li><a href="#simplified-template-maintenance-for-efficient-collaboration">Simplified Template Maintenance for Efficient Collaboration</a></li>
+            <li><a href="#dependency-status-and-automated-project-upgrades">Dependency Status and Automated Project Upgrades</a></li>
           </ul>
         </li>
       </ul>
@@ -111,31 +111,25 @@
             </header>
 <h1 id="plybuild">plybuild</h1>
 
-<h2 id="_a-little-go-help-for-the-javakotlin-developers-using-maven_"><em>A little “go help” for the Java/Kotlin developers using Maven.</em></h2>
+<h2 id="_a-power-tool-platform-for-java-and-kotlin-developers_"><em>A power tool platform for Java and Kotlin developers</em></h2>
 <ul>
-<li>Upgrade your pom.xml dependencies to latest and greatest!</li>
-<li>Easy and fast</li>
-<li>Brings feature to the table, not found anywhere else, stay tuned!</li>
+<li>Starting point for microservice-based application development</li>
+<li>Simplifies maintaining code templates for efficient collaboration</li>
+<li>Provides dependency status and automates project dependency upgrades</li>
 </ul>
 <h2 id="why">Why?</h2>
-<h3 id="no-requirements">No requirements</h3>
-<p>No installs of maven-plugins required, so if you a working in a multi-repo developer environment with lots of 2party dependencies and repos, you can easily upgrade them with plybuild upgrade 2party.</p>
-<h3 id="natural-semantics">Natural semantics</h3>
-<p>Brings natural semantics and support for different types of dependencies to the table: Kotlin, 2party, spring-boot (curated dependencies), (other) 3party</p>
-<h3 id="open-source">Open source</h3>
-<p>Can be used as a library for other go-projects automating the upgrade process</p>
-
-<div class="box notices cstyle secondary">
-  <div class="box-label">Heads up</div>
-  <div class="box-content">
-
-<ul>
-<li>plybuild rewrites your <strong>pom.xml</strong>, so make sure that everything committed before testing out plybuild</li>
-<li>start with <code>ply build format</code>, verify that the rewrite of the pom.xml is ok, commit, and from now on you will easily see the diff that plybuild introduces with <code>ply upgrade &lt;2party|3party|spring-boot|plugins|all&gt;</code></li>
-<li>or just use <code>ply status</code> (no rewrite) and manually upgrade your pom.xml based on what is reported as outdated, current option if you need to keep your pom.xml formatting</li>
-</ul>
-</div>
-</div>
+<h3 id="starting-point-for-microservice-based-application-development">Starting Point for Microservice-Based Application Development</h3>
+<p>Discover the ideal launchpad for your microservice-based projects. Plybuild offers a robust foundation to kickstart
+your development process, providing essential resources and structures tailored for microservice architecture.</p>
+<p>The heart of plybuild is the <a href="https://github.com/DevDimensionLab/ply-config" target="_blank">cloud-config</a>, simply run the following
+command to get a new app running:</p>
+<p><code>ply build example --name rest-service</code></p>
+<h3 id="simplified-template-maintenance-for-efficient-collaboration">Simplified Template Maintenance for Efficient Collaboration</h3>
+<p>The strength of plybuild lies in creating a personalized <a href="https://github.com/DevDimensionLab/ply-config" target="_blank">cloud-config</a> for your organization,
+featuring live, executable code templates. Unlike static, purpose-rendered templates, these dynamic templates with actual running code
+simplify maintenance significantly. This live code capability ensures easier upkeep and adaptability for your projects.</p>
+<h3 id="dependency-status-and-automated-project-upgrades">Dependency Status and Automated Project Upgrades</h3>
+<p>Stay ahead with automated dependency management. Our tool keeps you informed about dependency status and takes the hassle out of upgrading project dependencies. With automated upgrades, your projects remain up-to-date, secure, and optimized without the usual manual intervention, ensuring smooth development cycles.</p>
 
             <footer class="footline">
             </footer>
@@ -248,8 +242,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1704024858" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1704024858" defer></script>
-    <script src="/js/theme.js?1704024858" defer></script>
+    <script src="/js/clipboard.min.js?1704035779" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1704035779" defer></script>
+    <script src="/js/theme.js?1704035779" defer></script>
   </body>
 </html>
