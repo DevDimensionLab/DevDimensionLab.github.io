@@ -9,9 +9,9 @@
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Example :: plybuild">
-    <meta name="twitter:description" content="Help Examples found in cloud-config Usage: ply examples [flags] ply examples [command] Available Commands: install install example from cloud-config Flags: --dry-run dry run does not write to pom.xml -h, --help help for examples --target string Optional target directory (default &#34;.&#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &#34;ply examples [command] --help&#34; for more information about a command.">
+    <meta name="twitter:description" content="Help Builds example from cloud-config Usage: ply build example [flags] Flags: --boot-version string Defines spring-boot version to use --dry-run dry run does not write to pom.xml -h, --help help for example --name string Example name to use --target string Optional target directory (default &#34;.&#34;) --upstream string Upstream to use, ex: [initializer, none] (default &#34;initializer&#34;) Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging">
     <meta property="og:title" content="Example :: plybuild">
-    <meta property="og:description" content="Help Examples found in cloud-config Usage: ply examples [flags] ply examples [command] Available Commands: install install example from cloud-config Flags: --dry-run dry run does not write to pom.xml -h, --help help for examples --target string Optional target directory (default &#34;.&#34;) Global Flags: --debug turn on debug output --json turn on json output logging Use &#34;ply examples [command] --help&#34; for more information about a command.">
+    <meta property="og:description" content="Help Builds example from cloud-config Usage: ply build example [flags] Flags: --boot-version string Defines spring-boot version to use --dry-run dry run does not write to pom.xml -h, --help help for example --name string Example name to use --target string Optional target directory (default &#34;.&#34;) --upstream string Upstream to use, ex: [initializer, none] (default &#34;initializer&#34;) Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://plybuild.io/commands/build/example/index.html">
     <meta property="article:section" content="Build :: plybuild">
@@ -20,19 +20,19 @@
     <meta property="og:site_name" content="plybuild">
     <title>Example :: plybuild</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1703969333" rel="stylesheet">
-    <link href="/css/auto-complete.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1703969333" rel="stylesheet">
-    <link href="/css/fonts.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1703969333" rel="stylesheet">
-    <link href="/css/theme-plybuild-variant.css?1703969333" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1703969333" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1703969333" rel="stylesheet">
-    <link href="/css/print.css?1703969333" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1703969333" rel="stylesheet">
-    <script src="/js/url.js?1703969333"></script>
-    <script src="/js/variant.js?1703969333"></script>
+    <link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1704022905" rel="stylesheet">
+    <link href="/css/auto-complete.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1704022905" rel="stylesheet">
+    <link href="/css/fonts.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1704022905" rel="stylesheet">
+    <link href="/css/theme-plybuild-variant.css?1704022905" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1704022905" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1704022905" rel="stylesheet">
+    <link href="/css/print.css?1704022905" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1704022905" rel="stylesheet">
+    <script src="/js/url.js?1704022905"></script>
+    <script src="/js/variant.js?1704022905"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -86,9 +86,9 @@
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Example</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/index.html" title="Build (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/format/index.html" title="Format (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/merge/index.html" title="Merge (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/options/index.html" title="Options (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -110,25 +110,25 @@
 <h1 id="example">Example</h1>
 
 <h2 id="help">Help</h2>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Examples found in cloud-config
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Builds example from cloud-config
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Usage:
-</span></span><span style="display:flex;"><span>  ply examples <span style="color:#f92672">[</span>flags<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>  ply examples <span style="color:#f92672">[</span>command<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Available Commands:
-</span></span><span style="display:flex;"><span>  install     install example from cloud-config
+</span></span><span style="display:flex;"><span>  ply build example <span style="color:#f92672">[</span>flags<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Flags:
-</span></span><span style="display:flex;"><span>      --dry-run         dry run does not write to pom.xml
-</span></span><span style="display:flex;"><span>  -h, --help            help <span style="color:#66d9ef">for</span> examples
-</span></span><span style="display:flex;"><span>      --target string   Optional target directory <span style="color:#f92672">(</span>default <span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      --boot-version string   Defines spring-boot version to use
+</span></span><span style="display:flex;"><span>      --dry-run               dry run does not write to pom.xml
+</span></span><span style="display:flex;"><span>  -h, --help                  help <span style="color:#66d9ef">for</span> example
+</span></span><span style="display:flex;"><span>      --name string           Example name to use
+</span></span><span style="display:flex;"><span>      --target string         Optional target directory <span style="color:#f92672">(</span>default <span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      --upstream string       Upstream to use, ex: <span style="color:#f92672">[</span>initializer, none<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>default <span style="color:#e6db74">&#34;initializer&#34;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Global Flags:
-</span></span><span style="display:flex;"><span>      --debug   turn on debug output
-</span></span><span style="display:flex;"><span>      --json    turn on json output logging
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Use <span style="color:#e6db74">&#34;ply examples [command] --help&#34;</span> <span style="color:#66d9ef">for</span> more information about a command.</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>      --cloud-sync   Cloud sync <span style="color:#f92672">(</span>default true<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      --debug        turn on debug output
+</span></span><span style="display:flex;"><span>      --doc          open documentation website
+</span></span><span style="display:flex;"><span>      --force        uses default <span style="color:#66d9ef">for</span> prompts
+</span></span><span style="display:flex;"><span>      --json         turn on json output logging</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -158,12 +158,12 @@
           <li data-nav-id="/commands/index.html" class="parent "><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148" checked><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
           <li data-nav-id="/commands/profile/index.html" class=""><a class="padding" href="/commands/profile/index.html">Profile</a></li>
           <li data-nav-id="/commands/build/index.html" class="parent "><input type="checkbox" id="R-section-8a6be015729fa57d08f917abbee0bbb3" aria-controls="R-subsections-8a6be015729fa57d08f917abbee0bbb3" checked><label for="R-section-8a6be015729fa57d08f917abbee0bbb3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Build</span></label><a class="padding" href="/commands/build/index.html">Build</a><ul id="R-subsections-8a6be015729fa57d08f917abbee0bbb3" class="morespace collapsible-menu">
-          <li data-nav-id="/commands/build/example/index.html" class="active"><a class="padding" href="/commands/build/example/index.html">Example</a></li>
-          <li data-nav-id="/commands/build/merge/index.html" class=""><a class="padding" href="/commands/build/merge/index.html">Merge</a></li>
           <li data-nav-id="/commands/build/init/index.html" class=""><a class="padding" href="/commands/build/init/index.html">Init</a></li>
-          <li data-nav-id="/commands/build/info/index.html" class=""><a class="padding" href="/commands/build/info/index.html">Info</a></li>
+          <li data-nav-id="/commands/build/add/index.html" class=""><a class="padding" href="/commands/build/add/index.html">Add</a></li>
           <li data-nav-id="/commands/build/format/index.html" class=""><a class="padding" href="/commands/build/format/index.html">Format</a></li>
-          <li data-nav-id="/commands/build/clean/index.html" class=""><a class="padding" href="/commands/build/clean/index.html">Clean</a></li></ul></li>
+          <li data-nav-id="/commands/build/example/index.html" class="active"><a class="padding" href="/commands/build/example/index.html">Example</a></li>
+          <li data-nav-id="/commands/build/options/index.html" class=""><a class="padding" href="/commands/build/options/index.html">Options</a></li>
+          <li data-nav-id="/commands/build/remove/index.html" class=""><a class="padding" href="/commands/build/remove/index.html">Remove</a></li></ul></li>
           <li data-nav-id="/commands/status/index.html" class=""><a class="padding" href="/commands/status/index.html">Status</a></li>
           <li data-nav-id="/commands/upgrade/index.html" class=""><a class="padding" href="/commands/upgrade/index.html">Upgrade</a></li>
           <li data-nav-id="/commands/plugin/index.html" class=""><input type="checkbox" id="R-section-49c10f7f425fb4a677fb5836fe0e69df" aria-controls="R-subsections-49c10f7f425fb4a677fb5836fe0e69df"><label for="R-section-49c10f7f425fb4a677fb5836fe0e69df"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Plugin</span></label><a class="padding" href="/commands/plugin/index.html">Plugin</a><ul id="R-subsections-49c10f7f425fb4a677fb5836fe0e69df" class="morespace collapsible-menu">
@@ -240,8 +240,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1703969333" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1703969333" defer></script>
-    <script src="/js/theme.js?1703969333" defer></script>
+    <script src="/js/clipboard.min.js?1704022905" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1704022905" defer></script>
+    <script src="/js/theme.js?1704022905" defer></script>
   </body>
 </html>

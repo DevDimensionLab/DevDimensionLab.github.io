@@ -7,6 +7,9 @@
     <loc>https://plybuild.io/template/basics/index.html</loc>
   </url>
   <url>
+    <loc>https://plybuild.io/commands/build/init/index.html</loc>
+  </url>
+  <url>
     <loc>https://plybuild.io/commands/profile/index.html</loc>
   </url>
   <url>
@@ -21,6 +24,9 @@
     <lastmod>2023-09-30T10:27:03+02:00</lastmod>
   </url>
   <url>
+    <loc>https://plybuild.io/commands/build/add/index.html</loc>
+  </url>
+  <url>
     <loc>https://plybuild.io/basics/installation/index.html</loc>
   </url>
   <url>
@@ -31,6 +37,9 @@
     <lastmod>2020-09-30T12:55:39+02:00</lastmod>
   </url>
   <url>
+    <loc>https://plybuild.io/commands/build/format/index.html</loc>
+  </url>
+  <url>
     <loc>https://plybuild.io/commands/upgrade/index.html</loc>
   </url>
   <url>
@@ -38,11 +47,21 @@
     <lastmod>2023-09-30T10:27:32+02:00</lastmod>
   </url>
   <url>
+    <loc>https://plybuild.io/commands/build/example/index.html</loc>
+    <lastmod>2023-09-30T10:27:03+02:00</lastmod>
+  </url>
+  <url>
     <loc>https://plybuild.io/template/index.html</loc>
     <lastmod>2020-09-30T13:07:42+02:00</lastmod>
   </url>
   <url>
+    <loc>https://plybuild.io/commands/build/options/index.html</loc>
+  </url>
+  <url>
     <loc>https://plybuild.io/commands/tips/index.html</loc>
+  </url>
+  <url>
+    <loc>https://plybuild.io/commands/build/remove/index.html</loc>
   </url>
   <url>
     <loc>https://plybuild.io/commands/plugin/install/index.html</loc>
@@ -54,10 +73,6 @@
   </url>
   <url>
     <loc>https://plybuild.io/commands/plugin/diagrams/index.html</loc>
-    <lastmod>2023-09-30T10:27:03+02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://plybuild.io/commands/build/example/index.html</loc>
     <lastmod>2023-09-30T10:27:03+02:00</lastmod>
   </url>
   <url>
@@ -95,26 +110,6 @@
   <url>
     <loc>https://plybuild.io/configuration/local/index.html</loc>
     <lastmod>2020-09-30T10:40:32+02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://plybuild.io/commands/build/merge/index.html</loc>
-    <lastmod>2020-09-30T10:27:39+02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://plybuild.io/commands/build/init/index.html</loc>
-    <lastmod>2020-09-30T10:27:32+02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://plybuild.io/commands/build/info/index.html</loc>
-    <lastmod>2020-09-30T10:27:29+02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://plybuild.io/commands/build/format/index.html</loc>
-    <lastmod>2020-09-30T10:27:18+02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://plybuild.io/commands/build/clean/index.html</loc>
-    <lastmod>2020-09-30T10:27:03+02:00</lastmod>
   </url>
   <url>
     <loc>https://plybuild.io/categories/index.html</loc>

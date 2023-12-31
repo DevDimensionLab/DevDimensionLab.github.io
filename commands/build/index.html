@@ -18,19 +18,19 @@
     <title>Build :: plybuild</title>
     <link href="/commands/build/index.xml" rel="alternate" type="application/rss+xml" title="Build :: plybuild">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1703969333" rel="stylesheet">
-    <link href="/css/auto-complete.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1703969333" rel="stylesheet">
-    <link href="/css/fonts.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1703969333" rel="stylesheet">
-    <link href="/css/theme-plybuild-variant.css?1703969333" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1703969333" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1703969333" rel="stylesheet">
-    <link href="/css/print.css?1703969333" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1703969333" rel="stylesheet">
-    <script src="/js/url.js?1703969333"></script>
-    <script src="/js/variant.js?1703969333"></script>
+    <link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1704022905" rel="stylesheet">
+    <link href="/css/auto-complete.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1704022905" rel="stylesheet">
+    <link href="/css/fonts.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1704022905" rel="stylesheet">
+    <link href="/css/theme-plybuild-variant.css?1704022905" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1704022905" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1704022905" rel="stylesheet">
+    <link href="/css/print.css?1704022905" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1704022905" rel="stylesheet">
+    <script src="/js/url.js?1704022905"></script>
+    <script src="/js/variant.js?1704022905"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -86,7 +86,7 @@
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/profile/index.html" title="Profile (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/example/index.html" title="Example (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/init/index.html" title="Init (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -117,14 +117,12 @@ Aliases:
   build, generate
 
 Available Commands:
-  Add            Add templates and functionalities for files to a build
-  clean          Removes intellij files and folder in a project
-  clear          Clears a maven project with ply files and formatting
-  example        Examples found in cloud-config
-  format         Format functionality for a project
-  info           Prints info on spring version, dependencies etc
-  init           Initializes build with ply files and formatting
-  list-templates Lists all available templates
+  add         Add templates and functionalities for files to a build
+  example     Builds example from cloud-config
+  format      Format functionality for a project
+  init        Initializes build with ply files and formatting
+  options     Prints options on spring version, dependencies etc
+  remove      Removes files and folders in a ply build project
 
 Flags:
       --application-name string   Overrides applicationName from config file
@@ -139,6 +137,7 @@ Flags:
       --name string               Overrides name from config file
       --package string            Overrides package from config file
       --target string             Optional target directory (default &#34;.&#34;)
+      --upstream string           Upstream to use, ex: [initializer, none] (default &#34;initializer&#34;)
 
 Global Flags:
       --debug   turn on debug output
@@ -162,8 +161,8 @@ Use &#34;ply build [command] --help&#34; for more information about a command.</
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;templates&#34;</span> : [<span style="color:#e6db74">&#34;dockerfile&#34;</span>, <span style="color:#e6db74">&#34;rest-basic&#34;</span>]
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>This file is the same file used for project-configuration, and is described at <a href="/configuration/project/index.html">project configuration</a></p>
 <h2 id="example-usage">Example usage</h2>
-<p><a href="#R-image-64f3cb45a16f850c4dd5c3429d8c8250" class="lightbox-link"><img src="/static/plybuild-generate-simple.gif" alt="Simple generate gif" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-64f3cb45a16f850c4dd5c3429d8c8250"><img src="/static/plybuild-generate-simple.gif" alt="Simple generate gif" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#R-image-b83c18dc86b335052e97c758bd14eca1" class="lightbox-link"><img src="/static/plybuild-generate-simple.gif" alt="Simple generate gif" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b83c18dc86b335052e97c758bd14eca1"><img src="/static/plybuild-generate-simple.gif" alt="Simple generate gif" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 
             <footer class="footline">
             </footer>
@@ -194,12 +193,12 @@ Use &#34;ply build [command] --help&#34; for more information about a command.</
           <li data-nav-id="/commands/index.html" class="parent "><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148" checked><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
           <li data-nav-id="/commands/profile/index.html" class=""><a class="padding" href="/commands/profile/index.html">Profile</a></li>
           <li data-nav-id="/commands/build/index.html" class="active parent "><input type="checkbox" id="R-section-8a6be015729fa57d08f917abbee0bbb3" aria-controls="R-subsections-8a6be015729fa57d08f917abbee0bbb3" checked><label for="R-section-8a6be015729fa57d08f917abbee0bbb3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Build</span></label><a class="padding" href="/commands/build/index.html">Build</a><ul id="R-subsections-8a6be015729fa57d08f917abbee0bbb3" class="morespace collapsible-menu">
-          <li data-nav-id="/commands/build/example/index.html" class=""><a class="padding" href="/commands/build/example/index.html">Example</a></li>
-          <li data-nav-id="/commands/build/merge/index.html" class=""><a class="padding" href="/commands/build/merge/index.html">Merge</a></li>
           <li data-nav-id="/commands/build/init/index.html" class=""><a class="padding" href="/commands/build/init/index.html">Init</a></li>
-          <li data-nav-id="/commands/build/info/index.html" class=""><a class="padding" href="/commands/build/info/index.html">Info</a></li>
+          <li data-nav-id="/commands/build/add/index.html" class=""><a class="padding" href="/commands/build/add/index.html">Add</a></li>
           <li data-nav-id="/commands/build/format/index.html" class=""><a class="padding" href="/commands/build/format/index.html">Format</a></li>
-          <li data-nav-id="/commands/build/clean/index.html" class=""><a class="padding" href="/commands/build/clean/index.html">Clean</a></li></ul></li>
+          <li data-nav-id="/commands/build/example/index.html" class=""><a class="padding" href="/commands/build/example/index.html">Example</a></li>
+          <li data-nav-id="/commands/build/options/index.html" class=""><a class="padding" href="/commands/build/options/index.html">Options</a></li>
+          <li data-nav-id="/commands/build/remove/index.html" class=""><a class="padding" href="/commands/build/remove/index.html">Remove</a></li></ul></li>
           <li data-nav-id="/commands/status/index.html" class=""><a class="padding" href="/commands/status/index.html">Status</a></li>
           <li data-nav-id="/commands/upgrade/index.html" class=""><a class="padding" href="/commands/upgrade/index.html">Upgrade</a></li>
           <li data-nav-id="/commands/plugin/index.html" class=""><input type="checkbox" id="R-section-49c10f7f425fb4a677fb5836fe0e69df" aria-controls="R-subsections-49c10f7f425fb4a677fb5836fe0e69df"><label for="R-section-49c10f7f425fb4a677fb5836fe0e69df"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Plugin</span></label><a class="padding" href="/commands/plugin/index.html">Plugin</a><ul id="R-subsections-49c10f7f425fb4a677fb5836fe0e69df" class="morespace collapsible-menu">
@@ -276,8 +275,8 @@ Use &#34;ply build [command] --help&#34; for more information about a command.</
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1703969333" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1703969333" defer></script>
-    <script src="/js/theme.js?1703969333" defer></script>
+    <script src="/js/clipboard.min.js?1704022905" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1704022905" defer></script>
+    <script src="/js/theme.js?1704022905" defer></script>
   </body>
 </html>

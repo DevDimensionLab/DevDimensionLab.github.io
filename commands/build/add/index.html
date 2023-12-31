@@ -8,19 +8,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Basics :: plybuild">
-    <meta name="twitter:description" content="Templates is a concept where plybuild effectively merges one project into another. Templates are added to the cloud-config repo under a templates folder, example, and are later referred to by their folder name in the plybuild.json file. A template, like most projects, consists of these filetypes:
-Filetypes Filetypes in templates are
-.kt and .java files If a template supplies a .kt or a .java file, the file is copied to its right destination and the package com.">
-    <meta property="og:title" content="Basics :: plybuild">
-    <meta property="og:description" content="Templates is a concept where plybuild effectively merges one project into another. Templates are added to the cloud-config repo under a templates folder, example, and are later referred to by their folder name in the plybuild.json file. A template, like most projects, consists of these filetypes:
-Filetypes Filetypes in templates are
-.kt and .java files If a template supplies a .kt or a .java file, the file is copied to its right destination and the package com.">
+    <meta name="twitter:title" content="Add :: plybuild">
+    <meta name="twitter:description" content="Add is a standalone command for merging a specific template into a target. It is the same process used iteratively by generate
+Help Add templates and functionalities for files to a build Usage: ply build add [command] Available Commands: pom Adds a pom-file into a project template Adds a template from ply-config text Merges two text files Flags: --from string file to add -h, --help help for add Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging --target string Optional target directory (default &#34;.">
+    <meta property="og:title" content="Add :: plybuild">
+    <meta property="og:description" content="Add is a standalone command for merging a specific template into a target. It is the same process used iteratively by generate
+Help Add templates and functionalities for files to a build Usage: ply build add [command] Available Commands: pom Adds a pom-file into a project template Adds a template from ply-config text Merges two text files Flags: --from string file to add -h, --help help for add Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging --target string Optional target directory (default &#34;.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://plybuild.io/template/basics/index.html">
-    <meta property="article:section" content=" 4. Template :: plybuild">
+    <meta property="og:url" content="https://plybuild.io/commands/build/add/index.html">
+    <meta property="article:section" content="Build :: plybuild">
     <meta property="og:site_name" content="plybuild">
-    <title>Basics :: plybuild</title>
+    <title>Add :: plybuild</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css?1704022905" rel="stylesheet">
@@ -57,7 +55,7 @@ Filetypes Filetypes in templates are
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/template/basics/index.html">
+  <body class="mobile-support html" data-url="/commands/build/add/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -72,21 +70,7 @@ Filetypes Filetypes in templates are
   <ul>
     <li>
       <ul>
-        <li><a href="#filetypes">Filetypes</a>
-          <ul>
-            <li><a href="#kt-and-java-files">.kt and .java files</a></li>
-            <li><a href="#properties-files">*.properties files</a></li>
-            <li><a href="#pomxml-files">pom.xml files</a></li>
-            <li><a href="#text-files-default">text files (default)</a></li>
-          </ul>
-        </li>
-        <li><a href="#situations">Situations</a>
-          <ul>
-            <li><a href="#during-generate">During generate</a></li>
-            <li><a href="#during-merge">During merge</a></li>
-            <li><a href="#during-upgrade---deprecated">During upgrade &ndash;deprecated</a></li>
-          </ul>
-        </li>
+        <li><a href="#help">Help</a></li>
       </ul>
     </li>
   </ul>
@@ -97,13 +81,14 @@ Filetypes Filetypes in templates are
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">plybuild</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/template/index.html"><span itemprop="name"> 4. Template</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Basics</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/commands/index.html"><span itemprop="name"> 2. Commands</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/commands/build/index.html"><span itemprop="name">Build</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Add</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/template/index.html" title="4. Template (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/init/index.html" title="Init (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/template/ignore/index.html" title="Ignores (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/commands/build/format/index.html" title="Format (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -122,33 +107,33 @@ Filetypes Filetypes in templates are
           <article class="default">
             <header class="headline">
             </header>
-<h1 id="basics">Basics</h1>
+<h1 id="add">Add</h1>
 
-<p>Templates is a concept where plybuild effectively merges one project into another. Templates are added to the cloud-config repo under a <code>templates</code> folder, <a href="https://github.com/plybuild/plybuild-config/tree/master/templates" target="_blank">example</a>, and are later referred to by their folder name in the <code>plybuild.json</code> file. A template, like most projects, consists of these filetypes:</p>
-<h2 id="filetypes">Filetypes</h2>
-<p>Filetypes in templates are</p>
-<h3 id="kt-and-java-files">.kt and .java files</h3>
-<p>If a template supplies a .kt or a .java file, the file is copied to its right destination and the <code>package com.example...</code> line in top of the file is replaced to support the target. I with the same path and filename is found in the target, the file is ignored.</p>
-<h3 id="properties-files">*.properties files</h3>
-<p>If a template supplies a *.properties file the file is parsed by <code>key=value</code> pairs, and merged correctly into the target. If the target is missing a properties file with the same name as the template supplies, the whole file is copied. plybuild does not check <code>key=value</code> pairs across properties files.</p>
-<h3 id="pomxml-files">pom.xml files</h3>
-<p>If a template and the target supplies a pom.xml file, the templates pom.xml following definitions are merged over:</p>
-<ul>
-<li><code>&lt;dependencies&gt;</code></li>
-<li><code>&lt;dependencyManagement&gt;</code></li>
-<li><code>&lt;build&gt;&lt;plugins&gt;</code></li>
-</ul>
-<h3 id="text-files-default">text files (default)</h3>
-<p>All files not matching the above is eighter copied over if the target does not contain it, or the differences are merged into the end of the targetfile.</p>
-<h2 id="situations">Situations</h2>
-<p>Templates is used in the following situations</p>
-<h3 id="during-generate">During generate</h3>
-<p>See <a href="/commands/generate">commands generate</a></p>
-<h3 id="during-merge">During merge</h3>
-<p>See <a href="/commands/merge">commands merge</a></p>
-<h3 id="during-upgrade---deprecated">During upgrade &ndash;deprecated</h3>
-<p>See <a href="/commands/deprecated">commands upgrade</a></p>
-
+<p>Add is a standalone command for merging a specific template into a target. It is the same process used iteratively by <a href="/commands/generate">generate</a></p>
+<h2 id="help">Help</h2>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Add templates and functionalities <span style="color:#66d9ef">for</span> files to a build
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Usage:
+</span></span><span style="display:flex;"><span>  ply build add <span style="color:#f92672">[</span>command<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Available Commands:
+</span></span><span style="display:flex;"><span>  pom         Adds a pom-file into a project
+</span></span><span style="display:flex;"><span>  template    Adds a template from ply-config
+</span></span><span style="display:flex;"><span>  text        Merges two text files
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Flags:
+</span></span><span style="display:flex;"><span>      --from string   file to add
+</span></span><span style="display:flex;"><span>  -h, --help          help <span style="color:#66d9ef">for</span> add
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Global Flags:
+</span></span><span style="display:flex;"><span>      --cloud-sync      Cloud sync <span style="color:#f92672">(</span>default true<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      --debug           turn on debug output
+</span></span><span style="display:flex;"><span>      --doc             open documentation website
+</span></span><span style="display:flex;"><span>      --force           uses default <span style="color:#66d9ef">for</span> prompts
+</span></span><span style="display:flex;"><span>      --json            turn on json output logging
+</span></span><span style="display:flex;"><span>      --target string   Optional target directory <span style="color:#f92672">(</span>default <span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Use <span style="color:#e6db74">&#34;ply build add [command] --help&#34;</span> <span style="color:#66d9ef">for</span> more information about a command.</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -175,11 +160,11 @@ Filetypes Filetypes in templates are
           <li data-nav-id="/basics/whats-new/index.html" class=""><a class="padding" href="/basics/whats-new/index.html">Whats New</a></li>
           <li data-nav-id="/basics/installation/index.html" class=""><a class="padding" href="/basics/installation/index.html">Installation</a></li>
           <li data-nav-id="/basics/global-flags/index.html" class=""><a class="padding" href="/basics/global-flags/index.html">Global flags</a></li></ul></li>
-          <li data-nav-id="/commands/index.html" class=""><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148"><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/index.html" class="parent "><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148" checked><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
           <li data-nav-id="/commands/profile/index.html" class=""><a class="padding" href="/commands/profile/index.html">Profile</a></li>
-          <li data-nav-id="/commands/build/index.html" class=""><input type="checkbox" id="R-section-8a6be015729fa57d08f917abbee0bbb3" aria-controls="R-subsections-8a6be015729fa57d08f917abbee0bbb3"><label for="R-section-8a6be015729fa57d08f917abbee0bbb3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Build</span></label><a class="padding" href="/commands/build/index.html">Build</a><ul id="R-subsections-8a6be015729fa57d08f917abbee0bbb3" class="morespace collapsible-menu">
+          <li data-nav-id="/commands/build/index.html" class="parent "><input type="checkbox" id="R-section-8a6be015729fa57d08f917abbee0bbb3" aria-controls="R-subsections-8a6be015729fa57d08f917abbee0bbb3" checked><label for="R-section-8a6be015729fa57d08f917abbee0bbb3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Build</span></label><a class="padding" href="/commands/build/index.html">Build</a><ul id="R-subsections-8a6be015729fa57d08f917abbee0bbb3" class="morespace collapsible-menu">
           <li data-nav-id="/commands/build/init/index.html" class=""><a class="padding" href="/commands/build/init/index.html">Init</a></li>
-          <li data-nav-id="/commands/build/add/index.html" class=""><a class="padding" href="/commands/build/add/index.html">Add</a></li>
+          <li data-nav-id="/commands/build/add/index.html" class="active"><a class="padding" href="/commands/build/add/index.html">Add</a></li>
           <li data-nav-id="/commands/build/format/index.html" class=""><a class="padding" href="/commands/build/format/index.html">Format</a></li>
           <li data-nav-id="/commands/build/example/index.html" class=""><a class="padding" href="/commands/build/example/index.html">Example</a></li>
           <li data-nav-id="/commands/build/options/index.html" class=""><a class="padding" href="/commands/build/options/index.html">Options</a></li>
@@ -199,8 +184,8 @@ Filetypes Filetypes in templates are
           <li data-nav-id="/configuration/cloud/index.html" class=""><a class="padding" href="/configuration/cloud/index.html">Cloud</a></li>
           <li data-nav-id="/configuration/project/index.html" class=""><a class="padding" href="/configuration/project/index.html">Project</a></li>
           <li data-nav-id="/configuration/local/index.html" class=""><a class="padding" href="/configuration/local/index.html">Local</a></li></ul></li>
-          <li data-nav-id="/template/index.html" class="parent "><input type="checkbox" id="R-section-83f30eaf50f55daeb4d665945dc38775" aria-controls="R-subsections-83f30eaf50f55daeb4d665945dc38775" checked><label for="R-section-83f30eaf50f55daeb4d665945dc38775"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  4. Template</span></label><a class="padding" href="/template/index.html"> 4. Template</a><ul id="R-subsections-83f30eaf50f55daeb4d665945dc38775" class="morespace collapsible-menu">
-          <li data-nav-id="/template/basics/index.html" class="active"><a class="padding" href="/template/basics/index.html">Basics</a></li>
+          <li data-nav-id="/template/index.html" class=""><input type="checkbox" id="R-section-83f30eaf50f55daeb4d665945dc38775" aria-controls="R-subsections-83f30eaf50f55daeb4d665945dc38775"><label for="R-section-83f30eaf50f55daeb4d665945dc38775"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  4. Template</span></label><a class="padding" href="/template/index.html"> 4. Template</a><ul id="R-subsections-83f30eaf50f55daeb4d665945dc38775" class="morespace collapsible-menu">
+          <li data-nav-id="/template/basics/index.html" class=""><a class="padding" href="/template/basics/index.html">Basics</a></li>
           <li data-nav-id="/template/ignore/index.html" class=""><a class="padding" href="/template/ignore/index.html">Ignores</a></li></ul></li>
           </ul>
         </div>

@@ -20,19 +20,19 @@ Help Perform upgrade on existing projects Usage: ply upgrade [command] Available
     <meta property="og:site_name" content="plybuild">
     <title>Upgrade :: plybuild</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1703969333" rel="stylesheet">
-    <link href="/css/auto-complete.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1703969333" rel="stylesheet">
-    <link href="/css/fonts.css?1703969333" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1703969333" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1703969333" rel="stylesheet">
-    <link href="/css/theme-plybuild-variant.css?1703969333" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1703969333" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1703969333" rel="stylesheet">
-    <link href="/css/print.css?1703969333" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1703969333" rel="stylesheet">
-    <script src="/js/url.js?1703969333"></script>
-    <script src="/js/variant.js?1703969333"></script>
+    <link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1704022905" rel="stylesheet">
+    <link href="/css/auto-complete.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1704022905" rel="stylesheet">
+    <link href="/css/fonts.css?1704022905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1704022905" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1704022905" rel="stylesheet">
+    <link href="/css/theme-plybuild-variant.css?1704022905" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1704022905" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1704022905" rel="stylesheet">
+    <link href="/css/print.css?1704022905" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1704022905" rel="stylesheet">
+    <script src="/js/url.js?1704022905"></script>
+    <script src="/js/variant.js?1704022905"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -71,8 +71,6 @@ Help Perform upgrade on existing projects Usage: ply upgrade [command] Available
     <li>
       <ul>
         <li><a href="#help">Help</a></li>
-        <li><a href="#example-usage">Example usage</a></li>
-        <li><a href="#example-output">Example output</a></li>
       </ul>
     </li>
   </ul>
@@ -139,17 +137,11 @@ Help Perform upgrade on existing projects Usage: ply upgrade [command] Available
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Global Flags:
 </span></span><span style="display:flex;"><span>      --debug   turn on debug output
+</span></span><span style="display:flex;"><span>      --doc     open documentation website
+</span></span><span style="display:flex;"><span>      --force   uses default <span style="color:#66d9ef">for</span> prompts
 </span></span><span style="display:flex;"><span>      --json    turn on json output logging
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Use <span style="color:#e6db74">&#34;ply upgrade [command] --help&#34;</span> <span style="color:#66d9ef">for</span> more information about a command.</span></span></code></pre></div><h2 id="example-usage">Example usage</h2>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Shell" data-lang="Shell"><span style="display:flex;"><span>plybuild upgrade all --target webservice</span></span></code></pre></div><h2 id="example-output">Example output</h2>
-<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Shell" data-lang="Shell"><span style="display:flex;"><span>INFO<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> upgrading everything <span style="color:#66d9ef">for</span> file webservice/pom.xml
-</span></span><span style="display:flex;"><span>INFO<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> outdated kotlin version <span style="color:#f92672">[</span>1.4.8 <span style="color:#f92672">=</span>&gt; 1.4.10<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>INFO<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> outdated spring-boot version <span style="color:#f92672">[</span>2.3.1.RELEASE <span style="color:#f92672">=</span>&gt; 2.3.4.RELEASE<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>INFO<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> outdated dependency org.hibernate:hibernate-core <span style="color:#f92672">[</span>5.2.21.Final <span style="color:#f92672">=</span>&gt; 5.4.21.Final<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>INFO<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> outdated dependency net.logstash.logback:logstash-logback-encoder <span style="color:#f92672">[</span>6.2 <span style="color:#f92672">=</span>&gt; 6.4<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>INFO<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> sorting pom file with default dependencySort
-</span></span><span style="display:flex;"><span>INFO<span style="color:#f92672">[</span>0000<span style="color:#f92672">]</span> writing model to pom file: webservice/pom.xml</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>Use <span style="color:#e6db74">&#34;ply upgrade [command] --help&#34;</span> <span style="color:#66d9ef">for</span> more information about a command.</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -179,12 +171,12 @@ Help Perform upgrade on existing projects Usage: ply upgrade [command] Available
           <li data-nav-id="/commands/index.html" class="parent "><input type="checkbox" id="R-section-ef90ded878463657444bd2c20835c148" aria-controls="R-subsections-ef90ded878463657444bd2c20835c148" checked><label for="R-section-ef90ded878463657444bd2c20835c148"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2. Commands</span></label><a class="padding" href="/commands/index.html"> 2. Commands</a><ul id="R-subsections-ef90ded878463657444bd2c20835c148" class="morespace collapsible-menu">
           <li data-nav-id="/commands/profile/index.html" class=""><a class="padding" href="/commands/profile/index.html">Profile</a></li>
           <li data-nav-id="/commands/build/index.html" class=""><input type="checkbox" id="R-section-8a6be015729fa57d08f917abbee0bbb3" aria-controls="R-subsections-8a6be015729fa57d08f917abbee0bbb3"><label for="R-section-8a6be015729fa57d08f917abbee0bbb3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Build</span></label><a class="padding" href="/commands/build/index.html">Build</a><ul id="R-subsections-8a6be015729fa57d08f917abbee0bbb3" class="morespace collapsible-menu">
-          <li data-nav-id="/commands/build/example/index.html" class=""><a class="padding" href="/commands/build/example/index.html">Example</a></li>
-          <li data-nav-id="/commands/build/merge/index.html" class=""><a class="padding" href="/commands/build/merge/index.html">Merge</a></li>
           <li data-nav-id="/commands/build/init/index.html" class=""><a class="padding" href="/commands/build/init/index.html">Init</a></li>
-          <li data-nav-id="/commands/build/info/index.html" class=""><a class="padding" href="/commands/build/info/index.html">Info</a></li>
+          <li data-nav-id="/commands/build/add/index.html" class=""><a class="padding" href="/commands/build/add/index.html">Add</a></li>
           <li data-nav-id="/commands/build/format/index.html" class=""><a class="padding" href="/commands/build/format/index.html">Format</a></li>
-          <li data-nav-id="/commands/build/clean/index.html" class=""><a class="padding" href="/commands/build/clean/index.html">Clean</a></li></ul></li>
+          <li data-nav-id="/commands/build/example/index.html" class=""><a class="padding" href="/commands/build/example/index.html">Example</a></li>
+          <li data-nav-id="/commands/build/options/index.html" class=""><a class="padding" href="/commands/build/options/index.html">Options</a></li>
+          <li data-nav-id="/commands/build/remove/index.html" class=""><a class="padding" href="/commands/build/remove/index.html">Remove</a></li></ul></li>
           <li data-nav-id="/commands/status/index.html" class=""><a class="padding" href="/commands/status/index.html">Status</a></li>
           <li data-nav-id="/commands/upgrade/index.html" class="active"><a class="padding" href="/commands/upgrade/index.html">Upgrade</a></li>
           <li data-nav-id="/commands/plugin/index.html" class=""><input type="checkbox" id="R-section-49c10f7f425fb4a677fb5836fe0e69df" aria-controls="R-subsections-49c10f7f425fb4a677fb5836fe0e69df"><label for="R-section-49c10f7f425fb4a677fb5836fe0e69df"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Plugin</span></label><a class="padding" href="/commands/plugin/index.html">Plugin</a><ul id="R-subsections-49c10f7f425fb4a677fb5836fe0e69df" class="morespace collapsible-menu">
@@ -261,8 +253,8 @@ Help Perform upgrade on existing projects Usage: ply upgrade [command] Available
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1703969333" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1703969333" defer></script>
-    <script src="/js/theme.js?1703969333" defer></script>
+    <script src="/js/clipboard.min.js?1704022905" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1704022905" defer></script>
+    <script src="/js/theme.js?1704022905" defer></script>
   </body>
 </html>

@@ -16,8 +16,16 @@ var relearn_search_index = [
     "uri": "/template/basics/index.html"
   },
   {
+    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
+    "content": "Initializes an existing project with plybuild files like ply.json. The command also overwrites the pom.xml files with standard formatting and sorting.\nHelp Initializes build project with ply files and formatting Usage: ply build init [flags] Flags: --config-file string Optional config file --dry-run dry run does not write to pom.xml -h, --help help for init -r, --recursive turn on recursive mode --target string Optional target directory (default \".\") Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging",
+    "description": "",
+    "tags": null,
+    "title": "Init",
+    "uri": "/commands/build/init/index.html"
+  },
+  {
     "breadcrumb": "plybuild \u003e  2. Commands",
-    "content": "Help Manage profiles settings for ply Usage: ply profiles [flags] ply profiles [command] Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profiles --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --json turn on json output logging Use \"ply profiles [command] --help\" for more information about a command.",
+    "content": "Help Manage profiles settings for ply Usage: ply profile [flags] ply profile [command] Aliases: profile, profiles Available Commands: config Config display in the terminal Flags: --cloud-sync sync with cloud config repo --edit edit active profile local config -h, --help help for profile --reset reset local config --show show local config --use string switch to profile Global Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use \"ply profile [command] --help\" for more information about a command.",
     "description": "",
     "tags": null,
     "title": "Profile",
@@ -33,7 +41,7 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "plybuild",
-    "content": " __ __ _ __ __ ____ / /_ __/ /_ __ __(_) /___/ / / __ \\/ / / / / __ \\/ / / / / / __ / / /_/ / / /_/ / /_/ / /_/ / / / /_/ / / .___/_/\\__, /_.___/\\__,_/_/_/\\__,_/ /_/ /____/ == version: v1.0.1 == Usage: ply [command] Available Commands: build Builds a maven project with ply files and formatting help Help about any command plugin Plugin functionality for plybuild profile Manage profiles settings for ply status Status functionality for a project tips Use tips to learn information faster upgrade Upgrade options Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts -h, --help help for ply --json turn on json output logging Additional help topics: ply about About ply Use \"ply [command] --help\" for more information about a command.",
+    "content": " __ __ _ __ __ ____ / /_ __/ /_ __ __(_) /___/ / / __ \\/ / / / / __ \\/ / / / / / __ / / /_/ / / /_/ / /_/ / /_/ / / / /_/ / / .___/_/\\__, /_.___/\\__,_/_/_/\\__,_/ /_/ /____/ == version: v1.0.1 == Usage: ply [command] Available Commands: build Builds a ply project with ply files and formatting help Help about any command plugin Plugin functionality for plybuild profile Manage profiles settings for ply status Status functionality for a project tips Use tips to learn information faster upgrade Upgrade options Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts -h, --help help for ply --json turn on json output logging Additional help topics: ply about About ply Use \"ply [command] --help\" for more information about a command.",
     "description": "",
     "tags": null,
     "title": " 2. Commands",
@@ -41,11 +49,19 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "plybuild \u003e  2. Commands",
-    "content": "Builds a ply project with ply files and formatting Usage: ply build [flags] ply build [command] Aliases: build, generate Available Commands: Add Add templates and functionalities for files to a build clean Removes intellij files and folder in a project clear Clears a maven project with ply files and formatting example Examples found in cloud-config format Format functionality for a project info Prints info on spring version, dependencies etc init Initializes build with ply files and formatting list-templates Lists all available templates Flags: --application-name string Overrides applicationName from config file --artifact-id string Overrides artifactId from config file --boot-version string Defines spring-boot version to use --cloud-sync Cloud sync (default true) --config-file string Optional config file (default \"ply.json\") --disable-upgrading dont upgrade dependencies --group-id string Overrides groupId from config file -h, --help help for build -i, --interactive Interactive mode --name string Overrides name from config file --package string Overrides package from config file --target string Optional target directory (default \".\") Global Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use \"ply build [command] --help\" for more information about a command.Example plybuild.json file { \"language\": \"kotlin\", \"groupId\": \"com.example\", \"artifactId\": \"app\", \"package\": \"com.example.app\", \"name\": \"Example REST basic app\", \"team\": { \"name\": \"demo-name\", \"email\": \"demo-email@example.com\" }, \"description\": \"Demo of new app, generated with spring-boot and plybuild templates\", \"dependencies\": [\"web-services\"], \"templates\" : [\"dockerfile\", \"rest-basic\"] }This file is the same file used for project-configuration, and is described at project configuration\nExample usage ",
+    "content": "Builds a ply project with ply files and formatting Usage: ply build [flags] ply build [command] Aliases: build, generate Available Commands: add Add templates and functionalities for files to a build example Builds example from cloud-config format Format functionality for a project init Initializes build with ply files and formatting options Prints options on spring version, dependencies etc remove Removes files and folders in a ply build project Flags: --application-name string Overrides applicationName from config file --artifact-id string Overrides artifactId from config file --boot-version string Defines spring-boot version to use --cloud-sync Cloud sync (default true) --config-file string Optional config file (default \"ply.json\") --disable-upgrading dont upgrade dependencies --group-id string Overrides groupId from config file -h, --help help for build -i, --interactive Interactive mode --name string Overrides name from config file --package string Overrides package from config file --target string Optional target directory (default \".\") --upstream string Upstream to use, ex: [initializer, none] (default \"initializer\") Global Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use \"ply build [command] --help\" for more information about a command.Example plybuild.json file { \"language\": \"kotlin\", \"groupId\": \"com.example\", \"artifactId\": \"app\", \"package\": \"com.example.app\", \"name\": \"Example REST basic app\", \"team\": { \"name\": \"demo-name\", \"email\": \"demo-email@example.com\" }, \"description\": \"Demo of new app, generated with spring-boot and plybuild templates\", \"dependencies\": [\"web-services\"], \"templates\" : [\"dockerfile\", \"rest-basic\"] }This file is the same file used for project-configuration, and is described at project configuration\nExample usage ",
     "description": "",
     "tags": null,
     "title": "Build",
     "uri": "/commands/build/index.html"
+  },
+  {
+    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
+    "content": "Add is a standalone command for merging a specific template into a target. It is the same process used iteratively by generate\nHelp Add templates and functionalities for files to a build Usage: ply build add [command] Available Commands: pom Adds a pom-file into a project template Adds a template from ply-config text Merges two text files Flags: --from string file to add -h, --help help for add Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging --target string Optional target directory (default \".\") Use \"ply build add [command] --help\" for more information about a command.",
+    "description": "",
+    "tags": null,
+    "title": "Add",
+    "uri": "/commands/build/add/index.html"
   },
   {
     "breadcrumb": "plybuild \u003e  1. Basics",
@@ -57,7 +73,7 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "plybuild \u003e  2. Commands",
-    "content": "Status is a command for printing status on a plybuild project. By default it outputs available upgrades.\nHelp Status functionality for a project Usage: ply status [flags] Flags: --cloud-sync force cloud sync -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default \".\") Global Flags: --debug turn on debug output --json turn on json output loggingExample usage plybuild statusExample output INFO[0000] Project status for file ./pom.xml INFO[0000] No update needed, kotlin is the the latest version [1.4.10] INFO[0000] spring boot is the latest version [2.3.4.RELEASE]",
+    "content": "Status is a command for printing status on a plybuild project. By default it outputs available upgrades.\nHelp Status functionality for a project Usage: ply status [flags] Flags: --cloud-sync force cloud sync -h, --help help for status -r, --recursive turn on recursive mode --show show project status --target string optional target directory (default \".\") Global Flags: --debug turn on debug output --json turn on json output logging",
     "description": "",
     "tags": null,
     "title": "Status",
@@ -72,8 +88,16 @@ var relearn_search_index = [
     "uri": "/configuration/index.html"
   },
   {
+    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
+    "content": "Help Format functionality for a project Usage: ply build format [command] Available Commands: inherit Removes manual versions from spring dependencies pom Formats pom.xml and sorts dependencies version Removes version tags and replaces them with property tags Flags: --dry-run dry run does not write to pom.xml -h, --help help for format -r, --recursive turn on recursive mode --target string Optional target directory (default \".\") Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use \"ply build format [command] --help\" for more information about a command.",
+    "description": "",
+    "tags": null,
+    "title": "Format",
+    "uri": "/commands/build/format/index.html"
+  },
+  {
     "breadcrumb": "plybuild \u003e  2. Commands",
-    "content": "Upgrade is a command for upgrading all or specific parts of a project.\nHelp Perform upgrade on existing projects Usage: ply upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project interactive Interactively upgrade the project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version with-versions Upgrade using mvn versions in a project Flags: --cloud-sync force cloud sync --dry-run dry run does not write to pom.xml -h, --help help for upgrade -r, --recursive turn on recursive mode --stealth use alternative pom.xml writer --target string Optional target directory (default \".\") Global Flags: --debug turn on debug output --json turn on json output logging Use \"ply upgrade [command] --help\" for more information about a command.Example usage plybuild upgrade all --target webserviceExample output INFO[0000] upgrading everything for file webservice/pom.xml INFO[0000] outdated kotlin version [1.4.8 =\u003e 1.4.10] INFO[0000] outdated spring-boot version [2.3.1.RELEASE =\u003e 2.3.4.RELEASE] INFO[0000] outdated dependency org.hibernate:hibernate-core [5.2.21.Final =\u003e 5.4.21.Final] INFO[0000] outdated dependency net.logstash.logback:logstash-logback-encoder [6.2 =\u003e 6.4] INFO[0000] sorting pom file with default dependencySort INFO[0000] writing model to pom file: webservice/pom.xml",
+    "content": "Upgrade is a command for upgrading all or specific parts of a project.\nHelp Perform upgrade on existing projects Usage: ply upgrade [command] Available Commands: 2party Upgrade all 2party dependencies to project 3party Upgrade all 3party dependencies to project all Upgrade everything in project dependency Upgrade a specific dependency on a project deprecated Remove and replace deprecated dependencies in a project interactive Interactively upgrade the project kotlin Upgrade kotlin version in project plugins Upgrade all plugins found in project spring-boot Upgrade spring-boot to the latest version with-versions Upgrade using mvn versions in a project Flags: --cloud-sync force cloud sync --dry-run dry run does not write to pom.xml -h, --help help for upgrade -r, --recursive turn on recursive mode --stealth use alternative pom.xml writer --target string Optional target directory (default \".\") Global Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use \"ply upgrade [command] --help\" for more information about a command.",
     "description": "",
     "tags": null,
     "title": "Upgrade",
@@ -88,6 +112,14 @@ var relearn_search_index = [
     "uri": "/commands/plugin/index.html"
   },
   {
+    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
+    "content": "Help Builds example from cloud-config Usage: ply build example [flags] Flags: --boot-version string Defines spring-boot version to use --dry-run dry run does not write to pom.xml -h, --help help for example --name string Example name to use --target string Optional target directory (default \".\") --upstream string Upstream to use, ex: [initializer, none] (default \"initializer\") Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging",
+    "description": "",
+    "tags": null,
+    "title": "Example",
+    "uri": "/commands/build/example/index.html"
+  },
+  {
     "breadcrumb": "plybuild",
     "content": "",
     "description": "",
@@ -96,12 +128,28 @@ var relearn_search_index = [
     "uri": "/template/index.html"
   },
   {
+    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
+    "content": "Help Prints options on spring version, dependencies etc Usage: ply build options [flags] Flags: --examples show plybuild examples -h, --help help for options --maven-repositories show current maven repositories --spring-dependencies show spring boot status --spring-managed show spring boot managed dependencies info --templates show plybuild templates Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging --target string Optional target directory (default \".\")",
+    "description": "",
+    "tags": null,
+    "title": "Options",
+    "uri": "/commands/build/options/index.html"
+  },
+  {
     "breadcrumb": "plybuild \u003e  2. Commands",
-    "content": "Help A concentrated version of things you need to know for a topic, typically internal know-how that you can't find on the internet Usage: ply tips [flags] ply tips [command] Available Commands: list Lists all tips for current profile show Show tips Flags: -h, --help help for tips Global Flags: --debug turn on debug output --json turn on json output logging Use \"ply tips [command] --help\" for more information about a command.",
+    "content": "Help A concentrated version of things you need to know for a topic, typically internal know-how that you can't find on the internet Usage: ply tips [flags] ply tips [command] Available Commands: list Lists all tips for current profile show Show tips Flags: -h, --help help for tips Global Flags: --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging Use \"ply tips [command] --help\" for more information about a command.",
     "description": "",
     "tags": null,
     "title": "Tips",
     "uri": "/commands/tips/index.html"
+  },
+  {
+    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
+    "content": "Help Removes files and folders in a ply build project Usage: ply build remove [flags] Flags: --generated removes plybuild generated files and folders -h, --help help for remove --intellij removes .idea folders and *.iml files -r, --recursive turn on recursive mode Global Flags: --cloud-sync Cloud sync (default true) --debug turn on debug output --doc open documentation website --force uses default for prompts --json turn on json output logging --target string Optional target directory (default \".\")",
+    "description": "",
+    "tags": null,
+    "title": "Remove",
+    "uri": "/commands/build/remove/index.html"
   },
   {
     "breadcrumb": "plybuild \u003e  2. Commands \u003e Plugin",
@@ -126,14 +174,6 @@ var relearn_search_index = [
     "tags": null,
     "title": "Diagrams",
     "uri": "/commands/plugin/diagrams/index.html"
-  },
-  {
-    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
-    "content": "Help Examples found in cloud-config Usage: ply examples [flags] ply examples [command] Available Commands: install install example from cloud-config Flags: --dry-run dry run does not write to pom.xml -h, --help help for examples --target string Optional target directory (default \".\") Global Flags: --debug turn on debug output --json turn on json output logging Use \"ply examples [command] --help\" for more information about a command.",
-    "description": "",
-    "tags": null,
-    "title": "Example",
-    "uri": "/commands/build/example/index.html"
   },
   {
     "breadcrumb": "plybuild \u003e  2. Commands \u003e Plugin",
@@ -193,7 +233,7 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "plybuild \u003e  3. Configuration",
-    "content": "In every plybuild project and template there should be located a plybuild.json file describing the project.\nExample plybuild.json { \"language\": \"kotlin\", \"groupId\": \"com.example\", \"artifactId\": \"app\", \"package\": \"com.example.app\", \"name\": \"Example REST basic app\", \"team\": { \"name\": \"demo-name\", \"email\": \"demo-email@example.com\" }, \"description\": \"Demo of new app, generated with spring-boot and plybuild templates\", \"dependencies\": [\"web-services\"], \"templates\" : [\"dockerfile\", \"rest-basic\"], \"settings\": { \"disableDependencySort\": false, \"disableKotlinUpgrade\": false, \"disableSpringBootUpgrade\": false, \"disableUpgradesFor\": [ { \"groupId\": \"com.example\", \"artifactId\": \"artifactId\" } ], \"maxVersionForDependencies\": [ { \"groupId\": \"com.example\", \"artifactId\": \"artifactId\", \"maxVersion\": \"0.0.1\" } ] } }The dependencies key in this file refers to spring-boot dependencies. The command plybuild info --spring-info shows a complete list of all the available dependencies. The templates key refers to templates available in your cloud-config repository.\n",
+    "content": "In every plybuild project and template there should be located a ply.json file describing the project.\nExample plybuild.json { \"language\": \"kotlin\", \"groupId\": \"com.example\", \"artifactId\": \"app\", \"package\": \"com.example.app\", \"name\": \"Example REST basic app\", \"team\": { \"name\": \"demo-name\", \"email\": \"demo-email@example.com\" }, \"description\": \"Demo of new app, generated with spring-boot and plybuild templates\", \"dependencies\": [\"web-services\"], \"templates\" : [\"dockerfile\", \"rest-basic\"], \"settings\": { \"disableDependencySort\": false, \"disableKotlinUpgrade\": false, \"disableSpringBootUpgrade\": false, \"disableUpgradesFor\": [ { \"groupId\": \"com.example\", \"artifactId\": \"artifactId\" } ], \"maxVersionForDependencies\": [ { \"groupId\": \"com.example\", \"artifactId\": \"artifactId\", \"maxVersion\": \"0.0.1\" } ] } }The dependencies key in this file refers to spring-boot dependencies.\n",
     "description": "",
     "tags": null,
     "title": "Project",
@@ -201,51 +241,11 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "plybuild \u003e  3. Configuration",
-    "content": "The first time running plybuild a ~/.plybuild configuration folder is created with a ~/.plybuild/local-config.yaml file. The contents of this file by default are:\ncloudConfig: git: url: https://github.com/plybuild/plybuild-config.git",
+    "content": "The first time running plybuild a ~/.ply configuration folder is created with a ~/.ply/local-config.yaml file. The contents of this file by default are:\ncloudConfig: git: url: https://github.com/plybuild/plybuild-config.git",
     "description": "",
     "tags": null,
     "title": "Local",
     "uri": "/configuration/local/index.html"
-  },
-  {
-    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
-    "content": "Merge is a standalone command for merging a specific template into a target. It is the same process used iteratively by generate\nHelp Merge functionalities for files to a project Usage: ply merge [command] Available Commands: pom Merges a pom-file into a project template Merges a template from ply-config text Merges two text files Flags: --from string file to merge -h, --help help for merge Global Flags: --debug turn on debug output --json turn on json output logging Use \"ply merge [command] --help\" for more information about a command.",
-    "description": "",
-    "tags": null,
-    "title": "Merge",
-    "uri": "/commands/build/merge/index.html"
-  },
-  {
-    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
-    "content": "Initializes a project with plybuild files like plybuild.json. The command also overwrites the pom.xml files with standard formatting and sorting.\nHelp Initializes a maven project with ply files and formatting Usage: ply init [flags] Flags: --config-file string Optional config file --dry-run dry run does not write to pom.xml -h, --help help for init -r, --recursive turn on recursive mode --target string Optional target directory (default \".\") Global Flags: --debug turn on debug output --json turn on json output logging",
-    "description": "",
-    "tags": null,
-    "title": "Init",
-    "uri": "/commands/build/init/index.html"
-  },
-  {
-    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
-    "content": "Info is a command for printing various non-project information like spring-info, spring-managed dependencies, and which maven-repositories are defined by mvn\nHelp Prints info on spring version, dependencies etc Usage: ply info [flags] Flags: -h, --help help for info --maven-repositories show current maven repositories --spring-info show spring boot status --spring-managed show spring boot managed dependencies info Global Flags: --debug turn on debug output --json turn on json output logging",
-    "description": "",
-    "tags": null,
-    "title": "Info",
-    "uri": "/commands/build/info/index.html"
-  },
-  {
-    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
-    "content": "Help Format functionality for a project Usage: ply format [command] Available Commands: inherit Removes manual versions from spring dependencies pom Formats pom.xml and sorts dependencies version Removes version tags and replaces them with property tags Flags: --dry-run dry run does not write to pom.xml -h, --help help for format -r, --recursive turn on recursive mode --target string Optional target directory (default \".\") Global Flags: --debug turn on debug output --json turn on json output logging Use \"ply format [command] --help\" for more information about a command.Example usage ply format pom --target webserviceExample output INFO[0000] formatting for file webservice/pom.xml INFO[0000] sorting pom file with default dependencySort INFO[0000] writing model to pom file: webservice/pom.xml",
-    "description": "",
-    "tags": null,
-    "title": "Format",
-    "uri": "/commands/build/format/index.html"
-  },
-  {
-    "breadcrumb": "plybuild \u003e  2. Commands \u003e Build",
-    "content": "Help Clean files and folder in a project Usage: ply clean [flags] Flags: --dry-run dry run does not write to pom.xml -h, --help help for clean --ide removes .idea folders and *.iml files -r, --recursive turn on recursive mode --target string Optional target directory (default \".\") Global Flags: --debug turn on debug output --json turn on json output loggingExample usage ply clean --ide --target webserviceExample output INFO[0000] Deleted 0 files and 0 directories",
-    "description": "",
-    "tags": null,
-    "title": "Clean",
-    "uri": "/commands/build/clean/index.html"
   },
   {
     "breadcrumb": "plybuild",
